@@ -1,1 +1,6 @@
 $color-primary: #fff000;
+$container-width:1440px;
+%centering{
+    display: flex;
+    justify-content: center;
+}

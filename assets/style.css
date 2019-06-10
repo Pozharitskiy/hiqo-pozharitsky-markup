@@ -1,3 +1,88 @@
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 h1 {
   color: #fff000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.start-screen-block {
+  width: 1440px;
+  height: 900px;
+  border: 1px solid black;
+  background: #3D4148;
+}
+
+header {
+  margin: 20px 230px 0px;
+  width: 1021px;
+  height: 465px;
+  border: 1px solid blue;
+}
+
+.paralax-section {
+  margin-top: -35px;
+  width: 1440px;
+  height: 700px;
+  border: 1px solid black;
+  background: #D14B3A;
+}
+
+.commercial-data {
+  margin-top: -40px;
+  width: 1440px;
+  height: 294px;
+  border: 1px solid black;
+  background: #656D7A;
+}
+
+.latest-blog-posts {
+  width: 1440px;
+  height: 1069px;
+  border: 1px solid black;
+}
+
+.latest-portfolio {
+  margin-top: -80px;
+  width: 1440px;
+  height: 923px;
+  border: 1px solid black;
+}
+
+.feedback {
+  margin-top: -130px;
+  width: 1440px;
+  height: 836px;
+  border: 1px solid black;
+}
+
+footer {
+  margin-top: -70px;
+  width: 1440px;
+  height: 150px;
+  border: 1px solid black;
+  background: #303030;
 }
