@@ -7,6 +7,7 @@
 ##### `npm install -g gulp`
 ##### 'gulp serve' - this abracadabra will run your (mine) project!
 #### Some contacts:
+⋅⋅* Unordered sub-list. 
 ⋅⋅* My name is Den
 ⋅⋅* [My instagram page](https://instagram.com/sovasmotrit)
 ### Good luck and have fun!
