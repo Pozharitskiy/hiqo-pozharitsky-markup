@@ -114,7 +114,12 @@ header li:hover {
 }
 
 .header-buttons {
-  margin: 66px 96px;
+  margin: 69px 96px;
+}
+
+.arrows {
+  position: absolute;
+  width: inherit;
 }
 
 .header-buttons button {

@@ -68,7 +68,11 @@ header li:hover{
     margin-left:91px;
 }
 .header-buttons{
-    margin:66px 96px;
+    margin:69px 96px;
+}
+.arrows{
+    position: absolute;
+    width:inherit;
 }
 .header-buttons button{
     cursor: pointer;
@@ -92,6 +96,7 @@ header li:hover{
     float:left;
     width:23px;
     height: 23px;
+    
 }
 .paralax-section {
     background: url(/src/img/red-frame.png);
