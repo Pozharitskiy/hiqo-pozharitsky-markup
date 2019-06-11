@@ -1,0 +1,41 @@
+%centering {
+  display: flex;
+  justify-content: center;
+}
+
+%logo {
+  img {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    width: 105px;
+    height: 88px;
+  }
+  p {
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    color: #fafafa;
+  }
+}
+
+%headline {
+  width: 541px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 160px auto;
+  h2 {
+    align-self: center;
+    margin-top: -20px;
+    font-size: 45px;
+    color: white;
+    border-bottom: 1px solid white;
+  }
+  p {
+    font-size: 18px;
+    color: white;
+    margin-top: 62px;
+  }
+}

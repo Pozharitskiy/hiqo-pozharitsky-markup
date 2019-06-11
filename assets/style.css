@@ -1,3 +1,138 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -27,7 +162,7 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 32px;
-  color: #FAFAFA;
+  color: #fafafa;
 }
 
 .paralax-headline {
@@ -56,7 +191,6 @@ header {
 }
 
 .paralax-headline p {
-  position: absolute;
   font-size: 18px;
   color: white;
   margin-top: 62px;
@@ -66,23 +200,12 @@ h1 {
   color: #FAFAFA;
 }
 
-@font-face {
-  font-family: Raleway;
-  src: url(src/fonts/Raleway-SemiBold.ttf);
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  font-family: Raleway, sans-serif;
-}
-
 a {
   text-decoration: none;
-  color: #FAFAFA;
+  color: #fafafa;
 }
 
-body {
+.container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -93,6 +216,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  font-family: Raleway, sans-serif;
 }
 
 .start-screen-block {
@@ -122,17 +246,22 @@ header ul {
   height: 25px;
   margin-top: 38px;
   margin-left: -35px;
+  text-transform: uppercase;
 }
 
 header li {
-  float: left;
-  display: block;
+  border-bottom: 1px solid transparent;
   font-size: 18px;
-  color: #FAFAFA;
+  color: #fafafa;
 }
 
 header li:hover {
-  border-bottom: 1px solid red;
+  border-bottom-color: #f00;
+}
+
+.header-logo img {
+  width: 50px;
+  height: 50px;
 }
 
 .header-slider {
@@ -146,11 +275,11 @@ header li:hover {
 .header-slider p {
   font-size: 50px;
   margin-top: 37px;
-  color: white;
+  color: #fafafa;
   margin-left: 91px;
 }
 
-.header-buttons {
+.slider-buttons {
   margin: 69px 96px;
 }
 
@@ -159,14 +288,26 @@ header li:hover {
   width: inherit;
 }
 
-.header-buttons button {
-  cursor: pointer;
-  font-size: 16px;
-  color: #FAFAFA;
-  width: 150px;
-  height: 50px;
-  border: 1px solid white;
-  background: none;
+.left-arrow {
+  margin: 120px -1px;
+  position: absolute;
+}
+
+.right-arrow {
+  margin-top: 120px;
+  position: absolute;
+  right: 1px;
+}
+
+.slider-headline {
+  font-size: 70px;
+  font-weight: 700;
+  font-style: normal;
+  margin-top: -17px;
+}
+
+.line {
+  margin: -16px 95px;
 }
 
 .slider-dots {
@@ -180,11 +321,44 @@ header li:hover {
   height: 25px;
 }
 
-.slider-dots img {
-  padding: 0 8px;
-  float: left;
+.slider-paragraph {
+  font-size: 50px;
+  width: 910px;
+}
+
+.focused {
   width: 23px;
   height: 23px;
+  border: 1px solid #fafafa;
+  background: #fafafa;
+}
+
+.unfocused {
+  width: 23px;
+  height: 23px;
+  border: 1px solid #fafafa;
+  background: none;
+}
+
+.explore-btn {
+  cursor: pointer;
+  color: #fafafa;
+  font-size: 16px;
+  text-transform: uppercase;
+  background: #d14b3a;
+  border: 0px;
+  width: 150px;
+  height: 50px;
+}
+
+.learn-btn {
+  margin-left: 15px;
+  text-transform: uppercase;
+  width: 150px;
+  height: 50px;
+  color: #fafafa;
+  background: none;
+  border: 1px solid #fafafa;
 }
 
 .paralax-section {

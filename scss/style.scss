@@ -1,33 +1,27 @@
 @import "vendor/reset";
-
+@import "mixins";
 @import "variables";
 @import "typography";
-// import components here
-@font-face {
-    font-family: Raleway; 
-    src: url(src/fonts/Raleway-SemiBold.ttf); 
-   }
-* {
-  margin: 0;
-  padding: 0;
-  font-family: Raleway, sans-serif;
-}
 
 a {
-    text-decoration: none;
-    color:#FAFAFA;
+  text-decoration: none;
+  color: #fafafa;
 }
-body {
+
+.container {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  font-family: Raleway, sans-serif;
 }
+
 .start-screen-block {
   width: $container-width;
   height: 900px;
   border: 1px solid black;
   background: #3d4148;
 }
+
 header {
   position: absolute;
   margin: 20px 230px 0px;
@@ -36,82 +30,125 @@ header {
   @extend %centering;
   border: 1px solid blue;
 }
-header ul{
-    display: flex;
-    justify-content: space-between;
-    list-style-type:none;
-    width: 963px;
-    height: 25px;
-    margin-top:38px;
-    margin-left:-35px;
+
+header ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  width: 963px;
+  height: 25px;
+  margin-top: 38px;
+  margin-left: -35px;
+  text-transform: uppercase;
 }
-header li{
-    float:left;
-    display: block;
-    
-    font-size: 18px;
-    color:#FAFAFA;
+
+header li {
+  border-bottom: 1px solid transparent;
+  font-size: 18px;
+  color: #fafafa;
 }
-header li:hover{
-    border-bottom:1px solid red;
+
+header li:hover {
+  border-bottom-color: #f00;
 }
+
 .header-logo {
   @extend %logo;
 }
-.header-slider{
-    width:1364px;
-    height: 524px;
-    border:1px solid green;
-    margin-top:187px;
-    margin-left:38px;
+
+.header-logo img {
+  width: 50px;
+  height: 50px;
 }
-.header-slider p{
-    font-size: 50px;
-    margin-top:37px;
-    
-    color:white;
-    margin-left:91px;
+.header-slider {
+  width: 1364px;
+  height: 524px;
+  border: 1px solid green;
+  margin-top: 187px;
+  margin-left: 38px;
 }
-.header-buttons{
-    margin:69px 96px;
+.header-slider p {
+  font-size: 50px;
+  margin-top: 37px;
+  color: #fafafa;
+  margin-left: 91px;
 }
-.arrows{
-    position: absolute;
-    width:inherit;
+.slider-buttons {
+  margin: 69px 96px;
 }
-.header-buttons button{
-    cursor: pointer;
-    font-size: 16px;
-    color:#FAFAFA;
-    width:150px;
-    height: 50px;
-    border:1px solid white;
-    background:none;
+.arrows {
+  position: absolute;
+  width: inherit;
 }
-.slider-dots{
-    margin:140px auto;
-    
-    display:flex;
-    justify-content: space-around;
-    width:105px;
-    height:25px;
+.left-arrow {
+  margin: 120px -1px;
+  position: absolute;
 }
-.slider-dots img{
-    padding:0 8px;
-    float:left;
-    width:23px;
-    height: 23px;
-    
+.right-arrow {
+  margin-top: 120px;
+  position: absolute;
+  right: 1px;
+}
+.slider-headline {
+  font-size: 70px;
+  font-weight: 700;
+  font-style: normal;
+  margin-top: -17px;
+}
+.line {
+  margin: -16px 95px;
+}
+.slider-dots {
+  margin: 140px auto;
+  display: flex;
+  justify-content: space-around;
+  width: 105px;
+  height: 25px;
+}
+.slider-paragraph {
+  font-size: 50px;
+  width: 910px;
+}
+.focused {
+  width: 23px;
+  height: 23px;
+  border: 1px solid #fafafa;
+  background: #fafafa;
+}
+.unfocused {
+  width: 23px;
+  height: 23px;
+  border: 1px solid #fafafa;
+  background: none;
+}
+.explore-btn {
+  cursor: pointer;
+  color: #fafafa;
+  font-size: 16px;
+  text-transform: uppercase;
+  background: #d14b3a;
+  border: 0px;
+  width: 150px;
+  height: 50px;
+}
+.learn-btn {
+  margin-left: 15px;
+  text-transform: uppercase;
+  width: 150px;
+  height: 50px;
+  color: #fafafa;
+  background: none;
+  border: 1px solid #fafafa;
 }
 .paralax-section {
-    background: url(/src/img/red-frame.png);
+  background: url(/src/img/red-frame.png);
   margin-top: -35px;
   width: $container-width;
   height: 700px;
   border: 1px solid black;
 }
-.paralax-headline{
-    @extend %headline;
+.paralax-headline {
+  @extend %headline;
 }
 .commercial-data {
   margin-top: -40px;
