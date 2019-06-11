@@ -5,7 +5,7 @@
 ##### Just open the terminal and type following letters:
 ##### `npm install` (if you didn't install NPM yet, do it:) )
 ##### `npm install -g gulp`
-##### 'gulp serve' - this abracadabra will run your (mine) project!
+##### `gulp serve` - this abracadabra will run your (mine) project!
 #### Some contacts:
 ##### My name is Den
 ##### [My instagram page](https://instagram.com/sovasmotrit)

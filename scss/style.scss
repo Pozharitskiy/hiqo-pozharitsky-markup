@@ -26,8 +26,39 @@ header {
   @extend %centering;
   border: 1px solid blue;
 }
+header ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type:none;
+    width: 963px;
+    height: 25px;
+    margin-top:38px;
+    margin-left:-35px;
+}
+header li{
+    float:left;
+    display: block;
+    
+    font-size: 18px;
+    color:#FAFAFA;
+}
+header li:hover{
+    border-bottom:1px solid red;
+}
 .header-logo {
   @extend %logo;
+}
+.header-slider{
+    width:1364px;
+    height: 524px;
+    border:1px solid green;
+    margin-top:187px;
+    margin-left:38px;
+}
+.header-slider p{
+    font-size: 70px;
+    color:white;
+    
 }
 .paralax-section {
   margin-top: -35px;

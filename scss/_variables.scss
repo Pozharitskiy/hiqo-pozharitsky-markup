@@ -1,11 +1,21 @@
-$color-primary: #fff000;
+$color-primary: #FAFAFA;
 $container-width:1440px;
 %centering{
     display: flex;
     justify-content: center;
 }
 %logo{
+    img{
+    display: flex;
+    justify-content: center;
     margin: 20px auto;
-  width: 50px;
-  height: 50px;
+  width: 105px;
+  height: 88px;
+}
+p{
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    color:#FAFAFA;
+}
 }
