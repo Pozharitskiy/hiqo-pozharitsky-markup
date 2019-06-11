@@ -30,14 +30,51 @@ header {
   color: #FAFAFA;
 }
 
+.paralax-headline {
+  width: 541px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 160px auto;
+}
+
+.paralax-headline h2 {
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin-top: -20px;
+  font-size: 45px;
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+.paralax-headline p {
+  position: absolute;
+  font-size: 18px;
+  color: white;
+  margin-top: 62px;
+}
+
 h1 {
   color: #FAFAFA;
+}
+
+@font-face {
+  font-family: Raleway;
+  src: url(src/fonts/Raleway-SemiBold.ttf);
 }
 
 * {
   margin: 0;
   padding: 0;
-  font-family: raleway, sans-serif;
+  font-family: Raleway, sans-serif;
 }
 
 a {
