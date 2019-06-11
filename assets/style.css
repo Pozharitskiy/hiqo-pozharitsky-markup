@@ -37,6 +37,12 @@ h1 {
 * {
   margin: 0;
   padding: 0;
+  font-family: raleway, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #FAFAFA;
 }
 
 body {
@@ -101,16 +107,50 @@ header li:hover {
 }
 
 .header-slider p {
-  font-size: 70px;
+  font-size: 50px;
+  margin-top: 37px;
   color: white;
+  margin-left: 91px;
+}
+
+.header-buttons {
+  margin: 66px 96px;
+}
+
+.header-buttons button {
+  cursor: pointer;
+  font-size: 16px;
+  color: #FAFAFA;
+  width: 150px;
+  height: 50px;
+  border: 1px solid white;
+  background: none;
+}
+
+.slider-dots {
+  margin: 140px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 105px;
+  height: 25px;
+}
+
+.slider-dots img {
+  padding: 0 8px;
+  float: left;
+  width: 23px;
+  height: 23px;
 }
 
 .paralax-section {
+  background: url(/src/img/red-frame.png);
   margin-top: -35px;
   width: 1440px;
   height: 700px;
   border: 1px solid black;
-  background: #d14b3a;
 }
 
 .commercial-data {
