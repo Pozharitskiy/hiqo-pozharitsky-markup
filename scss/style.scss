@@ -4,62 +4,66 @@
 @import "typography";
 // import components here
 * {
-    margin:0;
-    padding:0;
+  margin: 0;
+  padding: 0;
 }
 body {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
-.start-screen-block{
-    width:$container-width;
-    height: 900px;
-    border: 1px solid black;
-    background:#3D4148;
+.start-screen-block {
+  width: $container-width;
+  height: 900px;
+  border: 1px solid black;
+  background: #3d4148;
 }
-header{
-    margin:20px 230px 0px;
-    width:1021px;
-    height: 465px;
-    @extend %centering;
-    border:1px solid blue;
+header {
+  position: absolute;
+  margin: 20px 230px 0px;
+  width: 1021px;
+  height: 465px;
+  @extend %centering;
+  border: 1px solid blue;
+}
+.header-logo {
+  @extend %logo;
 }
 .paralax-section {
-    margin-top:-35px;
-    width:$container-width;
-    height: 700px;
-    border: 1px solid black;
-    background:#D14B3A;
+  margin-top: -35px;
+  width: $container-width;
+  height: 700px;
+  border: 1px solid black;
+  background: #d14b3a;
 }
 .commercial-data {
-    margin-top:-40px;
-    width:$container-width;
-    height: 294px;
-    border: 1px solid black;
-    background:#656D7A;
+  margin-top: -40px;
+  width: $container-width;
+  height: 294px;
+  border: 1px solid black;
+  background: #656d7a;
 }
-.latest-blog-posts{
-    width:$container-width;
-    height: 1069px;
-    border: 1px solid black;
+.latest-blog-posts {
+  width: $container-width;
+  height: 1069px;
+  border: 1px solid black;
 }
 .latest-portfolio {
-    margin-top: -80px;
-    width:$container-width;
-    height: 923px;
-    border: 1px solid black;
+  margin-top: -80px;
+  width: $container-width;
+  height: 923px;
+  border: 1px solid black;
 }
-.feedback{
-    margin-top:-130px;
-    width:$container-width;
-    height: 836px;
-    border: 1px solid black;
+.feedback {
+  margin-top: -130px;
+  width: $container-width;
+  height: 836px;
+  border: 1px solid black;
 }
-footer{
-    margin-top:-70px;
-    width:$container-width;
-    height: 150px;
-    border: 1px solid black;
-    background: #303030;
+footer {
+  margin-top: -70px;
+  width: $container-width;
+  height: 150px;
+  border: 1px solid black;
+  background: #303030;
 }
