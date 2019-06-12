@@ -165,7 +165,11 @@ header {
   color: #fafafa;
 }
 
-.paralax-headline {
+h1 {
+  color: #FAFAFA;
+}
+
+.blog-headline, .paralax-headline {
   width: 541px;
   height: 100px;
   display: -webkit-box;
@@ -181,11 +185,7 @@ header {
   margin: 160px auto;
 }
 
-h1 {
-  color: #FAFAFA;
-}
-
-.underline {
+.underline, .blog-underline {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -200,7 +200,7 @@ h1 {
   white-space: nowrap;
 }
 
-.underline-headline {
+.underline-headline, .blog-underline-headline {
   -ms-flex-item-align: center;
       align-self: center;
   width: 500px;
@@ -209,7 +209,7 @@ h1 {
   color: white;
 }
 
-.underline-text {
+.underline-text, .blog-underline-text {
   font-size: 18px;
   color: white;
   margin-top: 30px;
@@ -256,6 +256,96 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.blog-headline, .paralax-headline {
+  width: 541px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 160px auto;
+}
+
+.underline, .blog-underline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  border-bottom: 1px solid #fafafa;
+  padding: 20px;
+  width: 50px;
+  white-space: nowrap;
+}
+
+.underline-headline, .blog-underline-headline {
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 500px;
+  margin-top: -20px;
+  font-size: 45px;
+  color: white;
+}
+
+.underline-text, .blog-underline-text {
+  font-size: 18px;
+  color: white;
+  margin-top: 30px;
+}
+
+.blog-underline {
+  border-bottom: 1px solid #000;
+}
+
+.blog-underline-headline {
+  color: #000;
+}
+
+.blog-underline-text {
+  -ms-flex-item-align: center;
+      align-self: center;
+  color: #000;
+  width: 40vw;
+}
+
+.test {
+  margin-left: 5vw;
+  width: 373px;
+  height: 200px;
+  background: #3d4148;
+  position: relative;
+}
+
+.test:after {
+  width: 0;
+  height: 0;
+  border-bottom: 50px solid #3d4148;
+  border-right: 50px solid transparent;
+  position: absolute;
+  content: "";
+  top: -50px;
+  left: 161.5px;
+}
+
+.test:before {
+  width: 161.5px;
+  height: 50px;
+  background: #3d4148;
+  position: absolute;
+  content: "";
+  top: -50px;
+  left: 0;
 }
 
 a {

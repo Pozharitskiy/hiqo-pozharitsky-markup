@@ -1,4 +1,13 @@
-.underline {
+%headline {
+  width: 541px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 160px auto;
+}
+
+%underline {
   display: flex;
   justify-content: center;
   align-self: center;
@@ -7,15 +16,24 @@
   width: 50px;
   white-space: nowrap;
 }
-.underline-headline {
+%underline-headline {
   align-self: center;
   width: 500px;
   margin-top: -20px;
   font-size: 45px;
   color: white;
 }
-.underline-text {
+%underline-text {
   font-size: 18px;
   color: white;
   margin-top: 30px;
+}
+.underline {
+  @extend %underline;
+}
+.underline-headline {
+  @extend %underline-headline;
+}
+.underline-text {
+  @extend %underline-text;
 }
