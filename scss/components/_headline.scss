@@ -1,0 +1,21 @@
+.underline {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  border-bottom: 1px solid #fafafa;
+  padding: 20px;
+  width: 50px;
+  white-space: nowrap;
+}
+.underline-headline {
+  align-self: center;
+  width: 500px;
+  margin-top: -20px;
+  font-size: 45px;
+  color: white;
+}
+.underline-text {
+  font-size: 18px;
+  color: white;
+  margin-top: 30px;
+}

@@ -1,0 +1,27 @@
+.commercial-data {
+  margin-top: -40px;
+  width: $container-width;
+  height: 294px;
+  border: 1px solid black;
+  background: #656d7a;
+}
+.list-of-data {
+  display: flex;
+  color: #fafafa;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.list-letters {
+  font-size: 25px;
+  align-self: flex-end;
+  margin-left: -6vw;
+}
+.list-numbers {
+  font-size: 40px;
+}
+.chapter {
+  display: flex;
+  height: 15vh;
+  align-items: center;
+}

@@ -2,6 +2,8 @@
 @import "inheritance";
 @import "variables";
 @import "typography";
+@import "scss/components/headline";
+@import "scss/components/commercial";
 
 a {
   text-decoration: none;
@@ -157,15 +159,6 @@ header li:hover {
 .paralax-headline {
   @extend %headline;
 }
-.underline {
-  display: flex;
-  justify-content: center;
-  align-self: center;
-  border-bottom: 1px solid #fafafa;
-  padding: 20px;
-  width: 50px;
-  white-space: nowrap;
-}
 .paralax-quote {
   display: flex;
   justify-content: center;
@@ -193,13 +186,6 @@ header li:hover {
   margin-top: 5vh;
   width: 878px;
   align-self: center;
-}
-.commercial-data {
-  margin-top: -40px;
-  width: $container-width;
-  height: 294px;
-  border: 1px solid black;
-  background: #656d7a;
 }
 .latest-blog-posts {
   width: $container-width;

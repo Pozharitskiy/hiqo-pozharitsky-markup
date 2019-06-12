@@ -181,7 +181,26 @@ header {
   margin: 160px auto;
 }
 
-.paralax-headline h2 {
+h1 {
+  color: #FAFAFA;
+}
+
+.underline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  border-bottom: 1px solid #fafafa;
+  padding: 20px;
+  width: 50px;
+  white-space: nowrap;
+}
+
+.underline-headline {
   -ms-flex-item-align: center;
       align-self: center;
   width: 500px;
@@ -190,14 +209,53 @@ header {
   color: white;
 }
 
-.paralax-headline p {
+.underline-text {
   font-size: 18px;
   color: white;
   margin-top: 30px;
 }
 
-h1 {
-  color: #FAFAFA;
+.commercial-data {
+  margin-top: -40px;
+  width: 1440px;
+  height: 294px;
+  border: 1px solid black;
+  background: #656d7a;
+}
+
+.list-of-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fafafa;
+  height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.list-letters {
+  font-size: 25px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-left: -6vw;
+}
+
+.list-numbers {
+  font-size: 40px;
+}
+
+.chapter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 15vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 a {
@@ -377,21 +435,6 @@ header li:hover {
   border: 1px solid black;
 }
 
-.underline {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-item-align: center;
-      align-self: center;
-  border-bottom: 1px solid #fafafa;
-  padding: 20px;
-  width: 50px;
-  white-space: nowrap;
-}
-
 .paralax-quote {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -431,14 +474,6 @@ header li:hover {
   width: 878px;
   -ms-flex-item-align: center;
       align-self: center;
-}
-
-.commercial-data {
-  margin-top: -40px;
-  width: 1440px;
-  height: 294px;
-  border: 1px solid black;
-  background: #656d7a;
 }
 
 .latest-blog-posts {
