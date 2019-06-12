@@ -1,5 +1,5 @@
 @import "vendor/reset";
-@import "mixins";
+@import "inheritance";
 @import "variables";
 @import "typography";
 
@@ -126,12 +126,18 @@ header li:hover {
   color: #fafafa;
   font-size: 16px;
   text-transform: uppercase;
-  background: #d14b3a;
-  border: 0px;
   width: 150px;
   height: 50px;
+  background: none;
+  border: 1px solid #fafafa;
+}
+.explore-btn:hover,
+.learn-btn:hover {
+  background: #d14b3a;
+  border: none;
 }
 .learn-btn {
+  cursor: pointer;
   margin-left: 15px;
   text-transform: uppercase;
   width: 150px;
@@ -145,10 +151,48 @@ header li:hover {
   margin-top: -35px;
   width: $container-width;
   height: 700px;
+  z-index: 100;
   border: 1px solid black;
 }
 .paralax-headline {
   @extend %headline;
+}
+.underline {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  border-bottom: 1px solid #fafafa;
+  padding: 20px;
+  width: 50px;
+  white-space: nowrap;
+}
+.paralax-quote {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: -10vh;
+  color: #fafafa;
+}
+.quote-symbol {
+  color: #fafafa;
+  font-size: 150px;
+  opacity: 0.6;
+  margin-left: 15vw;
+  width: 51px;
+  height: 40px;
+}
+.quote {
+  font-style: italic;
+  font-size: 30px;
+  align-self: center;
+  width: 878px;
+  height: 71px;
+}
+.quote-author {
+  font-size: 30px;
+  margin-top: 5vh;
+  width: 878px;
+  align-self: center;
 }
 .commercial-data {
   margin-top: -40px;

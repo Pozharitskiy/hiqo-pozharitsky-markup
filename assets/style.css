@@ -184,16 +184,16 @@ header {
 .paralax-headline h2 {
   -ms-flex-item-align: center;
       align-self: center;
+  width: 500px;
   margin-top: -20px;
   font-size: 45px;
   color: white;
-  border-bottom: 1px solid white;
 }
 
 .paralax-headline p {
   font-size: 18px;
   color: white;
-  margin-top: 62px;
+  margin-top: 30px;
 }
 
 h1 {
@@ -345,13 +345,20 @@ header li:hover {
   color: #fafafa;
   font-size: 16px;
   text-transform: uppercase;
-  background: #d14b3a;
-  border: 0px;
   width: 150px;
   height: 50px;
+  background: none;
+  border: 1px solid #fafafa;
+}
+
+.explore-btn:hover,
+.learn-btn:hover {
+  background: #d14b3a;
+  border: none;
 }
 
 .learn-btn {
+  cursor: pointer;
   margin-left: 15px;
   text-transform: uppercase;
   width: 150px;
@@ -366,7 +373,64 @@ header li:hover {
   margin-top: -35px;
   width: 1440px;
   height: 700px;
+  z-index: 100;
   border: 1px solid black;
+}
+
+.underline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  border-bottom: 1px solid #fafafa;
+  padding: 20px;
+  width: 50px;
+  white-space: nowrap;
+}
+
+.paralax-quote {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: -10vh;
+  color: #fafafa;
+}
+
+.quote-symbol {
+  color: #fafafa;
+  font-size: 150px;
+  opacity: 0.6;
+  margin-left: 15vw;
+  width: 51px;
+  height: 40px;
+}
+
+.quote {
+  font-style: italic;
+  font-size: 30px;
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 878px;
+  height: 71px;
+}
+
+.quote-author {
+  font-size: 30px;
+  margin-top: 5vh;
+  width: 878px;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 .commercial-data {
