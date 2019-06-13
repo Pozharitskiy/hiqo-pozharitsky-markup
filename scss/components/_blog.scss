@@ -1,49 +1,51 @@
 @import "headline";
+@import "folder";
+@import "/scss/mixins/flex-mix.scss";
 
 .blog-headline {
   @extend %headline;
+  padding: 100px 0 84px;
 }
 
 .blog-underline {
   @extend %underline;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid $black;
 }
 
 .blog-underline-headline {
   @extend %underline-headline;
-  color: #000;
+  color: $black;
 }
 
 .blog-underline-text {
   @extend %underline-text;
   align-self: center;
-  color: #000;
-  width: 40vw;
+  color: $black;
+}
+.blog-folders {
+  margin-left: 115px;
 }
 
-.test {
-  margin-left: 5vw;
-  width: 373px;
-  height: 200px;
-  background: $grey;
-  position: relative;
+.folder {
+  @extend %folder;
+
+  &:before {
+    @extend %folder:before;
+  }
+
+  &:after {
+    @extend %folder:after;
+  }
 }
-.test:after {
-  width: 0;
-  height: 0;
-  border-bottom: 50px solid $grey;
-  border-right: 50px solid transparent;
-  position: absolute;
-  content: "";
-  top: -50px;
-  left: (373px / 2 - 25px);
+
+.folder-headline {
+  @include flex;
 }
-.test:before {
-  width: (373px / 2 - 25px);
-  height: 50px;
-  background: $grey;
-  position: absolute;
-  content: "";
-  top: -50px;
-  left: 0;
+
+.folder-name {
+  padding: 220px 0 15px;
+  font-size: 25px;
+  border-bottom: 1px solid black;
+}
+.folder-name:hover {
 }

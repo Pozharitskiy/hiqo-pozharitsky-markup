@@ -1,0 +1,65 @@
+@import "./button";
+@import "/scss/mixins/flex-mix.scss";
+
+.first-column {
+  width: 372px;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+%folder {
+  margin: 47px 0;
+  width: 373px;
+  height: 200px;
+  background: $grey;
+  position: relative;
+  &:before {
+    width: (373px / 2 - 25px);
+    height: 50px;
+    background: $grey;
+    position: absolute;
+    content: "";
+    top: -50px;
+    left: 0;
+  }
+  &:after {
+    width: 0;
+    height: 0;
+    border-bottom: 50px solid $grey;
+    border-right: 50px solid transparent;
+    position: absolute;
+    content: "";
+    top: -50px;
+    left: (373px / 2 - 25px);
+  }
+}
+
+.folder-info {
+  padding: 30px 0px;
+}
+
+.info-list {
+  @include flex;
+}
+
+.info-list li {
+  margin-left: 13px;
+}
+
+.folder-paragraph {
+  padding: 0px 10px;
+}
+
+.read-more {
+  @extend %button-template;
+  border: 1px solid $orange !important;
+  color: $orange !important;
+}
+
+.read-more:hover {
+  background: white !important;
+}
+
+.folder-button {
+  padding: 56px 25px;
+}

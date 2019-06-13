@@ -1,17 +1,17 @@
 %headline {
   width: 541px;
-  height: 100px;
   display: flex;
+  margin: 0 auto;
   justify-content: center;
+  padding-top: 195px;
   flex-direction: column;
-  margin: 160px auto;
 }
 
 %underline {
   display: flex;
   justify-content: center;
   align-self: center;
-  border-bottom: 1px solid #fafafa;
+  border-bottom: 1px solid $white;
   padding: 20px;
   width: 50px;
   white-space: nowrap;

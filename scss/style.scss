@@ -5,58 +5,58 @@
 @import "scss/components/headline";
 @import "scss/components/commercial";
 @import "scss/components/blog";
+@import "scss/components/button";
+@import "/scss/mixins/flex-mix.scss";
 
 a {
   text-decoration: none;
-  color: #fafafa;
+  color: $white;
 }
 
 .container {
-  display: flex;
-  justify-content: center;
+  @include flex;
+  max-width: $container-width;
   flex-direction: column;
   font-family: Raleway, sans-serif;
+  background: $grey;
 }
 
 .start-screen-block {
-  width: $container-width;
-  height: 900px;
+  max-width: $container-width;
   border: 1px solid black;
   background: #3d4148;
 }
 
 header {
-  position: absolute;
-  margin: 20px 230px 0px;
-  width: 1021px;
-  height: 465px;
-  @extend %centering;
+  @include flex;
+  width: inherit;
+  align-self: center;
   border: 1px solid blue;
 }
 
 header ul {
-  display: flex;
-  justify-content: space-between;
+  @include flex;
   list-style-type: none;
-  width: 963px;
-  height: 25px;
+  align-items: baseline;
   margin-top: 38px;
-  margin-left: -35px;
+  margin-left: 25px;
   text-transform: uppercase;
+  align-items: flex-end;
 }
 
 header li {
+  padding: 0 40px;
   border-bottom: 1px solid transparent;
   font-size: 18px;
-  color: #fafafa;
+  color: $white;
 }
 
 header li:hover {
   border-bottom-color: #f00;
 }
 
-.header-logo {
-  @extend %logo;
+.header-headline {
+  @extend %header-p;
 }
 
 .header-logo img {
@@ -73,7 +73,7 @@ header li:hover {
 .header-slider p {
   font-size: 50px;
   margin-top: 37px;
-  color: #fafafa;
+  color: $white;
   margin-left: 91px;
 }
 .slider-buttons {
@@ -112,48 +112,23 @@ header li:hover {
   font-size: 50px;
   width: 910px;
 }
-.focused {
+.slider-dots-item-focused {
   width: 23px;
   height: 23px;
-  border: 1px solid #fafafa;
-  background: #fafafa;
+  border: 1px solid $white;
+  background: $white;
 }
-.unfocused {
+.slider-dots-item {
   width: 23px;
   height: 23px;
-  border: 1px solid #fafafa;
+  border: 1px solid $white;
   background: none;
 }
-.explore-btn {
-  cursor: pointer;
-  color: #fafafa;
-  font-size: 16px;
-  text-transform: uppercase;
-  width: 150px;
-  height: 50px;
-  background: none;
-  border: 1px solid #fafafa;
-}
-.explore-btn:hover,
-.learn-btn:hover {
-  background: #d14b3a;
-  border: none;
-}
-.learn-btn {
-  cursor: pointer;
-  margin-left: 15px;
-  text-transform: uppercase;
-  width: 150px;
-  height: 50px;
-  color: #fafafa;
-  background: none;
-  border: 1px solid #fafafa;
-}
+
 .paralax-section {
   background: url(/src/img/red-frame.png);
-  margin-top: -35px;
+  margin-top: 25px;
   width: $container-width;
-  height: 700px;
   z-index: 100;
   border: 1px solid black;
 }
@@ -161,14 +136,14 @@ header li:hover {
   @extend %headline;
 }
 .paralax-quote {
-  display: flex;
-  justify-content: center;
+  @include flex;
   flex-direction: column;
-  margin-top: -10vh;
-  color: #fafafa;
+  padding-top: 25px;
+  padding-bottom: 165px;
+  color: $white;
 }
 .quote-symbol {
-  color: #fafafa;
+  color: $white;
   font-size: 150px;
   opacity: 0.6;
   margin-left: 15vw;
@@ -190,25 +165,22 @@ header li:hover {
 }
 .latest-blog-posts {
   width: $container-width;
-  height: 1069px;
   border: 1px solid black;
+  background: $white;
 }
 .latest-portfolio {
   margin-top: -80px;
   width: $container-width;
-  height: 923px;
   border: 1px solid black;
 }
 .feedback {
   margin-top: -130px;
   width: $container-width;
-  height: 836px;
   border: 1px solid black;
 }
 footer {
   margin-top: -70px;
   width: $container-width;
-  height: 150px;
   border: 1px solid black;
   background: #303030;
 }
