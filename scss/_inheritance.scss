@@ -11,3 +11,15 @@
     color: #fafafa;
   }
 }
+
+%arrow {
+  margin: 99px -1px;
+  font-family: "Raleway";
+  font-weight: 100;
+  font-size: 60px;
+  position: absolute;
+  &:hover {
+    color: $orange;
+    cursor: pointer;
+  }
+}

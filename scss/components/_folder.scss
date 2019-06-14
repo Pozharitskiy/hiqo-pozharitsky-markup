@@ -1,5 +1,6 @@
 @import "./button";
-@import "/scss/mixins/flex-mix.scss";
+@import "./mixins/flex-mix.scss";
+@import "./src/fonts";
 
 .first-column {
   width: 372px;
@@ -42,7 +43,7 @@
   @include flex;
 }
 
-.info-list li {
+.info-list-li {
   margin-left: 13px;
 }
 

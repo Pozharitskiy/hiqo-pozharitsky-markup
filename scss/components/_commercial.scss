@@ -1,3 +1,6 @@
+@import "./src/fonts";
+@import "./mixins/flex-mix.scss";
+
 .commercial-data {
   padding: 25px 0;
   width: $container-width;
@@ -9,20 +12,46 @@
   height: 100%;
   padding-bottom: 215px;
 }
-.list-of-data li {
-  padding: 0 75px;
+.list-of-data-li {
+  width: 25%;
   float: left;
 }
 .list-letters {
   font-size: 25px;
   align-self: flex-end;
   margin-left: -6vw;
-  margin-top: 120px;
+  margin-top: 126px;
 }
 .list-numbers {
   font-size: 40px;
+  margin-left: 32px;
 }
-.chapter {
-  display: flex;
+%chapter {
+  @include flex;
   align-items: center;
+}
+
+.chapter {
+  @extend %chapter;
+  margin-left: 147px;
+}
+
+.chapter-two {
+  @extend %chapter;
+  margin-left: 34px;
+}
+
+.chapter-three {
+  margin-right: 111px;
+  @extend %chapter;
+}
+
+.chapter-four {
+  @extend %chapter;
+  margin-right: 100px;
+}
+
+.chapter-image {
+  width: 45px;
+  height: 43px;
 }

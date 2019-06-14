@@ -1,6 +1,7 @@
 @import "headline";
 @import "folder";
-@import "/scss/mixins/flex-mix.scss";
+@import "./mixins/flex-mix.scss";
+@import "./src/fonts";
 
 .blog-headline {
   @extend %headline;

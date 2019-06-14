@@ -148,6 +148,76 @@ h1 {
   color: #fafafa;
 }
 
+@font-face {
+  font-family: "Raleway";
+  src: url("../assets/fonts/Raleway.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Times New Roman";
+  src: url("../assets/fonts/TimesNewRoman.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../assets/fonts/Raleway-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../assets/fonts/Raleway-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../assets/fonts/OpenSans-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../assets/fonts/OpenSansLight-Italic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../assets/fonts/OpenSans-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../assets/fonts/OpenSans.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Myriad Pro";
+  src: url("/assets/fonts/MyriadPro-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Myriad Pro";
+  src: url("../assets/fonts/MyriadPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .blog-headline, .paralax-headline {
   width: 541px;
   display: -webkit-box;
@@ -157,7 +227,7 @@ h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 195px;
+  padding-top: 179px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -191,7 +261,77 @@ h1 {
 .underline-text, .blog-underline-text {
   font-size: 18px;
   color: white;
-  margin-top: 30px;
+  margin-top: 21px;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../assets/fonts/Raleway.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Times New Roman";
+  src: url("../assets/fonts/TimesNewRoman.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../assets/fonts/Raleway-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../assets/fonts/Raleway-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../assets/fonts/OpenSans-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../assets/fonts/OpenSansLight-Italic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../assets/fonts/OpenSans-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../assets/fonts/OpenSans.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Myriad Pro";
+  src: url("/assets/fonts/MyriadPro-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Myriad Pro";
+  src: url("../assets/fonts/MyriadPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 .commercial-data {
@@ -207,8 +347,8 @@ h1 {
   padding-bottom: 215px;
 }
 
-.list-of-data li {
-  padding: 0 75px;
+.list-of-data-li {
+  width: 25%;
   float: left;
 }
 
@@ -217,20 +357,115 @@ h1 {
   -ms-flex-item-align: end;
       align-self: flex-end;
   margin-left: -6vw;
-  margin-top: 120px;
+  margin-top: 126px;
 }
 
 .list-numbers {
   font-size: 40px;
+  margin-left: 32px;
 }
 
-.chapter {
+.chapter, .chapter-two, .chapter-three, .chapter-four {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.chapter {
+  margin-left: 147px;
+}
+
+.chapter-two {
+  margin-left: 34px;
+}
+
+.chapter-three {
+  margin-right: 111px;
+}
+
+.chapter-four {
+  margin-right: 100px;
+}
+
+.chapter-image {
+  width: 45px;
+  height: 43px;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../assets/fonts/Raleway.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Times New Roman";
+  src: url("../assets/fonts/TimesNewRoman.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../assets/fonts/Raleway-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../assets/fonts/Raleway-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../assets/fonts/OpenSans-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../assets/fonts/OpenSansLight-Italic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../assets/fonts/OpenSans-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../assets/fonts/OpenSans.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Myriad Pro";
+  src: url("/assets/fonts/MyriadPro-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Myriad Pro";
+  src: url("../assets/fonts/MyriadPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 .blog-headline, .paralax-headline {
@@ -242,7 +477,7 @@ h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 195px;
+  padding-top: 179px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -276,7 +511,7 @@ h1 {
 .underline-text, .blog-underline-text {
   font-size: 18px;
   color: white;
-  margin-top: 30px;
+  margin-top: 21px;
 }
 
 .button, .learn-btn, .read-more {
@@ -297,6 +532,76 @@ h1 {
 
 .learn-btn {
   margin-left: 15px;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../assets/fonts/Raleway.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Times New Roman";
+  src: url("../assets/fonts/TimesNewRoman.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../assets/fonts/Raleway-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../assets/fonts/Raleway-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../assets/fonts/OpenSans-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../assets/fonts/OpenSansLight-Italic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../assets/fonts/OpenSans-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../assets/fonts/OpenSans.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Myriad Pro";
+  src: url("/assets/fonts/MyriadPro-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Myriad Pro";
+  src: url("../assets/fonts/MyriadPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 .first-column {
@@ -342,9 +647,12 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.info-list li {
+.info-list-li {
   margin-left: 13px;
 }
 
@@ -365,6 +673,76 @@ h1 {
   padding: 56px 25px;
 }
 
+@font-face {
+  font-family: "Raleway";
+  src: url("../assets/fonts/Raleway.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Times New Roman";
+  src: url("../assets/fonts/TimesNewRoman.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../assets/fonts/Raleway-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../assets/fonts/Raleway-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../assets/fonts/OpenSans-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../assets/fonts/OpenSansLight-Italic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../assets/fonts/OpenSans-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../assets/fonts/OpenSans.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Myriad Pro";
+  src: url("/assets/fonts/MyriadPro-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Myriad Pro";
+  src: url("../assets/fonts/MyriadPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .blog-headline {
   padding: 100px 0 84px;
 }
@@ -381,7 +759,6 @@ h1 {
   -ms-flex-item-align: center;
       align-self: center;
   color: #000;
-  width: 40vw;
 }
 
 .blog-folders {
@@ -423,6 +800,76 @@ h1 {
   margin-left: 15px;
 }
 
+@font-face {
+  font-family: "Raleway";
+  src: url("../assets/fonts/Raleway.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Times New Roman";
+  src: url("../assets/fonts/TimesNewRoman.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../assets/fonts/Raleway-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../assets/fonts/Raleway-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../assets/fonts/OpenSans-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../assets/fonts/OpenSansLight-Italic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../assets/fonts/OpenSans-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../assets/fonts/OpenSans.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Myriad Pro";
+  src: url("/assets/fonts/MyriadPro-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Myriad Pro";
+  src: url("../assets/fonts/MyriadPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 a {
   text-decoration: none;
   color: #fafafa;
@@ -432,10 +879,10 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 1440px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  max-width: 1440px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -463,19 +910,20 @@ header {
   border: 1px solid blue;
 }
 
-header ul {
+.menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
+  margin-top: 20px;
   list-style-type: none;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-  margin-top: 38px;
-  margin-left: 25px;
+  margin-left: 26px;
   text-transform: uppercase;
   -webkit-box-align: end;
       -ms-flex-align: end;
@@ -483,6 +931,7 @@ header ul {
 }
 
 header li {
+  margin-left: 6px;
   padding: 0 40px;
   border-bottom: 1px solid transparent;
   font-size: 18px;
@@ -493,6 +942,10 @@ header li:hover {
   border-bottom-color: #f00;
 }
 
+.expire-header {
+  padding: 17px;
+}
+
 .header-logo img {
   width: 50px;
   height: 50px;
@@ -500,44 +953,52 @@ header li:hover {
 
 .header-slider {
   width: 1364px;
-  height: 524px;
   border: 1px solid green;
-  margin-top: 187px;
-  margin-left: 38px;
-}
-
-.header-slider p {
-  font-size: 50px;
-  margin-top: 37px;
   color: #fafafa;
-  margin-left: 91px;
+  margin: 0 auto;
 }
 
 .slider-buttons {
-  margin: 69px 96px;
+  margin: 62px 0 0 98px;
 }
 
 .arrows {
   position: absolute;
   width: inherit;
+  margin-top: 173px;
 }
 
 .left-arrow {
-  margin: 120px -1px;
+  margin: 99px -1px;
+  font-family: "Raleway";
+  font-weight: 100;
+  font-size: 60px;
   position: absolute;
 }
 
+.left-arrow:hover {
+  color: #ff3c1f;
+  cursor: pointer;
+}
+
 .right-arrow {
-  margin-top: 120px;
+  font-family: "Raleway";
+  font-weight: 100;
+  font-size: 60px;
+  margin-top: 99px;
   position: absolute;
   right: 1px;
+}
+
+.right-arrow:hover {
+  background: #ff3c1f;
 }
 
 .slider-headline {
   font-size: 70px;
   font-weight: 700;
   font-style: normal;
-  margin-top: -17px;
+  margin: 161px 0 0 92px;
 }
 
 .line {
@@ -545,7 +1006,7 @@ header li:hover {
 }
 
 .slider-dots {
-  margin: 140px auto;
+  margin: 137px auto 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -556,8 +1017,17 @@ header li:hover {
 }
 
 .slider-paragraph {
+  margin: 44px 0px 0px 94px;
   font-size: 50px;
   width: 910px;
+  line-height: 1.3;
+}
+
+.slider-dots-item {
+  width: 23px;
+  height: 23px;
+  border: 1px solid #fafafa;
+  background: none;
 }
 
 .slider-dots-item-focused {
@@ -567,11 +1037,9 @@ header li:hover {
   background: #fafafa;
 }
 
-.slider-dots-item {
-  width: 23px;
-  height: 23px;
-  border: 1px solid #fafafa;
-  background: none;
+.slider-dots-item:hover {
+  background: #fafafa;
+  cursor: pointer;
 }
 
 .paralax-section {
@@ -593,32 +1061,37 @@ header li:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 25px;
+  padding-top: 40px;
   padding-bottom: 165px;
   color: #fafafa;
 }
 
 .quote-symbol {
+  font-family: "Times New Roman";
   color: #fafafa;
   font-size: 150px;
-  opacity: 0.6;
-  margin-left: 15vw;
+  opacity: 0.2;
+  margin-left: 247px;
+  letter-spacing: -11px;
   width: 51px;
   height: 40px;
 }
 
 .quote {
+  margin-left: 50px;
+  font-family: "Raleway";
+  letter-spacing: -0.7px;
   font-style: italic;
   font-size: 30px;
   -ms-flex-item-align: center;
-      align-self: center;
-  width: 878px;
-  height: 71px;
+  align-self: center;
+  padding: 0 269px 0 240px;
+  line-height: 1.3;
 }
 
 .quote-author {
   font-size: 30px;
-  margin-top: 5vh;
+  margin: 52px 0 0 18px;
   width: 878px;
   -ms-flex-item-align: center;
       align-self: center;

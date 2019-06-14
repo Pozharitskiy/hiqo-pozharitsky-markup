@@ -1,9 +1,11 @@
+@import "./src/fonts";
+
 %headline {
   width: 541px;
   display: flex;
   margin: 0 auto;
   justify-content: center;
-  padding-top: 195px;
+  padding-top: 179px;
   flex-direction: column;
 }
 
@@ -26,7 +28,7 @@
 %underline-text {
   font-size: 18px;
   color: white;
-  margin-top: 30px;
+  margin-top: 21px;
 }
 .underline {
   @extend %underline;
