@@ -16,7 +16,7 @@ a {
 
 .container {
   @include flex;
-  max-width: $container-width;
+  width: $container-width;
   flex-direction: column;
   font-family: Raleway, sans-serif;
   background: $grey;
@@ -24,7 +24,6 @@ a {
 
 .start-screen-block {
   max-width: $container-width;
-  border: 1px solid black;
   background: #3d4148;
 }
 
@@ -75,7 +74,7 @@ header li:hover {
   margin: 0 auto;
 }
 .slider-buttons {
-  margin: 62px 0 0 98px;
+  margin: 60px 0 0 98px;
 }
 .arrows {
   position: absolute;
@@ -88,7 +87,21 @@ header li:hover {
 }
 .right-arrow {
   @extend %arrow;
+  right: 0;
 }
+
+.right-blog-arrow {
+  right: 59px;
+  top: -22px;
+  @extend %arrow;
+}
+
+.left-blog-arrow {
+  left: -77px;
+  top: -22px;
+  @extend %arrow;
+}
+
 .slider-headline {
   font-size: 70px;
   font-weight: 700;
@@ -96,10 +109,10 @@ header li:hover {
   margin: 161px 0 0 92px;
 }
 .line {
-  margin: -16px 95px;
+  margin: -25px 95px;
 }
 .slider-dots {
-  margin: 137px auto 0 auto;
+  margin: 141px auto 0 auto;
   display: flex;
   justify-content: space-around;
   width: 105px;
@@ -134,7 +147,6 @@ header li:hover {
   margin-top: 25px;
   width: $container-width;
   z-index: 100;
-  border: 1px solid black;
 }
 .paralax-headline {
   @extend %headline;
@@ -143,8 +155,31 @@ header li:hover {
   @include flex;
   flex-direction: column;
   padding-top: 40px;
-  padding-bottom: 165px;
+  padding-bottom: 147px;
   color: $white;
+}
+
+.bottom-picture {
+  width: 734px;
+  display: flex;
+  height: 30px;
+  &:before {
+    width: 705px;
+    height: 30px;
+    background: $grey;
+    content: "";
+    top: -50px;
+    left: 0;
+  }
+  &:after {
+    width: 0;
+    height: 0;
+    border-bottom: 30px solid $grey;
+    border-right: 30px solid transparent;
+    content: "";
+    top: -50px;
+    left: (373px / 2 - 25px);
+  }
 }
 .quote-symbol {
   font-family: "Times New Roman";
@@ -175,22 +210,18 @@ header li:hover {
 }
 .latest-blog-posts {
   width: $container-width;
-  border: 1px solid black;
   background: $white;
 }
 .latest-portfolio {
   margin-top: -80px;
   width: $container-width;
-  border: 1px solid black;
 }
 .feedback {
   margin-top: -130px;
   width: $container-width;
-  border: 1px solid black;
 }
 footer {
   margin-top: -70px;
   width: $container-width;
-  border: 1px solid black;
   background: #303030;
 }

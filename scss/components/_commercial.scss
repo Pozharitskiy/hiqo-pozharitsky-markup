@@ -2,10 +2,10 @@
 @import "./mixins/flex-mix.scss";
 
 .commercial-data {
-  padding: 25px 0;
   width: $container-width;
   border: 1px solid black;
   background: $grey;
+  padding-bottom: 35px;
 }
 .list-of-data {
   color: $white;
@@ -15,25 +15,78 @@
 .list-of-data-li {
   width: 25%;
   float: left;
+  margin-top: 60px;
 }
-.list-letters {
+.list-of-data-li-special {
+  width: 18%;
+  float: left;
+  margin-top: 60px;
+}
+%list-letters {
   font-size: 25px;
   align-self: flex-end;
-  margin-left: -6vw;
-  margin-top: 126px;
+  margin: 29px 53px 0 0;
 }
+
+.list-letters {
+  @extend %list-letters;
+}
+
+.list-letters-two {
+  @extend %list-letters;
+  margin: 29px 58px 0 0;
+}
+
+.list-letters-three {
+  @extend %list-letters;
+  margin: 29px 0 0 112px;
+  align-self: flex-start;
+}
+
+.list-letters-four {
+  @extend %list-letters;
+}
+
 .list-numbers {
   font-size: 40px;
-  margin-left: 32px;
+  margin-left: 27px;
 }
 %chapter {
   @include flex;
+  flex-direction: column;
+  width: 100%;
   align-items: center;
+}
+
+%chapter-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.chapter-container {
+  @extend %chapter-container;
+}
+
+.chapter-container-two {
+  @extend %chapter-container;
+  justify-content: flex-start;
+  margin-left: 122px;
+}
+
+.chapter-container-three {
+  @extend %chapter-container;
+  justify-content: flex-start;
+  margin-left: 69px;
+}
+
+.chapter-container-four {
+  @extend %chapter-container;
 }
 
 .chapter {
   @extend %chapter;
-  margin-left: 147px;
+  margin-left: 70px;
 }
 
 .chapter-two {
@@ -51,7 +104,26 @@
   margin-right: 100px;
 }
 
-.chapter-image {
+%chapter-image {
   width: 45px;
   height: 43px;
+}
+
+.chapter-image {
+  @extend %chapter-image;
+}
+
+.chapter-image-two {
+  @extend %chapter-image;
+  height: 35px;
+  margin: 4px 0 0 6px;
+}
+
+.chapter-image-three {
+  @extend %chapter-image;
+}
+
+.chapter-image-four {
+  @extend %chapter-image;
+  margin-left: 9px;
 }

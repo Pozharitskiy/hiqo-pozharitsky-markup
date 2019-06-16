@@ -5,12 +5,14 @@
 
 .blog-headline {
   @extend %headline;
-  padding: 100px 0 84px;
+  padding: 95px 0 93px;
+  width: 100%;
 }
 
 .blog-underline {
   @extend %underline;
   border-bottom: 1px solid $black;
+  padding-bottom: 28px;
 }
 
 .blog-underline-headline {
@@ -20,11 +22,14 @@
 
 .blog-underline-text {
   @extend %underline-text;
+  text-align: center;
+  width: 53%;
   align-self: center;
   color: $black;
 }
 .blog-folders {
   margin-left: 115px;
+  width: 100%;
 }
 
 .folder {
@@ -43,10 +48,31 @@
   @include flex;
 }
 
-.folder-name {
-  padding: 220px 0 15px;
+%folder-name {
+  padding: 230px 40px 15px 0;
   font-size: 25px;
   border-bottom: 1px solid black;
+  letter-spacing: 0.7px;
+  &:hover {
+    cursor: pointer;
+    color: $orange;
+  }
 }
+
+.first-folder-name {
+  @extend %folder-name;
+}
+
+.second-folder-name {
+  @extend %folder-name;
+  padding-left: 24px;
+  line-height: 27px;
+}
+
+.third-folder-name {
+  @extend %folder-name;
+  padding-right: 77px;
+}
+
 .folder-name:hover {
 }
