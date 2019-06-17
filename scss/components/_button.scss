@@ -1,0 +1,34 @@
+@import "./mixins/flex-mix.scss";
+
+%button-template {
+  cursor: pointer;
+  color: $white;
+  font-size: 16px;
+  text-transform: uppercase;
+  width: 150px;
+  height: 50px;
+  background: none;
+  border: 1px solid $white;
+}
+
+%button-template:hover {
+  background: #d14b3a;
+  border: none;
+}
+
+.button {
+  @extend %button-template;
+}
+
+.button:hover {
+  @extend %button-template:hover;
+}
+
+.learn-btn {
+  margin-left: 15px;
+  @extend %button-template;
+}
+
+.learn-btn:hover {
+  @extend %button-template:hover;
+}

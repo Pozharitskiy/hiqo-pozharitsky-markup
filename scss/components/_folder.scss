@@ -1,0 +1,103 @@
+@import "./button";
+@import "./mixins/flex-mix.scss";
+@import "./src/fonts";
+
+%column {
+  width: 372px;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.first-column {
+  @extend %column;
+}
+
+.second-column {
+  @extend %column;
+  margin-left: 23px;
+}
+
+.third-column {
+  @extend %column;
+  margin-left: 25px;
+}
+
+%folder {
+  margin: 52px 0;
+  width: 369px;
+  height: 206px;
+  background: $grey;
+  position: relative;
+  &:before {
+    width: 168px;
+    height: 38px;
+    background: $grey;
+    position: absolute;
+    content: "";
+    top: -37px;
+    left: 0;
+  }
+  &:after {
+    width: 0;
+    height: 0;
+    border-bottom: 78px solid #3d4148;
+    border-right: 72px solid transparent;
+    position: absolute;
+    content: "";
+    top: -37px;
+    left: 167.5px;
+  }
+}
+
+%folder-info {
+  padding: 26px 0 10px 0px;
+}
+
+.first-folder-info {
+  @extend %folder-info;
+}
+
+.second-folder-info {
+  padding: 61px 0 0 0;
+}
+
+.third-folder-info {
+  @extend %folder-info;
+}
+
+.info-list {
+  @include flex;
+  justify-content: start;
+  margin-left: 20px;
+}
+
+.info-list-li {
+  margin-left: 8px;
+  font-weight: bold;
+}
+
+.folder-paragraph {
+  padding: 0px 10px;
+}
+
+.read-more {
+  @extend %button-template;
+  border: 1px solid $orange !important;
+  color: $orange !important;
+}
+
+.read-more:hover {
+  background: white !important;
+}
+
+.folder-button {
+  padding: 19px 27px;
+}
+
+.folder-words {
+  text-align: justify;
+  padding: 6px 24px 0 14px;
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: 0.2px;
+}
