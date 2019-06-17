@@ -8,6 +8,8 @@
 @import "scss/components/button";
 @import "./mixins/flex-mix.scss";
 @import "./src/fonts";
+@import "scss/components/latest";
+@import "./components/feedback";
 
 a {
   text-decoration: none;
@@ -91,7 +93,7 @@ header li:hover {
 }
 
 .right-blog-arrow {
-  right: 59px;
+  right: -154px;
   top: -22px;
   @extend %arrow;
 }
@@ -216,12 +218,69 @@ header li:hover {
   margin-top: -80px;
   width: $container-width;
 }
-.feedback {
-  margin-top: -130px;
-  width: $container-width;
-}
 footer {
-  margin-top: -70px;
   width: $container-width;
   background: #303030;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 150px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-menu {
+  padding-top: 21px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+.copyright {
+  margin-top: 67px;
+  width: 30%;
+  position: absolute;
+  right: 0;
+  color: #fafafa;
+  font-size: 14px;
+}
+
+.up-anchor {
+  margin-top: -22px;
+  width: 41px;
+  height: 41px;
+  position: absolute;
+  right: 0;
+  background: #3d4148;
+  margin-right: 4px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.up-symbol {
+  font-size: 32px;
+  color: $white;
+  margin: 7px 0 0 13px;
+}
+
+.social-media {
+  position: absolute;
+  left: 0;
+  width: 33%;
+  margin-left: 141px;
+  margin-top: 58px;
+}
+
+.social-media-item {
+  margin-right: 41px;
+  float: left;
+}
+
+.facebook {
 }

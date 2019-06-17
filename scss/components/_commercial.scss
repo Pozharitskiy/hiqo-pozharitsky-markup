@@ -12,12 +12,12 @@
   height: 100%;
   padding-bottom: 215px;
 }
-.list-of-data-li {
+.list-of-data-list {
   width: 25%;
   float: left;
   margin-top: 60px;
 }
-.list-of-data-li-special {
+.list-of-data-list-special {
   width: 18%;
   float: left;
   margin-top: 60px;
@@ -32,19 +32,16 @@
   @extend %list-letters;
 }
 
-.list-letters-two {
-  @extend %list-letters;
-  margin: 29px 58px 0 0;
+.two {
+  margin: 35px 58px 0 0;
 }
 
-.list-letters-three {
-  @extend %list-letters;
-  margin: 29px 0 0 112px;
+.three {
+  margin: 32px 0 0 114px;
   align-self: flex-start;
 }
 
-.list-letters-four {
-  @extend %list-letters;
+.four {
 }
 
 .list-numbers {
@@ -89,18 +86,17 @@
   margin-left: 70px;
 }
 
-.chapter-two {
-  @extend %chapter;
+.c-two {
   margin-left: 34px;
 }
 
-.chapter-three {
+.c-three {
+  margin-left: 0;
   margin-right: 111px;
-  @extend %chapter;
 }
 
-.chapter-four {
-  @extend %chapter;
+.c-four {
+  margin-left: 0;
   margin-right: 100px;
 }
 
