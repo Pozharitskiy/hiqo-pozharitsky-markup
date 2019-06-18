@@ -1,6 +1,7 @@
 @import "./button";
 @import "./mixins/flex-mix.scss";
 @import "./src/fonts";
+@import "../variables";
 
 %column {
   width: 372px;
@@ -26,12 +27,12 @@
   margin: 52px 0;
   width: 369px;
   height: 206px;
-  background: $grey;
+  background: $main-color;
   position: relative;
   &:before {
     width: 168px;
     height: 38px;
-    background: $grey;
+    background: $main-color;
     position: absolute;
     content: "";
     top: -37px;
@@ -82,8 +83,8 @@
 
 .read-more {
   @extend %button-template;
-  border: 1px solid $orange !important;
-  color: $orange !important;
+  border: 1px solid $second-color !important;
+  color: $second-color !important;
 }
 
 .read-more:hover {
@@ -100,4 +101,35 @@
   font-size: 14px;
   line-height: 25px;
   letter-spacing: 0.2px;
+}
+
+.bottom-border {
+  height: 30px;
+  width: 100%;
+  margin-top: 116px;
+  &:after {
+    width: $container-width / 2 - 15px;
+    height: 30px;
+    position: absolute;
+    content: "";
+    border-top: 1px solid $main-color;
+  }
+  &:before {
+    left: $container-width / 2 + 15px;
+    width: $container-width / 2 - 15px;
+    height: 30px;
+    position: absolute;
+    content: "";
+    border-bottom: 1px solid $main-color;
+  }
+}
+
+.triangle {
+  margin-top: -16px;
+  border-left: 1px solid $main-color;
+  position: absolute;
+  margin-left: $container-width / 2 - 5px;
+  height: 42px;
+  width: 30px;
+  transform: rotate(-45deg);
 }

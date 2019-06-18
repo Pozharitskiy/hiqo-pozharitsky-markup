@@ -15,13 +15,13 @@
 }
 
 %arrow {
-  margin: 99px -1px;
+  margin: 0 -1px;
   font-family: "Raleway";
   font-weight: 100;
   font-size: 60px;
   position: absolute;
   &:hover {
-    color: $orange;
+    color: $second-color;
     cursor: pointer;
   }
 }
