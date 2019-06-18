@@ -1,32 +1,29 @@
+@import "../variables";
+
 .feedback {
-  background: $white;
-  padding-top: 125px;
-  padding-bottom: 64px;
+  background: $color-primary;
+  padding-top: 100px;
+  padding-bottom: 40px;
 }
 
 .feedback-headline {
   font-size: 45px;
+  flex-direction: column;
   display: flex;
 }
 
 .feedback-underline {
-  padding-bottom: 16px;
-  border-bottom: 1px solid gray;
-  display: flex;
-  align-self: center;
-  width: 100px;
-  white-space: nowrap;
-  margin-left: 137px;
-}
+  margin: 17px auto 0 136px;
 
-.feedback-underline-headline {
-  margin: -18px 0 0 -3px;
-  font-weight: bold;
-}
+  &-headline {
+    font-weight: bold;
+    margin: 45px 0 0 134px;
+  }
 
-.feedback-underline-text {
-  margin: 105px 0 0px -101px;
-  font-size: 18px;
+  &-text {
+    margin: 20px 0 0 135px;
+    font-size: 18px;
+  }
 }
 
 .connection {
@@ -38,7 +35,7 @@
 .connection-list {
   display: flex;
   width: 25%;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
 }
 
@@ -49,44 +46,42 @@
 }
 
 .list-item {
-  width: 50%;
-  float: left;
   font-size: 14px;
+  display: flex;
+  padding-bottom: 49px;
+  flex-direction: row;
   &:hover {
-    color: $orange;
+    color: $second-color;
     cursor: pointer;
   }
 }
 
-.first-cell {
-  width: 10%;
-  padding: 17px 0 0 11px;
+.special-center-text {
+  margin: 14px 0 0 65px !important;
 }
 
-.second-cell {
-  width: 50%;
-  padding: 0px 0 0 56px;
-  line-height: 23px;
+.email-image {
+  height: 19px !important;
+  margin: 19px 0 0 12px !important;
 }
 
-.third-cell {
-  padding: 14px 0 0 12px;
-  width: 17%;
+.special-bot-text {
+  padding-top: 15px;
 }
 
-.fourth-cell {
-  padding: 16px 36px 0 34px;
+.phone-image {
+  margin: 35px 0 0 11px !important;
 }
 
-.fifth-cell {
-  padding: 83px 0 0 11px;
-  width: 10%;
+.list-item-location {
+  margin: 21px 0 0 11px;
+  width: 24px;
+  height: 35px;
 }
 
-.sixth-cell {
-  padding: 69px 0 0 56px;
-  line-height: 22px;
-  letter-spacing: 0.5px;
+.list-item-text {
+  margin: 0 0 0 65px;
+  line-height: 25px;
 }
 
 .name {
@@ -118,13 +113,11 @@
 }
 
 .message {
-  margin-top: 13px;
-  height: 252px;
+  height: 227px;
   width: 98%;
-}
-
-.message::placeholder {
-  top: 0;
+  padding: 38px 0 0 21px;
+  font-size: 15px;
+  font-style: italic;
 }
 
 .message-item {
@@ -133,4 +126,13 @@
 
 .typing-item {
   float: left;
+}
+
+.input-box {
+  border-image-source: linear-gradient(
+    $color-feedback-border-grad1,
+    $color-feedback-border-grad2
+  );
+  border-width: 1px;
+  border-image-slice: 1;
 }

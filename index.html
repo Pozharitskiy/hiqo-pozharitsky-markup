@@ -17,15 +17,15 @@
       <div class="start-screen-block">
         <header>
           <ul class="menu">
-            <li><a href="#">home</a></li>
-            <li><a href="#">portfolio</a></li>
-            <li><a href="#">blog</a></li>
+            <li><a href="#" class="menu-item">home</a></li>
+            <li><a href="#" class="menu-item">portfolio</a></li>
+            <li><a href="#" class="menu-item">blog</a></li>
             <li>
               <div class="logo"><img src="src/img/logo.png" alt="" /></div>
             </li>
-            <li><a href="#">pages</a></li>
-            <li><a href="#">about us</a></li>
-            <li><a href="#">contact</a></li>
+            <li><a href="#" class="menu-item">pages</a></li>
+            <li><a href="#" class="menu-item">about us</a></li>
+            <li><a href="#" class="menu-item">contact</a></li>
           </ul>
         </header>
 
@@ -34,7 +34,7 @@
         </div>
 
         <div class="header-slider">
-          <div class="arrows">
+          <div class="arrows slider">
             <p class="left-arrow"><</p>
             <p class="right-arrow">></p>
           </div>
@@ -95,7 +95,7 @@
                 <img src="src/img/cart.png" alt="" class="chapter-image-two" />
                 <p class="list-numbers">200</p>
               </div>
-              <p class="list-letters two">Sold products</p>
+              <p class="list-letters list-letters-two">Sold products</p>
             </div>
           </li>
           <li class="list-of-data-list-special">
@@ -108,7 +108,7 @@
                 />
                 <p class="list-numbers">5632</p>
               </div>
-              <p class="list-letters three">Comments</p>
+              <p class="list-letters list-letters-three">Comments</p>
             </div>
           </li>
           <li class="list-of-data-list">
@@ -121,15 +121,16 @@
                 />
                 <p class="list-numbers">25000+</p>
               </div>
-              <p class="list-letters four">Lines of code</p>
+              <p class="list-letters list-letters-four">Lines of code</p>
             </div>
           </li>
         </ul>
       </div>
       <div class="latest-blog-posts">
         <div class="blog-headline">
-          <div class="blog-underline">
             <h2 class="blog-underline-headline">Latest Blog Posts</h2>
+          <div class="blog-underline">
+            
           </div>
           <p class="blog-underline-text">
             Information is a source of learning. But unless it is organized,
@@ -250,8 +251,9 @@
       </div>
       <div class="latest-portfolio">
         <div class="latest-headline">
-          <div class="latest-underline">
-            <h2 class="latest-underline-headline">Latest portfolio</h2>
+            <h2 class="blog-underline-headline portfolio">Latest portfolio</h2>
+          <div class="blog-underline latest-underline">
+            
           </div>
         </div>
         <div class="big-city">
@@ -347,8 +349,8 @@
       </div>
       <div class="feedback">
         <div class="feedback-headline">
-          <div class="feedback-underline">
             <h2 class="feedback-underline-headline">Get to know us better</h2>
+          <div class="blog-underline feedback-underline">
           </div>
           <p class="feedback-underline-text">
             Contact us, and we will contact you back. Want to chat? We can do that too.
@@ -356,21 +358,18 @@
         </div>
         <div class="connection">
           <ul class="connection-list">
-            <li class="list-item first-cell"><img src="/src/img/location.png"/></li>
-            <li class="list-item second-cell">623 Fifth Avenue,<br>
+            <li class="list-item"><img src="/src/img/location.png" class="list-item-location"/><p class="list-item-text">623 Fifth Avenue,<br>
                 New York, NY 10022, <br>
-                USA</li>
-            <li class="list-item third-cell"><img src="/src/img/email.png" /></li>
-            <li class="list-item fourth-cell">randomness@expire.com</li>
-            <li class="list-item fifth-cell"><img src="/src/img/phone.png"/></li>
-            <li class="list-item sixth-cell">Phone: +(123) 456 7890<br>
-                Fax: +(123) 456 7899</li>
+                USA</p></li>
+            <li class="list-item"><img src="/src/img/email.png"  class="list-item-location email-image"/><p class="list-item-text special-center-text">randomness@expire.com</p></li>
+            <li class="list-item"><img src="/src/img/phone.png"  class="list-item-location phone-image"/><p class="list-item-text special-bot-text">Phone: +(123) 456 7890<br>
+                Fax: +(123) 456 7899</p></li>
           </ul>
           <ul class="typing">
-            <li class="typing-item"><input class="name" type="text" placeholder="Name" /></li>
-            <li class="typing-item"><input class="e-mail" type="email"placeholder="E-mail" /></li>
-            <li class="typing-item subject-item"><input class="subject" type="text" placeholder="Subject" /></li>
-            <li class="typing-item message-item"><input class="message" type="text" placeholder="Message" /></li>
+            <li class="typing-item"><input class="input-box name" type="text" placeholder="Name" /></li>
+            <li class="typing-item"><input class="input-box e-mail" type="email"placeholder="E-mail" /></li>
+            <li class="typing-item subject-item"><input class="input-box subject" type="text" placeholder="Subject" /></li>
+            <li class="typing-item message-item"><textarea class="input-box message" placeholder="Message"></textarea></li>
           </ul>
         </div>
       </div>

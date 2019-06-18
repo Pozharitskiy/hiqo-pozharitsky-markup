@@ -5,30 +5,40 @@
 
 .blog-headline {
   @extend %headline;
-  padding: 95px 0 93px;
+  padding: 85px 0 86px;
   width: 100%;
 }
 
 .blog-underline {
   @extend %underline;
-  border-bottom: 1px solid $black;
-  padding-bottom: 28px;
+  margin-top: 25px;
+  padding: 1px 25px;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#f74831),
+    to(#525656)
+  );
 }
 
 .blog-underline-headline {
   @extend %underline-headline;
   color: $black;
+  margin: 11px 0px 0 140px;
+  padding: 0 0 2px 0;
 }
 
 .blog-underline-text {
   @extend %underline-text;
   text-align: center;
-  width: 53%;
+  width: 60%;
   align-self: center;
   color: $black;
 }
 .blog-folders {
-  width: 84%;
+  width: 100%;
+  box-sizing: border-box;
   padding-left: 115px;
 }
 
@@ -55,7 +65,7 @@
   letter-spacing: 0.7px;
   &:hover {
     cursor: pointer;
-    color: $orange;
+    color: $second-color;
   }
 }
 

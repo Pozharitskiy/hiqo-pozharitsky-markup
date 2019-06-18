@@ -13,7 +13,7 @@
 
 a {
   text-decoration: none;
-  color: $white;
+  color: $color-primary;
 }
 
 .container {
@@ -21,7 +21,7 @@ a {
   width: $container-width;
   flex-direction: column;
   font-family: Raleway, sans-serif;
-  background: $grey;
+  background: $main-color;
 }
 
 .start-screen-block {
@@ -33,13 +33,12 @@ header {
   @include flex;
   width: inherit;
   align-self: center;
-  border: 1px solid blue;
 }
 
 .menu {
   @include flex;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 23px;
   list-style-type: none;
   align-items: baseline;
   margin-left: 26px;
@@ -47,16 +46,21 @@ header {
   align-items: flex-end;
 }
 
+.menu-item:hover {
+  border-bottom: 1px solid $second-color;
+  padding-bottom: 4px;
+}
+
+.slider {
+  margin-top: 112px !important;
+}
+
 header li {
   margin-left: 6px;
   padding: 0 40px;
   border-bottom: 1px solid transparent;
   font-size: 18px;
-  color: $white;
-}
-
-header li:hover {
-  border-bottom-color: #f00;
+  color: $color-primary;
 }
 
 .header-headline {
@@ -71,17 +75,16 @@ header li:hover {
 }
 .header-slider {
   width: 1364px;
-  border: 1px solid green;
-  color: $white;
+  color: $color-primary;
   margin: 0 auto;
 }
 .slider-buttons {
-  margin: 60px 0 0 98px;
+  margin: 55px 0 0 98px;
 }
 .arrows {
   position: absolute;
   width: inherit;
-  margin-top: 173px;
+  margin-top: 250px;
 }
 
 .left-arrow {
@@ -93,14 +96,12 @@ header li:hover {
 }
 
 .right-blog-arrow {
-  right: -154px;
-  top: -22px;
+  right: 60px;
   @extend %arrow;
 }
 
 .left-blog-arrow {
   left: -77px;
-  top: -22px;
   @extend %arrow;
 }
 
@@ -121,7 +122,7 @@ header li:hover {
   height: 25px;
 }
 .slider-paragraph {
-  margin: 44px 0px 0px 94px;
+  margin: 50px 0px 0px 94px;
   font-size: 50px;
   width: 910px;
   line-height: 1.3;
@@ -130,35 +131,36 @@ header li:hover {
 .slider-dots-item {
   width: 23px;
   height: 23px;
-  border: 1px solid $white;
+  border: 1px solid $color-primary;
   background: none;
   &-focused {
     width: 23px;
     height: 23px;
-    border: 1px solid $white;
-    background: $white;
+    border: 1px solid $color-primary;
+    background: $color-primary;
   }
   &:hover {
-    background: $white;
+    background: $color-primary;
     cursor: pointer;
   }
 }
 
 .paralax-section {
   background: url(/src/img/red-frame.png);
-  margin-top: 25px;
+  margin-top: 29px;
   width: $container-width;
   z-index: 100;
 }
 .paralax-headline {
   @extend %headline;
+  padding-top: 176px;
 }
 .paralax-quote {
   @include flex;
   flex-direction: column;
   padding-top: 40px;
-  padding-bottom: 147px;
-  color: $white;
+  padding-bottom: 155px;
+  color: $color-primary;
 }
 
 .bottom-picture {
@@ -168,7 +170,7 @@ header li:hover {
   &:before {
     width: 705px;
     height: 30px;
-    background: $grey;
+    background: $main-color;
     content: "";
     top: -50px;
     left: 0;
@@ -176,7 +178,7 @@ header li:hover {
   &:after {
     width: 0;
     height: 0;
-    border-bottom: 30px solid $grey;
+    border-bottom: 30px solid $main-color;
     border-right: 30px solid transparent;
     content: "";
     top: -50px;
@@ -185,7 +187,7 @@ header li:hover {
 }
 .quote-symbol {
   font-family: "Times New Roman";
-  color: $white;
+  color: $color-primary;
   font-size: 150px;
   opacity: 0.2;
   margin-left: 247px;
@@ -206,13 +208,13 @@ header li:hover {
 }
 .quote-author {
   font-size: 30px;
-  margin: 52px 0 0 18px;
+  margin: 49px 0 0 22px;
   width: 878px;
   align-self: center;
 }
 .latest-blog-posts {
   width: $container-width;
-  background: $white;
+  background: $color-primary;
 }
 .latest-portfolio {
   margin-top: -80px;
@@ -265,7 +267,7 @@ footer {
 
 .up-symbol {
   font-size: 32px;
-  color: $white;
+  color: $color-primary;
   margin: 7px 0 0 13px;
 }
 

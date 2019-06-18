@@ -1,27 +1,31 @@
 @import "./src/fonts";
 @import "./mixins/flex-mix.scss";
+@import "../variables";
 
 .commercial-data {
   width: $container-width;
-  border: 1px solid black;
-  background: $grey;
-  padding-bottom: 35px;
+  background: $main-color;
+  padding-bottom: 38px;
 }
+
 .list-of-data {
-  color: $white;
+  color: $color-primary;
   height: 100%;
   padding-bottom: 215px;
 }
+
 .list-of-data-list {
   width: 25%;
   float: left;
   margin-top: 60px;
 }
+
 .list-of-data-list-special {
   width: 18%;
   float: left;
   margin-top: 60px;
 }
+
 %list-letters {
   font-size: 25px;
   align-self: flex-end;
@@ -32,16 +36,16 @@
   @extend %list-letters;
 }
 
-.two {
+.list-letters-two {
   margin: 35px 58px 0 0;
 }
 
-.three {
+.list-letters-three {
   margin: 32px 0 0 114px;
   align-self: flex-start;
 }
 
-.four {
+.list-letters-four {
 }
 
 .list-numbers {
