@@ -1,31 +1,27 @@
 @import "./src/fonts";
 @import "./mixins/flex-mix.scss";
-@import "../variables";
 
 .commercial-data {
   width: $container-width;
-  background: $main-color;
-  padding-bottom: 38px;
+  border: 1px solid black;
+  background: $grey;
+  padding-bottom: 35px;
 }
-
 .list-of-data {
-  color: $color-primary;
+  color: $white;
   height: 100%;
   padding-bottom: 215px;
 }
-
-.list-of-data-list {
+.list-of-data-li {
   width: 25%;
   float: left;
   margin-top: 60px;
 }
-
-.list-of-data-list-special {
+.list-of-data-li-special {
   width: 18%;
   float: left;
   margin-top: 60px;
 }
-
 %list-letters {
   font-size: 25px;
   align-self: flex-end;
@@ -37,15 +33,18 @@
 }
 
 .list-letters-two {
-  margin: 35px 58px 0 0;
+  @extend %list-letters;
+  margin: 29px 58px 0 0;
 }
 
 .list-letters-three {
-  margin: 32px 0 0 114px;
+  @extend %list-letters;
+  margin: 29px 0 0 112px;
   align-self: flex-start;
 }
 
 .list-letters-four {
+  @extend %list-letters;
 }
 
 .list-numbers {
@@ -90,17 +89,18 @@
   margin-left: 70px;
 }
 
-.c-two {
+.chapter-two {
+  @extend %chapter;
   margin-left: 34px;
 }
 
-.c-three {
-  margin-left: 0;
+.chapter-three {
   margin-right: 111px;
+  @extend %chapter;
 }
 
-.c-four {
-  margin-left: 0;
+.chapter-four {
+  @extend %chapter;
   margin-right: 100px;
 }
 
