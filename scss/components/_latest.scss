@@ -13,8 +13,12 @@
 }
 
 .latest-headline {
-  @extend %headline;
-  padding-top: 124px;
+  width: 50%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 76px;
   letter-spacing: 0.6px;
 }
 
@@ -41,7 +45,6 @@
   min-height: 240px;
   height: 50%;
   background: $main-color;
-  border: 1px solid #9c9595;
   display: flex;
   flex-direction: column;
 }
@@ -69,7 +72,12 @@
   background: $color-primary;
 
   &:before {
-    @extend %folder:before;
+    background: $main-color;
+    position: absolute;
+    content: "";
+    top: -37px;
+    left: 0;
+    height: 40px;
     width: $container-width / 8 - 18px;
     left: $container-width / 8 + 16px;
     background: $color-primary;
@@ -78,7 +86,7 @@
   &:after {
     width: 0;
     height: 0;
-    border-bottom: 37px solid $color-primary;
+    border-bottom: 39px solid $color-primary;
     right: $container-width / 8 - 17.5px;
     border-left: 33px solid transparent;
     top: -37px;

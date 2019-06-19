@@ -50,6 +50,7 @@
   display: flex;
   padding-bottom: 49px;
   flex-direction: row;
+
   &:hover {
     color: $second-color;
     cursor: pointer;
@@ -57,12 +58,12 @@
 }
 
 .special-center-text {
-  margin: 14px 0 0 65px !important;
+  margin: 14px 0 0 65px;
 }
 
 .email-image {
-  height: 19px !important;
-  margin: 19px 0 0 12px !important;
+  height: 19px;
+  margin: 19px 0 0 12px;
 }
 
 .special-bot-text {
@@ -70,7 +71,7 @@
 }
 
 .phone-image {
-  margin: 35px 0 0 11px !important;
+  margin: 35px 0 0 11px;
 }
 
 .list-item-location {
@@ -114,7 +115,7 @@
 
 .message {
   height: 227px;
-  width: 98%;
+  width: 96%;
   padding: 38px 0 0 21px;
   font-size: 15px;
   font-style: italic;
@@ -129,10 +130,8 @@
 }
 
 .input-box {
-  border-image-source: linear-gradient(
-    $color-feedback-border-grad1,
-    $color-feedback-border-grad2
-  );
+  border-image-source: linear-gradient($color-feedback-border-grad1,
+    $color-feedback-border-grad2);
   border-width: 1px;
   border-image-slice: 1;
 }

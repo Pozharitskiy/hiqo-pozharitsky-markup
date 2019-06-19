@@ -1,7 +1,7 @@
 @import "./src/fonts";
 
 %headline {
-  width: 541px;
+  width: 50%;
   display: flex;
   margin: 0 auto;
   justify-content: center;
@@ -15,27 +15,31 @@
   align-self: center;
   border-bottom: 1px solid $color-primary;
   padding: 19px;
-  width: 50px;
+  width: 60px;
   white-space: nowrap;
 }
+
 %underline-headline {
   align-self: center;
   width: 500px;
   margin-top: -20px;
   font-size: 45px;
-  color: white;
 }
+
 %underline-text {
+  text-align: center;
   font-size: 18px;
-  color: white;
   margin-top: 21px;
 }
+
 .underline {
   @extend %underline;
 }
+
 .underline-headline {
   @extend %underline-headline;
 }
+
 .underline-text {
   @extend %underline-text;
 }

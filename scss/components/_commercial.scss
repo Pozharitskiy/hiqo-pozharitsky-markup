@@ -3,9 +3,8 @@
 @import "../variables";
 
 .commercial-data {
-  width: $container-width;
-  background: $main-color;
-  padding-bottom: 38px;
+  background: $data-color;
+  padding-bottom: 92px;
 }
 
 .list-of-data {
@@ -45,13 +44,13 @@
   align-self: flex-start;
 }
 
-.list-letters-four {
-}
+.list-letters-four {}
 
 .list-numbers {
   font-size: 40px;
   margin-left: 27px;
 }
+
 %chapter {
   @include flex;
   flex-direction: column;
