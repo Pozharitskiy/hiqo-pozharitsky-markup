@@ -11,7 +11,7 @@
 .list-of-data {
   color: $color-primary;
   height: 100%;
-  padding-bottom: 215px;
+  @extend %clearfix;
 }
 
 .list-of-data-list {
