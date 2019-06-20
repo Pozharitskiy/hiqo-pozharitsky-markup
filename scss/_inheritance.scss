@@ -10,19 +10,23 @@
     display: flex;
     justify-content: center;
     font-size: 32px;
-    color: #fafafa;
+    color: $main-color;
   }
 }
 
 %arrow {
-  margin: 0 -1px;
-  font-family: "Raleway";
-  font-weight: 100;
   font-size: 60px;
   position: absolute;
+  width: 26px;
+  height: 26px;
+  border-left: 2px solid $data-color;
+  border-bottom: 2px solid $data-color;
+  transform: rotate(45deg);
+  left: 3%;
 
   &:hover {
-    color: $second-color;
+    border-left: 2px solid $second-color;
+    border-bottom: 2px solid $second-color;
     cursor: pointer;
   }
 }

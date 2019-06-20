@@ -5,20 +5,9 @@
   <meta charset="UTF-8" />
   <title>Expire</title>
   <link rel="stylesheet" type="text/css" href="scss/vendor/reset.css" />
-
   <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet" />
-
-
-
-
-
-
-
-
-
-
-  
-<link rel="stylesheet" href="/assets/style.css" /></head>
+  <link rel="stylesheet" href="/assets/style.css" />
+</head>
 
 <body>
   <div class="container">
@@ -26,14 +15,14 @@
       <header>
         <ul class="menu">
           <li><a href="#" class="menu-item">home</a></li>
-          <li><a href="#" class="menu-item">portfolio</a></li>
-          <li><a href="#" class="menu-item">blog</a></li>
+          <li><a href="#portfolio" class="menu-item">portfolio</a></li>
+          <li><a href="#blog" class="menu-item">blog</a></li>
           <li>
             <div><img src="src/img/logo.png" class="logo" alt="" /></div>
           </li>
           <li><a href="#" class="menu-item">pages</a></li>
-          <li><a href="#" class="menu-item">about us</a></li>
-          <li><a href="#" class="menu-item">contact</a></li>
+          <li><a href="#about" class="menu-item">about us</a></li>
+          <li><a href="#feedback" class="menu-item">contact</a></li>
         </ul>
       </header>
 
@@ -42,9 +31,9 @@
       </div>
 
       <div class="header-slider">
-        <div class="arrows slider">
-          <img src="src/img/left-slider.png" class="left-arrow">
-          <img src="src/img/right-slider.png" class="right-arrow">
+        <div class="slider-arrows">
+          <div class="left-blog-arrow"></div>
+          <div class="right-blog-arrow"></div>
         </div>
         <p class="slider-headline">
           Expire
@@ -87,7 +76,7 @@
       </div>
       <div class="bottom-picture"></div>
     </div>
-    <div class="commercial-data clearfix">
+    <div class="commercial-data clearfix" id="about">
       <ul class="list-of-data clearfix">
         <li class="list-of-data-list">
           <div class="chapter">
@@ -127,7 +116,7 @@
         </li>
       </ul>
     </div>
-    <div class="latest-blog-posts">
+    <div class="latest-blog-posts" id="blog">
       <div class="blog-headline">
         <h2 class="blog-underline-headline">Latest Blog Posts</h2>
         <div class="blog-underline">
@@ -141,8 +130,8 @@
         </p>
       </div>
       <div class="arrows blog-arrows">
-        <i class="blog-arrow-left"></i>
-        <i class="blog-arrow-right"></i>
+        <div class="left-blog-arrow"></div>
+        <div class="right-blog-arrow"></div>
       </div>
       <div class="blog-folders">
         <div class="first-column">
@@ -270,7 +259,7 @@
         <div class="triangle"></div>
       </div>
     </div>
-    <div class="latest-portfolio">
+    <div class="latest-portfolio" id="portfolio">
       <div class="latest-headline">
         <h2 class="blog-underline-headline portfolio">Latest portfolio</h2>
         <div class="blog-underline latest-underline">
@@ -368,7 +357,7 @@
         </div>
       </div>
     </div>
-    <div class="feedback">
+    <div class="feedback" id="feedback">
       <div class="feedback-headline">
         <h2 class="feedback-underline-headline">Get to know us better</h2>
         <div class="blog-underline feedback-underline">
@@ -393,8 +382,8 @@
           </li>
         </ul>
         <ul class="typing">
-          <li class="typing-item"><input class="input-box name" type="text" placeholder="Name" /></li>
-          <li class="typing-item"><input class="input-box e-mail" type="email" placeholder="E-mail" /></li>
+          <li class="typing-item name-item"><input class="input-box name" type="text" placeholder="Name" /></li>
+          <li class="typing-item email-item"><input class="input-box e-mail" type="email" placeholder="E-mail" /></li>
           <li class="typing-item subject-item"><input class="input-box subject" type="text" placeholder="Subject" />
           </li>
           <li class="typing-item message-item"><textarea class="input-box message" placeholder="Message"></textarea>
@@ -402,11 +391,13 @@
         </ul>
       </div>
     </div>
-    <div class="up-anchor"><a href="#">
-        <p class="up-symbol">^</p>
-      </a>
-    </div>
-    <footer>
+
+    <footer class="whole-footer">
+      <div class="up-anchor">
+        <a href="#" class="up-symbol">
+        </a>
+      </div>
+
       <div class="social-media-container">
         <ul class="social-media">
           <li class="social-media-item"><img src="/src/img/facebook.png"></li>

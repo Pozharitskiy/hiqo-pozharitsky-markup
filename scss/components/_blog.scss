@@ -35,6 +35,7 @@
 }
 
 .blog-folders {
+  display: flex;
   width: 90%;
   margin: 0 auto;
   box-sizing: border-box;
@@ -56,6 +57,41 @@
 .folder-headline {
   @include flex;
 }
+
+.right-blog-arrow {
+  margin-left: 92%;
+  border-left: none;
+  border-right: 2px solid $data-color;
+  transform: rotate(315deg);
+  @extend %arrow;
+
+  &:hover {
+    border-right: 2px solid $second-color;
+    border-bottom: 2px solid $second-color;
+    border-left: none;
+  }
+}
+
+.left-blog-arrow {
+  @extend %arrow;
+  width: 28px;
+  height: 28px;
+  border-left: 2px solid $data-color;
+  border-bottom: 2px solid $data-color;
+  transform: rotate(45deg);
+  left: 3%;
+
+  &:hover {
+    border-left: 2px solid $second-color;
+    border-bottom: 2px solid $second-color;
+    cursor: pointer;
+  }
+}
+
+.latest-blog-posts {
+  background: $color-primary;
+}
+
 
 %folder-name {
   padding: 230px 40px 15px 0;
@@ -86,30 +122,4 @@
 
 .blog-arrows {
   display: flex;
-  margin-top: 24%;
-}
-
-.blog-arrow-left {
-  background: url("/src/img/blog-left.png");
-  @extend %arrow-size;
-  position: absolute;
-  left: 38px;
-
-
-  &:hover {
-    background: url("/src/img/blog-left-hover.png");
-    @extend %arrow-size;
-  }
-}
-
-.blog-arrow-right {
-  background: url("/src/img/blog-right.png");
-  @extend %arrow-size;
-  position: absolute;
-  right: 38px;
-
-  &:hover {
-    background: url("/src/img/blog-right-hover.png");
-    @extend %arrow-size;
-  }
 }

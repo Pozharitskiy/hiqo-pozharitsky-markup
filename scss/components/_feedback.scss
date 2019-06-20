@@ -41,7 +41,7 @@
 
 .typing {
   width: 61%;
-  margin-left: 60px;
+  margin-left: 4%;
   line-height: 66px;
 }
 
@@ -62,7 +62,8 @@
 }
 
 .email-image {
-  height: 19px;
+  width: 24px;
+  height: 19px !important;
   margin: 19px 0 0 12px;
 }
 
@@ -75,7 +76,7 @@
 }
 
 .list-item-location {
-  margin: 21px 0 0 11px;
+  margin: auto 0 0 11px;
   width: 24px;
   height: 35px;
 }
@@ -86,18 +87,15 @@
 }
 
 .name {
-  width: $container-width * 0.243;
-  font-style: italic;
+  width: 24%;
   padding: 7px 0px 0 18px;
   height: 54px;
 }
 
 .e-mail {
-  width: $container-width * 0.243;
-  font-style: italic;
+  width: 24%;
   padding: 7px 0px 0 18px;
   height: 54px;
-  margin-left: 28px;
 }
 
 .subject {
@@ -105,7 +103,6 @@
   height: 52px;
   width: 96%;
   margin-top: 7px;
-  font-style: italic;
   font-size: 15px;
 }
 
@@ -116,9 +113,8 @@
 .message {
   height: 227px;
   width: 96%;
-  padding: 38px 0 0 21px;
+  padding: 38px 0 0 15px;
   font-size: 15px;
-  font-style: italic;
 }
 
 .message-item {
@@ -133,5 +129,7 @@
   border-image-source: linear-gradient($color-feedback-border-grad1,
     $color-feedback-border-grad2);
   border-width: 1px;
+  width: 100%;
+  font-style: italic;
   border-image-slice: 1;
 }

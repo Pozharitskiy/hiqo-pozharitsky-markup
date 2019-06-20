@@ -1,0 +1,96 @@
+@import "./mixins/flex-mix.scss";
+@import "./src/fonts";
+@import "../variables";
+
+.whole-footer {
+  background: #303030;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 150px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% / 3);
+}
+
+.footer-menu {
+  padding-top: 25px;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+  color: $color-primary;
+  width: calc(100% / 3);
+  font-size: 14px;
+}
+
+.footer-headline {
+  color: $color-primary;
+  font-size: 32px;
+}
+
+.up-anchor {
+  margin-top: -23px;
+  width: 41px;
+  height: 41px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $up-color;
+  right: 7%;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.up-symbol {
+  border-left: 2px solid $color-primary;
+  border-bottom: 2px solid $color-primary;
+  transform: rotate(135deg);
+  height: 30%;
+  margin-top: 5px;
+  width: 30%;
+  display: block;
+}
+
+.social-media {
+  left: 0;
+  margin-left: 21%;
+  width: 90%;
+}
+
+.social-media-item {
+  margin-right: 41px;
+  float: left;
+}
+
+.social-media-container {
+  display: flex;
+  flex-direction: row;
+  width: calc(100% / 3);
+  align-self: center;
+}
+
+.footer-expire-header {
+  text-align: center;
+  padding-top: 21px;
+}
+
+.name-item {
+  width: 46%;
+  padding-right: 7%;
+}
+
+.email-item {
+  width: 46%;
+}
