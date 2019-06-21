@@ -87,10 +87,10 @@
 }
 
 .name-item {
-  width: 46%;
+  width: calc(100% / 2 - 3.5%);
   padding-right: 7%;
 }
 
 .email-item {
-  width: 46%;
+  width: calc(100% / 2 - 3.5%);
 }

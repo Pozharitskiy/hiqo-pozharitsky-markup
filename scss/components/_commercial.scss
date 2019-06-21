@@ -1,6 +1,7 @@
-@import "./src/fonts";
 @import "./mixins/flex-mix.scss";
+@import "./src/fonts";
 @import "../variables";
+@import "../mixins/adaptive";
 
 .commercial-data {
   background: $data-color;
@@ -40,11 +41,9 @@
 }
 
 .list-letters-three {
-  margin: 32px 0 0 46%;
+  margin: 32px 0 0 50%;
   align-self: flex-start;
 }
-
-.list-letters-four {}
 
 .list-numbers {
   font-size: 40px;
@@ -89,20 +88,6 @@
   margin-left: 70px;
 }
 
-.c-two {
-  margin-left: 34px;
-}
-
-.c-three {
-  margin-left: 0;
-  margin-right: 111px;
-}
-
-.c-four {
-  margin-left: 0;
-  margin-right: 100px;
-}
-
 %chapter-image {
   width: 45px;
   height: 43px;
@@ -125,4 +110,27 @@
 .chapter-image-four {
   @extend %chapter-image;
   margin-left: 9px;
+}
+
+@include screen-large {
+
+  .list-of-data-list,
+  .list-of-data-list-special {
+    font-size: 15px;
+  }
+
+
+  .list-letters {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .list-numbers {
+    font-size: 30px;
+  }
+
+  .chapter {
+    margin: 0;
+  }
+
 }

@@ -87,6 +87,57 @@
 .quote-author {
   font-size: 30px;
   margin: 49px 0 0 22px;
-  width: 878px;
+  width: 61%;
   align-self: center;
+}
+
+@include screen-medium {
+  .quote {
+    font-size: 25px;
+  }
+
+  .paralax-headline {
+
+    transition: 1s;
+    padding-top: 100px;
+  }
+
+  .paralax-quote {
+    padding-bottom: 80px;
+  }
+
+  %underline {
+    padding: 10px;
+  }
+
+  %underline-text {
+    font-size: 15px;
+  }
+
+  %underline-headline {
+    font-size: 30px;
+  }
+
+  .quote-author {
+    font-size: 20px;
+  }
+
+}
+
+@include screen-small {
+  .quote {
+    transition: 1s;
+    width: 60%;
+    font-size: 20px;
+  }
+
+  .quote-symbol {
+    font-size: 100px;
+    margin-top: -90px;
+    position: absolute;
+  }
+
+  .paralax-quote {
+    padding-bottom: 80px;
+  }
 }

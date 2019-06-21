@@ -1,4 +1,3 @@
-@import "./mixins/flex-mix.scss";
 @import "./src/fonts";
 @import "../variables";
 
@@ -9,7 +8,6 @@ a {
 
 .container {
   @include flex;
-
   flex-direction: column;
   font-family: $arrow-font;
   background: $main-color;

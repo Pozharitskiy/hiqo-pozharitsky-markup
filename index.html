@@ -3,33 +3,56 @@
 
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Expire</title>
   <link rel="stylesheet" type="text/css" href="scss/vendor/reset.css" />
   <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="/assets/style.css" />
-</head>
+
+  
+<link rel="stylesheet" href="/assets/style.css" /></head>
 
 <body>
   <div class="container">
     <div class="start-screen-block">
       <header>
+
+        <!--NAVIGATION-->
         <ul class="menu">
-          <li><a href="#" class="menu-item">home</a></li>
-          <li><a href="#portfolio" class="menu-item">portfolio</a></li>
-          <li><a href="#blog" class="menu-item">blog</a></li>
+          <li><a href="#" class="menu-item  hidden-medium">home</a></li>
+          <li><a href="#portfolio" class="menu-item  hidden-medium">portfolio</a></li>
+          <li><a href="#blog" class="menu-item  hidden-medium">blog</a></li>
           <li>
+            <!--LOGO-->
             <div><img src="src/img/logo.png" class="logo" alt="" /></div>
+            <!--/LOGO-->
           </li>
-          <li><a href="#" class="menu-item">pages</a></li>
-          <li><a href="#about" class="menu-item">about us</a></li>
-          <li><a href="#feedback" class="menu-item">contact</a></li>
+          <li><a href="#" class="menu-item  hidden-medium">pages</a></li>
+          <li><a href="#about" class="menu-item  hidden-medium">about us</a></li>
+          <li><a href="#feedback" class="menu-item  hidden-medium">contact</a></li>
         </ul>
+        <!--/NAVIGATION-->
       </header>
 
-      <div class="header-headline">
+      <div class="header-headline hidden-medium">
         <p class="expire-header">Expire</p>
       </div>
+
+      <!--BURGER-->
+      <input class="burger-check hidden" id="burger-check" type="checkbox">
+      <label for="burger-check" class="burger visible-medium">
+      </label>
+      <nav class="navigation">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#portfolio">portfolio</a></li>
+          <li><a href="#blog">blog</a></li>
+          <li><a href="#">pages</a></li>
+          <li><a href="#about">about us</a></li>
+          <li><a href="#feedback">contact</a></li>
+        </ul>
+      </nav>
+      <!--/BURGER-->
 
       <div class="header-slider">
         <div class="slider-arrows">
@@ -147,19 +170,19 @@
                 <img src="src/img/blog/blog-user.png" alt="" />
               </li>
               <li class="info-list-item">
-                <p>By Author</p>
+                <p class="info-list-text">By Author</p>
               </li>
               <li class="info-list-item">
                 <img src="src/img/blog/calendar.png" alt="" />
               </li>
               <li class="info-list-item">
-                <p>9 November 2014</p>
+                <p class="info-list-text">9 November 2014</p>
               </li>
               <li class="info-list-item">
                 <img src="src/img/blog/blog-comment.png" alt="" />
               </li>
               <li class="info-list-item">
-                <p>3</p>
+                <p class="info-list-text">3</p>
               </li>
             </ul>
           </div>
@@ -187,19 +210,19 @@
                 <img src="src/img/blog/blog-user.png" alt="" />
               </li>
               <li class="info-list-item">
-                <p>By Author</p>
+                <p class="info-list-text">By Author</p>
               </li>
               <li class="info-list-item">
                 <img src="src/img/blog/calendar.png" alt="" />
               </li>
               <li class="info-list-item">
-                <p>9 November 2014</p>
+                <p class="info-list-text">9 November 2014</p>
               </li>
               <li class="info-list-item">
                 <img src="src/img/blog/blog-comment.png" alt="" />
               </li>
               <li class="info-list-item">
-                <p>3</p>
+                <p class="info-list-text">3</p>
               </li>
             </ul>
           </div>
@@ -223,23 +246,23 @@
           </div>
           <div class="third-folder-info">
             <ul class="info-list">
-              <li class="info-list-li">
+              <li class="info-list-item">
                 <img src="src/img/blog/blog-user.png" alt="" />
               </li>
-              <li class="info-list-li">
-                <p>By Author</p>
+              <li class="info-list-item">
+                <p class="info-list-text">By Author</p>
               </li>
-              <li class="info-list-li">
+              <li class="info-list-item">
                 <img src="src/img/blog/calendar.png" alt="" />
               </li>
-              <li class="info-list-li">
-                <p>9 November 2014</p>
+              <li class="info-list-item">
+                <p class="info-list-text">9 November 2014</p>
               </li>
-              <li class="info-list-li">
+              <li class="info-list-item">
                 <img src="src/img/blog/blog-comment.png" alt="" />
               </li>
-              <li class="info-list-li">
-                <p>3</p>
+              <li class="info-list-item">
+                <p class="info-list-text">3</p>
               </li>
             </ul>
           </div>

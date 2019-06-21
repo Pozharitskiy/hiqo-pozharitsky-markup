@@ -5,7 +5,7 @@
 @import "../mixins/adaptive";
 
 %column {
-  width: 360px;
+  width: 33%;
   margin: 0 auto;
   display: inline-block;
   border-image-source: linear-gradient($color-feedback-border-grad1,
@@ -58,7 +58,7 @@
 }
 
 %folder-info {
-  padding: 8% 0 3% 0px;
+  padding: 5% 0 0 0;
   font-family: "Open sans";
   font-weight: 200;
   color: $folder-text-color;
@@ -77,6 +77,8 @@
 
 .third-folder-info {
   @extend %folder-info;
+  font-weight: 600;
+
 }
 
 .info-list {
@@ -139,6 +141,10 @@
   }
 }
 
+.info-list-text {
+  font-size: 14px;
+}
+
 .triangle {
   margin-top: -16px;
   border-left: 1px solid $data-color;
@@ -152,7 +158,7 @@
 @include screen-large {
 
   %folder-info {
-    padding: 9% 0 3% 0;
+    padding: 6% 0 3% 0;
   }
 
   .info-list {
@@ -184,13 +190,15 @@
 
 @include screen-x-large {
   %folder-info {
-    padding: 9% 0 3% 0;
+    padding: 6% 0 3% 0;
   }
 
   .info-list {
     margin-left: 0;
     font-size: 11px;
   }
+
+
 
   %folder-name {
     padding-left: 0;
@@ -200,7 +208,7 @@
   }
 
   %folder-info {
-    padding: 9% 0 3% 0;
+    padding: 6% 0 3% 0;
   }
 
   .second-folder-info {

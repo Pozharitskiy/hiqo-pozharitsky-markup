@@ -9,11 +9,13 @@
 }
 
 .portfolio {
-  margin-left: 174px;
+  width: 100%;
+  padding-left: 0;
 }
 
 .latest-headline {
   width: 50%;
+  text-align: center;
   display: flex;
   margin: 0 auto;
   justify-content: center;
@@ -97,7 +99,7 @@
 }
 
 .img-container {
-  right: 38px;
+  right: 10%;
   position: absolute;
   top: -12px;
   display: flex;

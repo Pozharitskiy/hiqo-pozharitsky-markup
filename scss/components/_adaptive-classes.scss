@@ -1,12 +1,10 @@
-@import "../variables";
-
 .hidden {
   display: none;
 
-  @each $breakpont,
+  @each $breakpoint,
   $size in $breakpoints {
     @media screen and (max-width: $size) {
-      &-#{$breakpont} {
+      &-#{$breakpoint} {
         display: none;
       }
     }
@@ -15,17 +13,17 @@
 
 .visible {
 
-  @each $breakpont,
+  @each $breakpoint,
   $size in $breakpoints {
-    &-#{$breakpont} {
+    &-#{$breakpoint} {
       display: none;
     }
   }
 
-  @each $breakpont,
+  @each $breakpoint,
   $size in $breakpoints {
     @media screen and (max-width: $size) {
-      &-#{$breakpont} {
+      &-#{$breakpoint} {
         display: block;
       }
     }
