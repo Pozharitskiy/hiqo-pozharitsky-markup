@@ -77,6 +77,7 @@ $navigation__transition: max-height 0.5s ease-in-out;
   max-height: 0;
   margin-top: -60px;
   transition: $navigation__transition;
+  z-index: 5;
 }
 
 .burger-check:checked~.navigation {
@@ -92,6 +93,10 @@ $navigation__transition: max-height 0.5s ease-in-out;
   justify-content: center;
   align-items: center;
   line-height: 50px;
+
+  @include screen-small {
+    width: 80vw;
+  }
 }
 
 li {

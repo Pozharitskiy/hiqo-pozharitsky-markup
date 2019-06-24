@@ -130,6 +130,24 @@
   }
 }
 
+.show-more {
+  cursor: pointer;
+  color: $second-color;
+  font-size: 16px;
+  text-transform: uppercase;
+  width: 150px;
+  height: 50px;
+  margin: 20px auto;
+  background: none;
+  border: 1px solid $second-color;
+  color: $second-color;
+  display: block;
+}
+
+.show-more:hover {
+  background: white;
+}
+
 @include screen-large {
   .portfolio {
     font-size: 20px;
@@ -143,5 +161,16 @@
 
   .portfolio {
     font-size: 20px;
+  }
+}
+
+@include screen-small {
+
+  .big-city {
+    padding: 5% 15%;
+  }
+
+  .big-city-cell {
+    width: 100%;
   }
 }

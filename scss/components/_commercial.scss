@@ -121,26 +121,28 @@
 
 @include screen-medium {
   .chapter {
-    width: 90%;
+    width: 50%;
     justify-content: center;
   }
 
   .list-letters {
-    font-size: 13px;
     margin: 5px 5px 0 0;
+    font-size: 17px;
   }
 
   .comments-list {
-    width: 85%;
+    width: 47%;
+
   }
 
   .list-numbers {
-    font-size: 20px;
     margin: 0 0 0 5px;
   }
 
   .list-of-data-list {
-    width: 23%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
   }
 
   %chapter-image {
@@ -150,28 +152,41 @@
 }
 
 @include screen-small {
+  .chapter {
+    width: 90%;
+    justify-content: space-around;
+  }
+
   .list-letters {
-    font-size: 9px;
+    margin: 5px 5px 0 0;
+    font-size: 17px;
+  }
+
+  .comments-list {
+    width: 90%;
+
+  }
+
+  .chapter-image-four {
+    margin: 0;
+  }
+
+  .chapter-image-two {
+    margin: 0;
   }
 
   .list-numbers {
-    font-size: 13px;
-  }
-
-  %chapter-image {
-    width: 15px;
-    height: 13px;
-  }
-
-  .commercial-data {
-    padding: 0 0 3% 0;
-  }
-
-  .list-of-data {
-    @include flex;
+    margin: 0 40px 0 5px;
   }
 
   .list-of-data-list {
-    width: 22%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  %chapter-image {
+    width: 25px;
+    height: 20px;
   }
 }

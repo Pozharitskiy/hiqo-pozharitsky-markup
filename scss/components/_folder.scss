@@ -5,7 +5,8 @@
 @import "../mixins/adaptive";
 
 %column {
-  width: 31%;
+  width: 32%;
+  white-space: normal;
   margin: 0 auto;
   display: inline-block;
   border-image-source: linear-gradient($color-feedback-border-grad1,
@@ -28,10 +29,16 @@
   margin-left: 25px;
 }
 
+.folder-border {
+  border: 1px solid $folder-underline;
+  border-top: 0px;
+}
+
 %folder {
-  margin: 52px 0;
+  margin: 52px 0 0;
   width: 100%;
-  height: 28%;
+  padding-bottom: 10px;
+  height: 200px;
   background: $data-color;
   position: relative;
 
@@ -58,7 +65,7 @@
 }
 
 %folder-info {
-  padding: 4% 0 0 0;
+  padding: 1% 0 0 0;
   font-family: $main-font;
   font-weight: 200;
   color: $folder-text-color;
@@ -72,7 +79,7 @@
 
 .second-folder-info {
   @extend %folder-info;
-  padding: 12% 0 1% 0;
+  padding: 0 0 2% 0;
 }
 
 .third-folder-info {
@@ -109,6 +116,7 @@
 }
 
 .folder-button {
+  margin: 0 auto;
   padding: 19px 27px;
 }
 
@@ -123,7 +131,7 @@
 .bottom-border {
   height: 30px;
   width: 100%;
-  margin-top: 116px;
+  margin-top: 8%;
 
   &:after {
     width: calc(50% - 12px);
@@ -159,9 +167,17 @@
 
 @include screen-x-large {
   %folder-info {
-    padding: 6% 0 3% 0;
+    padding: 3% 0 3% 0;
   }
 
+  %column {
+    margin: 0 10%;
+  }
+
+  .scroller {
+    overflow: hidden;
+    flex: 1;
+  }
 
   .info-list {
     margin-left: 0;
@@ -173,12 +189,10 @@
   }
 
   %folder-name {
-    padding-left: 0;
-    padding-right: 0;
-    text-align: center;
+    text-align: start;
     font-size: 17px;
     padding-right: 0;
-    padding: 179px 0 11px 0;
+    padding: 20px 0 11px 0;
   }
 
   %folder-info {
@@ -188,12 +202,12 @@
   }
 
   .second-folder-info {
-    padding: 6% 0 3% 0;
+    padding: 3% 0 3% 0;
   }
 
   .folder-paragraph,
   .folder-words {
-    padding: 0;
+    padding: 0 5px;
     font-size: 11px;
   }
 
@@ -204,12 +218,7 @@
 
   %column {
     width: 45%;
-  }
-
-
-
-  .blog-arrows {
-    display: none;
+    margin: 0 30%;
   }
 
   %folder-info {
@@ -230,12 +239,17 @@
 
   .folder-paragraph,
   .folder-words {
-    padding: 0;
+    padding: 0 5px;
     font-size: 11px;
   }
 
   .info-list-text {
     font-size: 10px;
+  }
+
+  .blog-underline-headline {
+    font-size: 35px;
+    width: 100%;
   }
 
   .folder-words {
@@ -246,22 +260,34 @@
 
 @include screen-medium {
   %column {
-    width: 45%;
+    width: 60%;
+    margin: 0 22%;
   }
 
   %folder {
     margin: 52px 0 42px 0px;
   }
 
-  %folder-name {
-    font-size: 13px;
+  .blog-underline-headline {
+    font-size: 25px;
+    width: 100%;
   }
+
+  %folder-name {
+    font-size: 17px;
+  }
+
+
 
 }
 
 @include screen-small {
-  %column {}
+  %folder-name {
+    padding-top: 0;
+  }
 
-
+  %folder {
+    height: 120px;
+  }
 
 }

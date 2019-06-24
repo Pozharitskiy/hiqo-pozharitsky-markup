@@ -154,9 +154,14 @@ header li {
 @include screen-medium {
 
   .slider-arrows {
-    margin-top: 70%;
+    margin-top: 48%;
     transition: 1s;
     width: 98%;
+    z-index: 4;
+  }
+
+  .slider-dots {
+    margin-top: 80px;
   }
 
   .slider-headline {
@@ -184,7 +189,34 @@ header li {
 }
 
 @include screen-small {
+
   .slider-arrows {
-    margin-top: 50%;
+    margin-top: 15px;
+    width: 9%;
+    right: 20%;
   }
+
+  .arrows {
+    width: 93%;
+  }
+
+  %column {
+    width: 88%;
+    margin: 0 9%;
+  }
+
+  %folder {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .right-blog-arrow {
+    margin-left: 95%;
+  }
+
+  .info-list-item {
+    margin-left: 7px;
+  }
+
 }
