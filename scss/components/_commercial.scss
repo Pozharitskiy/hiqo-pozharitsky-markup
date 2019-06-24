@@ -5,44 +5,40 @@
 
 .commercial-data {
   background: $data-color;
-  padding-bottom: 92px;
+  padding-bottom: 7%;
 }
 
 .list-of-data {
   color: $color-primary;
   height: 100%;
   @extend %clearfix;
+  padding: 0 4%;
 }
 
 .list-of-data-list {
   width: 25%;
   float: left;
-  margin-top: 60px;
-}
-
-.list-of-data-list-special {
-  width: 18%;
-  float: left;
-  margin-top: 60px;
-}
-
-%list-letters {
-  font-size: 25px;
-  align-self: flex-end;
-  margin: 29px 53px 0 0;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 4%;
 }
 
 .list-letters {
-  @extend %list-letters;
+  font-size: 25px;
+  align-self: flex-end;
+  margin: 22px 0 0 5%;
 }
 
-.list-letters-two {
-  margin: 35px 58px 0 0;
+.comments-list {
+  justify-content: flex-start;
 }
 
-.list-letters-three {
-  margin: 32px 0 0 50%;
-  align-self: flex-start;
+.users-list {
+  justify-content: center;
+}
+
+.lines-list {
+  justify-content: flex-start;
 }
 
 .list-numbers {
@@ -50,42 +46,11 @@
   margin-left: 27px;
 }
 
-%chapter {
-  @include flex;
-  flex-direction: column;
-  width: 100%;
-  align-items: center;
-}
-
-%chapter-container {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-}
-
-.chapter-container {
-  @extend %chapter-container;
-}
-
-.chapter-container-two {
-  @extend %chapter-container;
-  justify-content: flex-start;
-  margin-left: 122px;
-}
-
-.chapter-container-three {
-  @extend %chapter-container;
-  justify-content: flex-start;
-  margin-left: 69px;
-}
-
-.chapter-container-four {
-  @extend %chapter-container;
-}
-
 .chapter {
-  @extend %chapter;
-  margin-left: 70px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 90%;
 }
 
 %chapter-image {
@@ -112,17 +77,17 @@
   margin-left: 9px;
 }
 
-@include screen-large {
+@include screen-x-large {
 
-  .list-of-data-list,
-  .list-of-data-list-special {
+  .list-of-data-list {
     font-size: 15px;
+    width: 24%;
   }
 
 
   .list-letters {
     font-size: 20px;
-    margin: 0;
+    margin: 20px 0 0 0;
   }
 
   .list-numbers {
@@ -133,4 +98,80 @@
     margin: 0;
   }
 
+}
+
+@include screen-large {
+  .list-letters {
+    font-size: 20px;
+  }
+
+  .chapter {
+    justify-content: center;
+  }
+
+  .list-numbers {
+    font-size: 21px;
+  }
+
+  %chapter-image {
+    width: 30px;
+    height: 25px;
+  }
+}
+
+@include screen-medium {
+  .chapter {
+    width: 90%;
+    justify-content: center;
+  }
+
+  .list-letters {
+    font-size: 13px;
+    margin: 5px 5px 0 0;
+  }
+
+  .comments-list {
+    width: 85%;
+  }
+
+  .list-numbers {
+    font-size: 20px;
+    margin: 0 0 0 5px;
+  }
+
+  .list-of-data-list {
+    width: 23%;
+  }
+
+  %chapter-image {
+    width: 25px;
+    height: 20px;
+  }
+}
+
+@include screen-small {
+  .list-letters {
+    font-size: 9px;
+  }
+
+  .list-numbers {
+    font-size: 13px;
+  }
+
+  %chapter-image {
+    width: 15px;
+    height: 13px;
+  }
+
+  .commercial-data {
+    padding: 0 0 3% 0;
+  }
+
+  .list-of-data {
+    @include flex;
+  }
+
+  .list-of-data-list {
+    width: 22%;
+  }
 }

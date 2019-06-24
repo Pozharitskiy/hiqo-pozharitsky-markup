@@ -2,6 +2,7 @@
 @import "folder";
 @import "./mixins/flex-mix.scss";
 @import "./src/fonts";
+@import "../mixins/adaptive";
 
 .blog-headline {
   width: 50%;
@@ -20,8 +21,9 @@
 
 .blog-underline-headline {
   color: $black;
+  font-size: 45px;
   @extend %underline-headline;
-  padding: 0 0 0 140px;
+  text-align: center;
 
 }
 
@@ -38,8 +40,9 @@
   display: flex;
   width: 90%;
   margin: 0 auto;
+  flex-wrap: wrap;
   box-sizing: border-box;
-  padding: 78px 43px 0;
+  padding: 6% 4% 0;
 }
 
 .folder {
@@ -89,13 +92,13 @@
 }
 
 .latest-blog-posts {
-  display: none;
+
   background: $color-primary;
 }
 
 
 %folder-name {
-  padding: 230px 40px 15px 0;
+  padding: 230px 0 15px 0;
   font-size: 25px;
   text-align: center;
   border-bottom: 1px solid black;
@@ -113,16 +116,19 @@
 
 .second-folder-name {
   @extend %folder-name;
-  padding-left: 8px;
+  padding-left: 29px;
   text-align: left;
   line-height: 27px;
 }
 
 .third-folder-name {
   @extend %folder-name;
-  padding-right: 77px;
 }
 
 .blog-arrows {
   display: flex;
+  margin-top: 25% !important;
+  /*because it doesnt work without that...*/
 }
+
+@include screen-x-large {}

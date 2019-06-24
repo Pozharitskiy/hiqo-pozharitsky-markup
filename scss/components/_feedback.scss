@@ -133,3 +133,46 @@
   font-style: italic;
   border-image-slice: 1;
 }
+
+@include screen-large {
+
+  .feedback {
+    padding-top: 40px;
+  }
+
+  .feedback-headline {
+    padding-left: 20px;
+  }
+
+  .feedback-underline-headline {
+    font-size: 25px;
+    margin: 5px 0 0 0;
+  }
+
+  .feedback-underline {
+    margin: 5px 0 0 0;
+  }
+
+  .feedback-underline-text {
+    margin: 10px 0 0 0;
+    font-size: 15px;
+  }
+
+  .connection {
+    padding: 0;
+  }
+
+  .list-item-location {
+    display: none;
+  }
+
+  .list-item {
+    padding: 0 0 20px 0;
+  }
+
+  .list-item-text {
+    font-size: 12px;
+    padding-top: 35px;
+    margin: 0 0 0 10px;
+  }
+}
