@@ -7,7 +7,7 @@
   display: flex;
   justify-content: center;
   align-content: center;
-  height: 150px;
+  padding-bottom: 25px;
 }
 
 .footer-container {
@@ -79,6 +79,7 @@
   display: flex;
   flex-direction: row;
   width: calc(100% / 3);
+  margin-top: 50px;
   align-self: center;
 }
 
@@ -129,15 +130,26 @@
 
 @include screen-small {
   .social-media {
-    margin: 30%;
     flex-direction: column;
     line-height: 17px;
+
+    &-container {
+      margin-top: 10px;
+    }
+  }
+
+  .social-media-item {
+    @include flex;
   }
 
   .copyright {
     font-size: 10px;
     align-self: flex-start;
     margin-top: 30px;
+  }
+
+  .whole-footer {
+    padding: 0;
   }
 
   .typing {

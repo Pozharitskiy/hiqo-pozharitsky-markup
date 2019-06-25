@@ -40,7 +40,7 @@
   width: 150px;
   height: 50px;
   background: $main-color;
-  border: 1px solid $data-color;
+  border: 1px solid $color-primary;
 }
 
 .connection-list {
@@ -61,11 +61,6 @@
   display: flex;
   padding-bottom: 49px;
   flex-direction: row;
-
-  &:hover {
-    color: $second-color;
-    cursor: pointer;
-  }
 }
 
 .special-center-text {
@@ -80,6 +75,12 @@
 
 .special-bot-text {
   padding-top: 15px;
+  align-self: center;
+
+  &:hover {
+    color: $second-color;
+    cursor: pointer;
+  }
 }
 
 .phone-image {
@@ -93,8 +94,13 @@
 }
 
 .list-item-text {
-  margin: 0 0 0 65px;
+  margin: 0 0 0 20px;
   line-height: 25px;
+
+  &:hover {
+    color: $second-color;
+    cursor: pointer;
+  }
 }
 
 .name {
@@ -137,6 +143,7 @@
 }
 
 .input-box {
+  resize: none;
   border-image-source: linear-gradient($color-feedback-border-grad1,
     $color-feedback-border-grad2);
   border-width: 1px;
@@ -165,7 +172,8 @@
   }
 
   .feedback-underline-text {
-    margin: 10px 0 0 0;
+    padding: 0 20px;
+    margin: 12px 0 10px 0;
     font-size: 15px;
   }
 
@@ -179,11 +187,22 @@
 
   .list-item {
     padding: 0 0 20px 0;
+    @include flex;
   }
 
   .list-item-text {
     font-size: 12px;
     padding-top: 35px;
     margin: 0 0 0 10px;
+  }
+}
+
+@include screen-small {
+  .email-image {
+    margin-left: 27px;
+  }
+
+  .location {
+    margin-left: 3px;
   }
 }

@@ -82,7 +82,7 @@ $navigation__transition: max-height 0.5s ease-in-out;
 
 .burger-check:checked~.navigation {
   max-height: 500px;
-  background: $second-color;
+  background: $paralax-color;
   transition: $navigation__transition;
   position: absolute;
   left: 0;
@@ -99,12 +99,12 @@ $navigation__transition: max-height 0.5s ease-in-out;
   }
 }
 
-li {
+.burger-list {
   list-style: none;
   font-size: 25px;
   padding: 5px 0;
 
-  a {
+  .burger-link {
     text-decoration: none;
 
     &:hover {
