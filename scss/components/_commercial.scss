@@ -1,107 +1,56 @@
-@import "./src/fonts";
 @import "./mixins/flex-mix.scss";
+@import "./src/fonts";
+@import "../variables";
+@import "../mixins/adaptive";
 
 .commercial-data {
-  width: $container-width;
-  border: 1px solid black;
-  background: $grey;
-  padding-bottom: 35px;
+  background: $data-color;
+  padding-bottom: 7%;
 }
+
 .list-of-data {
-  color: $white;
+  color: $color-primary;
   height: 100%;
-  padding-bottom: 215px;
+  @extend %clearfix;
+  padding: 0 4%;
 }
-.list-of-data-li {
+
+.list-of-data-list {
   width: 25%;
   float: left;
-  margin-top: 60px;
-}
-.list-of-data-li-special {
-  width: 18%;
-  float: left;
-  margin-top: 60px;
-}
-%list-letters {
-  font-size: 25px;
-  align-self: flex-end;
-  margin: 29px 53px 0 0;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 4%;
 }
 
 .list-letters {
-  @extend %list-letters;
+  font-size: 25px;
+  align-self: flex-end;
+  margin: 22px 0 0 5%;
 }
 
-.list-letters-two {
-  @extend %list-letters;
-  margin: 29px 58px 0 0;
+.comments-list {
+  justify-content: flex-start;
 }
 
-.list-letters-three {
-  @extend %list-letters;
-  margin: 29px 0 0 112px;
-  align-self: flex-start;
+.users-list {
+  justify-content: center;
 }
 
-.list-letters-four {
-  @extend %list-letters;
+.lines-list {
+  justify-content: flex-start;
 }
 
 .list-numbers {
   font-size: 40px;
   margin-left: 27px;
 }
-%chapter {
-  @include flex;
-  flex-direction: column;
-  width: 100%;
-  align-items: center;
-}
-
-%chapter-container {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-}
-
-.chapter-container {
-  @extend %chapter-container;
-}
-
-.chapter-container-two {
-  @extend %chapter-container;
-  justify-content: flex-start;
-  margin-left: 122px;
-}
-
-.chapter-container-three {
-  @extend %chapter-container;
-  justify-content: flex-start;
-  margin-left: 69px;
-}
-
-.chapter-container-four {
-  @extend %chapter-container;
-}
 
 .chapter {
-  @extend %chapter;
-  margin-left: 70px;
-}
-
-.chapter-two {
-  @extend %chapter;
-  margin-left: 34px;
-}
-
-.chapter-three {
-  margin-right: 111px;
-  @extend %chapter;
-}
-
-.chapter-four {
-  @extend %chapter;
-  margin-right: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 90%;
 }
 
 %chapter-image {
@@ -126,4 +75,118 @@
 .chapter-image-four {
   @extend %chapter-image;
   margin-left: 9px;
+}
+
+@include screen-x-large {
+
+  .list-of-data-list {
+    font-size: 15px;
+    width: 24%;
+  }
+
+
+  .list-letters {
+    font-size: 20px;
+    margin: 20px 0 0 0;
+  }
+
+  .list-numbers {
+    font-size: 30px;
+  }
+
+  .chapter {
+    margin: 0;
+  }
+
+}
+
+@include screen-large {
+  .list-letters {
+    font-size: 20px;
+  }
+
+  .chapter {
+    justify-content: center;
+  }
+
+  .list-numbers {
+    font-size: 21px;
+  }
+
+  %chapter-image {
+    width: 30px;
+    height: 25px;
+  }
+}
+
+@include screen-medium {
+  .chapter {
+    width: 50%;
+    justify-content: center;
+  }
+
+  .list-letters {
+    margin: 5px 5px 0 0;
+    font-size: 17px;
+  }
+
+  .comments-list {
+    width: 47%;
+
+  }
+
+  .list-numbers {
+    margin: 0 0 0 5px;
+  }
+
+  .list-of-data-list {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+
+  %chapter-image {
+    width: 25px;
+    height: 20px;
+  }
+}
+
+@include screen-small {
+  .chapter {
+    width: 90%;
+    justify-content: space-around;
+  }
+
+  .list-letters {
+    margin: 5px 5px 0 0;
+    font-size: 17px;
+  }
+
+  .comments-list {
+    width: 90%;
+
+  }
+
+  .chapter-image-four {
+    margin: 0;
+  }
+
+  .chapter-image-two {
+    margin: 0;
+  }
+
+  .list-numbers {
+    margin: 0 40px 0 5px;
+  }
+
+  .list-of-data-list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  %chapter-image {
+    width: 25px;
+    height: 20px;
+  }
 }
