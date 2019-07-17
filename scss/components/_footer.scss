@@ -1,0 +1,174 @@
+@import "./mixins/flex-mix.scss";
+@import "./src/fonts";
+@import "../variables";
+
+.whole-footer {
+  background: #303030;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-bottom: 25px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% / 3);
+}
+
+.footer-menu {
+  padding-top: 8px;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+  color: $color-primary;
+  width: calc(100% / 3);
+  font-size: 14px;
+}
+
+.footer-headline {
+  color: $color-primary;
+  font-size: 32px;
+}
+
+.up-anchor {
+  margin-top: -23px;
+  width: 41px;
+  height: 41px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $up-color;
+  right: 7%;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.up-symbol {
+  border-left: 2px solid $color-primary;
+  border-bottom: 2px solid $color-primary;
+  transform: rotate(135deg);
+  height: 30%;
+  margin-top: 5px;
+  width: 30%;
+  display: block;
+}
+
+.social-media {
+  left: 0;
+  margin-left: 30%;
+  margin-top: -5%;
+  width: 90%;
+}
+
+.social-media-item {
+  margin-right: 41px;
+  float: left;
+}
+
+.social-media-container {
+  display: flex;
+  flex-direction: row;
+  width: calc(100% / 3);
+  margin-top: 50px;
+  align-self: center;
+}
+
+.footer-expire-header {
+  text-align: center;
+  padding-top: 11px;
+}
+
+.name-item {
+  width: calc(100% / 2 - 3.5%);
+  padding-right: 7%;
+}
+
+.email-item {
+  width: calc(100% / 2 - 3.5%);
+}
+
+@include screen-x-large {
+  .social-media {
+    margin-left: 20%;
+  }
+
+  .social-media-item {
+    margin-right: 30px;
+  }
+}
+
+@include screen-large {
+  .social-media {
+    margin-left: 20%;
+  }
+
+  .social-media-item {
+    margin-right: 20px;
+  }
+
+  .copyright {
+    font-size: 12px;
+  }
+}
+
+@include screen-medium {
+  .social-media {
+    margin-left: 10%;
+    display: flex;
+  }
+}
+
+@include screen-small {
+  .social-media {
+    flex-direction: column;
+    line-height: 17px;
+
+    &-container {
+      margin-top: 10px;
+    }
+  }
+
+  .social-media-item {
+    @include flex;
+  }
+
+  .copyright {
+    font-size: 10px;
+    align-self: flex-start;
+    margin-top: 30px;
+  }
+
+  .whole-footer {
+    padding: 0;
+  }
+
+  .typing {
+    width: 85%;
+  }
+
+  .list-item-text {
+    line-height: 14px;
+  }
+
+  .connection-list {
+    width: 90%;
+  }
+
+  .list-item-location {
+    display: block;
+  }
+
+  .footer-image {
+    height: 14px;
+  }
+}

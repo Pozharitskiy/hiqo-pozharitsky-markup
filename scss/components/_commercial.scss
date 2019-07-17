@@ -1,0 +1,192 @@
+@import "./mixins/flex-mix.scss";
+@import "./src/fonts";
+@import "../variables";
+@import "../mixins/adaptive";
+
+.commercial-data {
+  background: $data-color;
+  padding-bottom: 7%;
+}
+
+.list-of-data {
+  color: $color-primary;
+  height: 100%;
+  @extend %clearfix;
+  padding: 0 4%;
+}
+
+.list-of-data-list {
+  width: 25%;
+  float: left;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 4%;
+}
+
+.list-letters {
+  font-size: 25px;
+  align-self: flex-end;
+  margin: 22px 0 0 5%;
+}
+
+.comments-list {
+  justify-content: flex-start;
+}
+
+.users-list {
+  justify-content: center;
+}
+
+.lines-list {
+  justify-content: flex-start;
+}
+
+.list-numbers {
+  font-size: 40px;
+  margin-left: 27px;
+}
+
+.chapter {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 90%;
+}
+
+%chapter-image {
+  width: 45px;
+  height: 43px;
+}
+
+.chapter-image {
+  @extend %chapter-image;
+}
+
+.chapter-image-two {
+  @extend %chapter-image;
+  height: 35px;
+  margin: 4px 0 0 6px;
+}
+
+.chapter-image-three {
+  @extend %chapter-image;
+}
+
+.chapter-image-four {
+  @extend %chapter-image;
+  margin-left: 9px;
+}
+
+@include screen-x-large {
+
+  .list-of-data-list {
+    font-size: 15px;
+    width: 24%;
+  }
+
+
+  .list-letters {
+    font-size: 20px;
+    margin: 20px 0 0 0;
+  }
+
+  .list-numbers {
+    font-size: 30px;
+  }
+
+  .chapter {
+    margin: 0;
+  }
+
+}
+
+@include screen-large {
+  .list-letters {
+    font-size: 20px;
+  }
+
+  .chapter {
+    justify-content: center;
+  }
+
+  .list-numbers {
+    font-size: 21px;
+  }
+
+  %chapter-image {
+    width: 30px;
+    height: 25px;
+  }
+}
+
+@include screen-medium {
+  .chapter {
+    width: 50%;
+    justify-content: center;
+  }
+
+  .list-letters {
+    margin: 5px 5px 0 0;
+    font-size: 17px;
+  }
+
+  .comments-list {
+    width: 47%;
+
+  }
+
+  .list-numbers {
+    margin: 0 0 0 5px;
+  }
+
+  .list-of-data-list {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+
+  %chapter-image {
+    width: 25px;
+    height: 20px;
+  }
+}
+
+@include screen-small {
+  .chapter {
+    width: 90%;
+    justify-content: space-around;
+  }
+
+  .list-letters {
+    margin: 5px 5px 0 0;
+    font-size: 17px;
+  }
+
+  .comments-list {
+    width: 90%;
+
+  }
+
+  .chapter-image-four {
+    margin: 0;
+  }
+
+  .chapter-image-two {
+    margin: 0;
+  }
+
+  .list-numbers {
+    margin: 0 40px 0 5px;
+  }
+
+  .list-of-data-list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  %chapter-image {
+    width: 25px;
+    height: 20px;
+  }
+}
