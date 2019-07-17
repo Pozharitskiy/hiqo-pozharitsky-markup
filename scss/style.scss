@@ -2,5 +2,25 @@
 
 @import "variables";
 @import "typography";
+<<<<<<< Updated upstream
 
 // import components here
+=======
+@import "scss/components/headline";
+@import "scss/components/commercial";
+@import "scss/components/blog";
+@import "scss/components/button";
+@import "./mixins/flex-mix.scss";
+@import "./src/fonts";
+@import "scss/components/folder";
+@import "scss/components/latest";
+@import "./components/feedback";
+@import "./components/paralax";
+@import "./components/container";
+@import "./components/start-block";
+@import "./components/footer";
+@import "./components/adaptive-classes";
+@import "./mixins/adaptive";
+@import "./components/burger";
+@import "./components/slider";
+>>>>>>> Stashed changes
