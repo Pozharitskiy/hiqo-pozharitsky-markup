@@ -785,7 +785,6 @@ h1 {
 }
 
 .first-column, .second-column, .third-column {
-  width: 32%;
   white-space: normal;
   margin: 0 auto;
   display: inline-block;
@@ -847,6 +846,11 @@ h1 {
 
 .second-folder-info {
   padding: 0 0 2% 0;
+}
+
+.scroller {
+  display: -webkit-box;
+  position: relative;
 }
 
 .third-folder-info {
@@ -948,6 +952,9 @@ h1 {
   }
   .scroller {
     overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
@@ -1174,6 +1181,7 @@ h1 {
 }
 
 .blog-folders {
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1435,7 +1443,6 @@ h1 {
 }
 
 .first-column, .second-column, .third-column {
-  width: 32%;
   white-space: normal;
   margin: 0 auto;
   display: inline-block;
@@ -1497,6 +1504,11 @@ h1 {
 
 .second-folder-info {
   padding: 0 0 2% 0;
+}
+
+.scroller {
+  display: -webkit-box;
+  position: relative;
 }
 
 .third-folder-info {
@@ -1598,6 +1610,9 @@ h1 {
   }
   .scroller {
     overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
@@ -1928,7 +1943,6 @@ h1 {
 }
 
 .first-column, .second-column, .third-column {
-  width: 32%;
   white-space: normal;
   margin: 0 auto;
   display: inline-block;
@@ -1990,6 +2004,11 @@ h1 {
 
 .second-folder-info {
   padding: 0 0 2% 0;
+}
+
+.scroller {
+  display: -webkit-box;
+  position: relative;
 }
 
 .third-folder-info {
@@ -2091,6 +2110,9 @@ h1 {
   }
   .scroller {
     overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
@@ -2491,7 +2513,6 @@ h1 {
 }
 
 .first-column, .second-column, .third-column {
-  width: 32%;
   white-space: normal;
   margin: 0 auto;
   display: inline-block;
@@ -2553,6 +2574,11 @@ h1 {
 
 .second-folder-info {
   padding: 0 0 2% 0;
+}
+
+.scroller {
+  display: -webkit-box;
+  position: relative;
 }
 
 .third-folder-info {
@@ -2654,6 +2680,9 @@ h1 {
   }
   .scroller {
     overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
@@ -2880,6 +2909,7 @@ h1 {
 }
 
 .blog-folders {
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3584,7 +3614,6 @@ h1 {
 }
 
 .first-column, .second-column, .third-column {
-  width: 32%;
   white-space: normal;
   margin: 0 auto;
   display: inline-block;
@@ -3646,6 +3675,11 @@ h1 {
 
 .second-folder-info {
   padding: 0 0 2% 0;
+}
+
+.scroller {
+  display: -webkit-box;
+  position: relative;
 }
 
 .third-folder-info {
@@ -3747,6 +3781,9 @@ h1 {
   }
   .scroller {
     overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
@@ -4308,7 +4345,7 @@ header li {
   background: none;
 }
 
-.slider-dots-item-focused {
+.slider-dots-item-active {
   width: 23px;
   height: 23px;
   border: 1px solid #fafafa;
@@ -4860,4 +4897,61 @@ header li {
 
 .burger-list .burger-link:hover {
   text-decoration: underline;
+}
+
+.slider-arrow {
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
+  width: 20px;
+  margin-top: 320px;
+  height: 20px;
+  position: absolute;
+}
+
+.prev {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  left: 50px;
+}
+
+.next {
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+  right: 50px;
+}
+
+.slider-prev,
+.slider-next {
+  cursor: pointer;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+}
+
+.slider-dot {
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  border: 1px solid #fafafa;
+  display: inline-block;
+}
+
+.active,
+dot:hover {
+  background: white;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+          animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+
+.blogSlides {
+  width: 372px;
+  padding: 0 15px;
 }
