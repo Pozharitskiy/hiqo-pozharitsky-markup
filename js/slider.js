@@ -1,17 +1,21 @@
 const blogSlides = document.getElementsByClassName('blogSlides');
 const slides = document.getElementsByClassName('mySlides');
+const scroller = document.querySelector(".scroller");
+const maxWidth = blogSlides.length * 372 + 'px';
+const slideRange = document.getElementById('folder').offsetWidth;;
+const overflowElements = blogSlides.length - 3;
 let pos = 0;
 let createDots = document.getElementsByClassName('slider-dots');
-const maxWidth = blogSlides.length * 372 + 'px';
-const slideRange = document.documentElement.clientWidth * 0.33;
-const scroller = document.querySelector(".scroller");
-const overflowElements = slides.length - 3;
+console.log(createDots);
 document.querySelector(".left-blog-arrow").style.display = 'none';
 console.log(slideRange);
 
 for (let i = 0; i < slides.length; i++) {
     createDots.innerHTML += `<span class="slider-dot" onclick="currentSlide(${i + 1})"></span>`;
 }
+
+const dots = document.getElementsByClassName('slider-dot');
+console.log(dots);
 
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -26,7 +30,6 @@ function currentSlide(n) {
 
 function showSlides(n) {
     let i = 0;
-    const dots = document.getElementsByClassName('slider-dot');
 
     if (n > slides.length) {
         slideIndex = 1;
@@ -50,7 +53,8 @@ function showSlides(n) {
 
 function right() {
     document.querySelector(".left-blog-arrow").style.display = 'block';
-    if (pos * (-1) >= overflowElements * slideRange) {
+    console.log(overflowElements);
+    if (pos * (-1) >= (overflowElements - 1) * slideRange) {
         document.querySelector(".right-blog-arrow").style.display = 'none';
     }
     pos = pos - slideRange;

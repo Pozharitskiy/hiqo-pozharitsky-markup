@@ -18,11 +18,9 @@
 }
 .second-column {
 	@extend %column;
-	margin-left: 23px;
 }
 .third-column {
 	@extend %column;
-	margin-left: 25px;
 }
 .folder-border {
 	border: 1px solid $folder-underline;
@@ -72,6 +70,7 @@
 .scroller {
 	display: -webkit-box;
 	position: relative;
+	transition: 1.5s;
 }
 .third-folder-info {
 	@extend %folder-info;
@@ -146,9 +145,6 @@
 	%folder-info {
 		padding: 3% 0 3% 0;
 	}
-	%column {
-		margin: 0 10%;
-	}
 	.scroller {
 		overflow: hidden;
 		display: flex;
@@ -182,10 +178,6 @@
 	}
 }
 @include screen-large {
-	%column {
-		width: 45%;
-		margin: 0 30%;
-	}
 	.blog-arrows {
 		display: flex;
 		width: 90% !important;

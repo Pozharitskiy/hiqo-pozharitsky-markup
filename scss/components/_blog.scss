@@ -44,7 +44,7 @@
 	margin: 0 auto;
 	flex-wrap: wrap;
 	box-sizing: border-box;
-	padding: 6% 4% 0;
+	padding: 6% 0;
 }
 
 .folder {
@@ -64,7 +64,7 @@
 }
 
 .right-blog-arrow {
-	margin-left: 90%;
+	margin-left: 92%;
 	border-left: none;
 	border-right: 2px solid $data-color;
 	transform: rotate(315deg);
@@ -84,7 +84,7 @@
 	border-left: 2px solid $data-color;
 	border-bottom: 2px solid $data-color;
 	transform: rotate(45deg);
-	left: 4%;
+	left: 2%;
 
 	&:hover {
 		border-left: 2px solid $second-color;
