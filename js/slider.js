@@ -5,8 +5,7 @@ const maxWidth = blogSlides.length * 372 + 'px';
 const slideRange = document.getElementById('folder').offsetWidth;;
 const overflowElements = blogSlides.length - 3;
 let pos = 0;
-let createDots = document.getElementsByClassName('slider-dots');
-console.log(createDots);
+let createDots = document.querySelector('.slider-dots');
 document.querySelector(".left-blog-arrow").style.display = 'none';
 console.log(slideRange);
 

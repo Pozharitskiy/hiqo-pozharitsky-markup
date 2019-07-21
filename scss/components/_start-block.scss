@@ -136,6 +136,10 @@ header li {
 		display: none;
 	}
 
+	%column {
+		width: 340px;
+	}
+
 	.menu {
 		transition: 1s;
 		width: 80%;
@@ -208,7 +212,7 @@ header li {
 	}
 
 	.right-blog-arrow {
-		margin-left: 97%;
+		margin-left: 90%;
 	}
 
 	.info-list-item {

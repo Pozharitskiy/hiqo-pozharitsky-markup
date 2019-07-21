@@ -216,13 +216,6 @@
 	}
 }
 @include screen-medium {
-	%column {
-		width: 60%;
-		margin: 0 22%;
-	}
-	.blog-arrows {
-		width: 98% !important;
-	}
 	%folder {
 		margin: 52px 0 0 0px;
 	}
@@ -237,9 +230,6 @@
 @include screen-small {
 	%folder-name {
 		padding-top: 0;
-	}
-	.blog-arrows {
-		width: 89% !important;
 	}
 	.first-folder-name {
 		padding-top: 15px;

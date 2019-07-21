@@ -59,12 +59,6 @@ dot:hover {
 	}
 }
 
-@include screen-small {
-	.blog-arrows {
-		display: none;
-	}
-}
-
 @include screen-xx-large {
 	.blogSlides {
 		padding: 0 35px;
@@ -73,6 +67,18 @@ dot:hover {
 
 @include screen-x-large {
 	.blogSlides {
-		padding: 0 20px;
+		padding: 0 80px;
+	}
+}
+
+@include screen-small {
+	.blogSlides {
+		padding: 0 35px;
+	}
+}
+
+@include screen-large {
+	.blogSlides {
+		padding: 0 55px;
 	}
 }
