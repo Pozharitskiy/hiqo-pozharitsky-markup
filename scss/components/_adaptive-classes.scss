@@ -1,31 +1,27 @@
 .hidden {
-  display: none;
+	display: none;
 
-  @each $breakpoint,
-  $size in $breakpoints {
-    @media screen and (max-width: $size) {
-      &-#{$breakpoint} {
-        display: none;
-      }
-    }
-  }
+	@each $breakpoint, $size in $breakpoints {
+		@media screen and (max-width: $size) {
+			&-#{$breakpoint} {
+				display: none;
+			}
+		}
+	}
 }
 
 .visible {
+	@each $breakpoint, $size in $breakpoints {
+		&-#{$breakpoint} {
+			display: none;
+		}
+	}
 
-  @each $breakpoint,
-  $size in $breakpoints {
-    &-#{$breakpoint} {
-      display: none;
-    }
-  }
-
-  @each $breakpoint,
-  $size in $breakpoints {
-    @media screen and (max-width: $size) {
-      &-#{$breakpoint} {
-        display: block;
-      }
-    }
-  }
+	@each $breakpoint, $size in $breakpoints {
+		@media screen and (max-width: $size) {
+			&-#{$breakpoint} {
+				display: block;
+			}
+		}
+	}
 }

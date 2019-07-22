@@ -146,6 +146,7 @@ table {
 
 .right-blog-arrow, .left-blog-arrow, .left-arrow, .right-arrow {
   font-size: 60px;
+  z-index: 10;
   position: absolute;
   z-index: 10;
   width: 26px;
@@ -786,6 +787,7 @@ h1 {
 }
 
 .first-column, .second-column, .third-column {
+  width: 370px;
   white-space: normal;
   margin: 0 auto;
   display: inline-block;
@@ -943,7 +945,6 @@ h1 {
     padding: 3% 0 3% 0;
   }
   .scroller {
-    overflow: hidden;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1218,7 +1219,7 @@ h1 {
 }
 
 .first-folder-name, .second-folder-name, .third-folder-name {
-  padding: 15px 0px 13px 0;
+  padding: 15px 0px 5px 0;
   border-bottom: 1px solid #e6e9ed;
   font-size: 25px;
   width: 88%;
@@ -1238,6 +1239,12 @@ h1 {
   display: flex;
   margin-top: 25% !important;
   /*because it doesnt work without that...*/
+}
+
+@media screen and (max-width: 992px) {
+  .blog-folders {
+    padding: 6% 4%;
+  }
 }
 
 .button, .learn-btn, .read-more {
@@ -1421,6 +1428,7 @@ h1 {
 }
 
 .first-column, .second-column, .third-column {
+  width: 370px;
   white-space: normal;
   margin: 0 auto;
   display: inline-block;
@@ -1578,7 +1586,6 @@ h1 {
     padding: 3% 0 3% 0;
   }
   .scroller {
-    overflow: hidden;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1898,6 +1905,7 @@ h1 {
 }
 
 .first-column, .second-column, .third-column {
+  width: 370px;
   white-space: normal;
   margin: 0 auto;
   display: inline-block;
@@ -2055,7 +2063,6 @@ h1 {
     padding: 3% 0 3% 0;
   }
   .scroller {
-    overflow: hidden;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2445,6 +2452,7 @@ h1 {
 }
 
 .first-column, .second-column, .third-column {
+  width: 370px;
   white-space: normal;
   margin: 0 auto;
   display: inline-block;
@@ -2602,7 +2610,6 @@ h1 {
     padding: 3% 0 3% 0;
   }
   .scroller {
-    overflow: hidden;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2877,7 +2884,7 @@ h1 {
 }
 
 .first-folder-name, .second-folder-name, .third-folder-name {
-  padding: 15px 0px 13px 0;
+  padding: 15px 0px 5px 0;
   border-bottom: 1px solid #e6e9ed;
   font-size: 25px;
   width: 88%;
@@ -2897,6 +2904,12 @@ h1 {
   display: flex;
   margin-top: 25% !important;
   /*because it doesnt work without that...*/
+}
+
+@media screen and (max-width: 992px) {
+  .blog-folders {
+    padding: 6% 4%;
+  }
 }
 
 .latest-portfolio {
@@ -3523,6 +3536,7 @@ h1 {
 }
 
 .first-column, .second-column, .third-column {
+  width: 370px;
   white-space: normal;
   margin: 0 auto;
   display: inline-block;
@@ -3680,7 +3694,6 @@ h1 {
     padding: 3% 0 3% 0;
   }
   .scroller {
-    overflow: hidden;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4168,9 +4181,15 @@ header li {
   margin-left: 33px;
 }
 
+.header-slider-container {
+  overflow: hidden;
+}
+
 .header-slider {
   color: #fafafa;
   margin: 50px auto 0;
+  position: relative;
+  display: -webkit-box;
 }
 
 .slider-buttons {
@@ -4247,6 +4266,9 @@ header li {
   .header-headline {
     display: none;
   }
+  .right-blog-arrow {
+    margin-left: 99%;
+  }
   .first-column, .second-column, .third-column {
     width: 340px;
   }
@@ -4318,7 +4340,7 @@ header li {
     margin-right: auto;
   }
   .right-blog-arrow {
-    margin-left: 90%;
+    margin-left: 99%;
   }
   .info-list-item {
     margin-left: 7px;
@@ -4817,12 +4839,14 @@ header li {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   left: 50px;
+  z-index: 10;
 }
 
 .next {
   -webkit-transform: rotate(-135deg);
           transform: rotate(-135deg);
   right: 50px;
+  z-index: 10;
 }
 
 .slider-prev,
@@ -4855,6 +4879,7 @@ dot:hover {
 }
 
 .fade {
+  width: 100%;
   -webkit-animation-name: fade;
           animation-name: fade;
   -webkit-animation-duration: 1.5s;
@@ -4893,12 +4918,19 @@ dot:hover {
 
 @media screen and (max-width: 576px) {
   .blogSlides {
-    padding: 0 35px;
+    margin-right: 170px;
   }
 }
 
 @media screen and (max-width: 992px) {
   .blogSlides {
-    padding: 0 55px;
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .blogSlides {
+    padding: 0 60px;
+    margin-right: 0;
   }
 }

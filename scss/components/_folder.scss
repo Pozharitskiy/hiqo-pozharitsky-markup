@@ -6,6 +6,7 @@
 
 %column {
 	//width: 32%;
+	width: 370px;
 	white-space: normal;
 	margin: 0 auto;
 	display: inline-block;
@@ -146,7 +147,6 @@
 		padding: 3% 0 3% 0;
 	}
 	.scroller {
-		overflow: hidden;
 		display: flex;
 		flex: 1;
 	}

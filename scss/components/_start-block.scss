@@ -58,9 +58,15 @@ header li {
 	margin-left: 33px;
 }
 
+.header-slider-container {
+	overflow: hidden;
+}
+
 .header-slider {
 	color: $color-primary;
 	margin: 50px auto 0;
+	position: relative;
+	display: -webkit-box;
 }
 
 .slider-buttons {
@@ -134,6 +140,10 @@ header li {
 @include screen-large {
 	.header-headline {
 		display: none;
+	}
+
+	.right-blog-arrow {
+		margin-left: 99%;
 	}
 
 	%column {
@@ -212,7 +222,7 @@ header li {
 	}
 
 	.right-blog-arrow {
-		margin-left: 90%;
+		margin-left: 99%;
 	}
 
 	.info-list-item {

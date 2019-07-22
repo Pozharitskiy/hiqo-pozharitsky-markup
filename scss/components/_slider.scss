@@ -10,11 +10,13 @@
 .prev {
 	transform: rotate(45deg);
 	left: 50px;
+	z-index: 10;
 }
 
 .next {
 	transform: rotate(-135deg);
 	right: 50px;
+	z-index: 10;
 }
 
 .slider-prev,
@@ -46,6 +48,7 @@ dot:hover {
 }
 
 .fade {
+	width: 100%;
 	animation-name: fade;
 	animation-duration: 1.5s;
 }
@@ -73,12 +76,19 @@ dot:hover {
 
 @include screen-small {
 	.blogSlides {
-		padding: 0 35px;
+		margin-right: 170px;
 	}
 }
 
 @include screen-large {
 	.blogSlides {
-		padding: 0 55px;
+		padding: 0 20px;
+	}
+}
+
+@include screen-medium {
+	.blogSlides {
+		padding: 0 60px;
+		margin-right: 0;
 	}
 }
