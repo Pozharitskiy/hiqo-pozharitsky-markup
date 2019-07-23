@@ -1185,14 +1185,14 @@ h1 {
 
 .right-blog-arrow {
   margin-left: 92%;
-  border-left: none;
-  border-right: 2px solid #656d78;
+  border-left: 2px solid #656d78 !important;
+  border-bottom: 2px solid #656d78 !important;
   -webkit-transform: rotate(315deg);
           transform: rotate(315deg);
 }
 
 .right-blog-arrow:hover {
-  border-right: 2px solid #ff3c1f;
+  border-left: 2px solid #ff3c1f;
   border-bottom: 2px solid #ff3c1f;
   border-left: none;
 }
@@ -1200,8 +1200,8 @@ h1 {
 .left-blog-arrow {
   width: 28px;
   height: 28px;
-  border-left: 2px solid #656d78;
-  border-bottom: 2px solid #656d78;
+  border-left: 2px solid #656d78 !important;
+  border-bottom: 2px solid #656d78 !important;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   left: 2%;
@@ -2850,14 +2850,14 @@ h1 {
 
 .right-blog-arrow {
   margin-left: 92%;
-  border-left: none;
-  border-right: 2px solid #656d78;
+  border-left: 2px solid #656d78 !important;
+  border-bottom: 2px solid #656d78 !important;
   -webkit-transform: rotate(315deg);
           transform: rotate(315deg);
 }
 
 .right-blog-arrow:hover {
-  border-right: 2px solid #ff3c1f;
+  border-left: 2px solid #ff3c1f;
   border-bottom: 2px solid #ff3c1f;
   border-left: none;
 }
@@ -2865,8 +2865,8 @@ h1 {
 .left-blog-arrow {
   width: 28px;
   height: 28px;
-  border-left: 2px solid #656d78;
-  border-bottom: 2px solid #656d78;
+  border-left: 2px solid #656d78 !important;
+  border-bottom: 2px solid #656d78 !important;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   left: 2%;

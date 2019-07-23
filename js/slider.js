@@ -3,7 +3,6 @@ let headerPos = 0;
 let paginationCounter = 0;
 const slides = document.getElementsByClassName('mySlides');
 const dots = document.getElementsByClassName('slider-dot');
-
 const createDynamicDots = function () {
     let createDots = document.querySelector('.slider-dots');
     for (let i = 0; i < slides.length; i++) {
@@ -12,11 +11,7 @@ const createDynamicDots = function () {
     document.querySelector(".left-blog-arrow").style.display = 'none';
     document.querySelector(".prev").style.display = 'none';
     dots[0].className = 'slider-dots-item-active';
-
-
 }();
-
-
 
 
 function moveSlide(arg, sliderId) {
@@ -55,6 +50,10 @@ function moveSlide(arg, sliderId) {
         }
         else if (typeof (arg) === 'number') {
             headerSlider.style.left = -headerSlideRange * arg + headerSlideRange + 'px';
+            for (let i = 0; i < slides.length; i++) {
+
+            }
+            return headerSlider;
         }
     }
     if (sliderId === 'blog') {
