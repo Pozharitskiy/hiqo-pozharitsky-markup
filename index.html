@@ -8,12 +8,6 @@
   <link rel="stylesheet" type="text/css" href="scss/vendor/reset.css" />
   <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet" />
 
-
-
-
-
-
-
   <link rel="stylesheet" href="/assets/style.css" />
 </head>
 
@@ -69,7 +63,7 @@
         </div>
         <div class="header-slider">
           <!--slide-->
-          <div class="mySlides">
+          <!-- <div class="mySlides">
             <p class="slider-headline">
               Expire
             </p>
@@ -83,11 +77,11 @@
                 learn more
               </button>
             </div>
-          </div>
+          </div> -->
           <!--/slide-->
 
           <!--slide-->
-          <div class="mySlides">
+          <!-- <div class="mySlides">
             <p class="slider-headline">
               SECOND
             </p>
@@ -101,11 +95,11 @@
                 learn more
               </button>
             </div>
-          </div>
+          </div> -->
           <!--/slide-->
 
           <!--slide-->
-          <div class="mySlides">
+          <!-- <div class="mySlides">
             <p class="slider-headline">
               THIRD
             </p>
@@ -120,7 +114,7 @@
                 learn more
               </button>
             </div>
-          </div>
+          </div> -->
           <!--/slide-->
 
 
@@ -515,98 +509,10 @@
 
         </div>
       </div>
-      <div class="cellbox">
-        <div class="cellbox-cell">
-          <div class="cellbox-headline">
-            <h2 class="cellbox-headline-name">Big city</h2>
-            <p>Art, Photography, City</p>
-          </div>
-          <div class="cell-bottom">
-            <div class="img-container">
-              <i class="city-img-link"></i><i class="city-img-zoom"></i>
-            </div>
-          </div>
-        </div>
-        <div class="cellbox-cell hidden-small">
-          <div class="cellbox-headline">
-            <h2 class="cellbox-headline-name">Big city</h2>
-            <p>Art, Photography, City</p>
-          </div>
-          <div class="cell-bottom">
-            <div class="img-container">
-              <i class="city-img-link"></i><i class="city-img-zoom"></i>
-            </div>
-          </div>
-        </div>
-        <div class="cellbox-cell hidden-small">
-          <div class="cellbox-headline">
-            <h2 class="cellbox-headline-name">Big city</h2>
-            <p>Art, Photography, City</p>
-          </div>
-          <div class="cell-bottom">
-            <div class="img-container">
-              <i class="city-img-link"></i><i class="city-img-zoom"></i>
-            </div>
-          </div>
-        </div>
-        <div class="cellbox-cell hidden-small">
-          <div class="cellbox-headline">
-            <h2 class="cellbox-headline-name">Big city</h2>
-            <p>Art, Photography, City</p>
-          </div>
-          <div class="cell-bottom">
-            <div class="img-container">
-              <i class="city-img-link"></i><i class="city-img-zoom"></i>
-            </div>
-          </div>
-        </div>
-        <div class="cellbox-cell hidden-small hidden-medium">
-          <div class="cellbox-headline">
-            <h2 class="cellbox-headline-name">Big city</h2>
-            <p>Art, Photography, City</p>
-          </div>
-          <div class="cell-bottom">
-            <div class="img-container">
-              <i class="city-img-link"></i><i class="city-img-zoom"></i>
-            </div>
-          </div>
-        </div>
-        <div class="cellbox-cell hidden-small hidden-medium">
-          <div class="cellbox-headline">
-            <h2 class="cellbox-headline-name">Big city</h2>
-            <p>Art, Photography, City</p>
-          </div>
-          <div class="cell-bottom">
-            <div class="img-container">
-              <i class="city-img-link"></i><i class="city-img-zoom"></i>
-            </div>
-          </div>
-        </div>
-        <div class="cellbox-cell hidden-small hidden-medium">
-          <div class="cellbox-headline">
-            <h2 class="cellbox-headline-name">Big city</h2>
-            <p>Art, Photography, City</p>
-          </div>
-          <div class="cell-bottom">
-            <div class="img-container">
-              <i class="city-img-link"></i><i class="city-img-zoom"></i>
-            </div>
-          </div>
-        </div>
-        <div class="cellbox-cell hidden-small hidden-medium">
-          <div class="cellbox-headline">
-            <h2 class="cellbox-headline-name">Big city</h2>
-            <p>Art, Photography, City</p>
-          </div>
-          <div class="cell-bottom">
-            <div class="img-container">
-              <i class="city-img-link"></i><i class="city-img-zoom"></i>
-            </div>
-          </div>
-        </div>
-        <button class="show-more visible-small">Show more</button>
-      </div>
+      <div class="cellbox"></div>
+      <button class="show-more visible-small">Show more</button>
     </div>
+
     <div class="feedback" id="feedback">
       <div class="feedback-headline">
         <h2 class="feedback-underline-headline">Get to know us better</h2>
@@ -687,10 +593,49 @@
       <div class="copyright">
         <p>&copy; Copyright 2014, design by dingo_design</p>
       </div>
-
     </footer>
   </div>
+  <script id="cellbox" type="text/x-handlebars-template">
+      {{#each cellbox}}
+      <div class="{{cellName}}">
+        <div class="cellbox-headline">
+          <h2 class="cellbox-headline-name">{{cellHeadline}}</h2>
+          <p>{{cellParagraph}}</p>
+        </div>
+        <div class="cell-bottom">
+          <div class="img-container">
+            <i class="city-img-link"></i><i class="city-img-zoom"></i>
+          </div>
+        </div>
+        </div>
+        {{/each}}
+  </script>
+
+  <script id="homeSlider" type="text/x-handlebars-template">
+    {{#each home-slider}}
+    <div class="{{slideClass}}">
+      <p class="slider-headline">
+       {{header}}
+      </p>
+      <img src="src/img/line.png" class="line" alt="" />
+      <p class="slider-paragraph">
+        {{paragraph}}
+      </p>
+      <div class="slider-buttons">
+        <button class="button">{{firstBtn}}</button>
+        <button class="learn-btn">
+          {{secondBtn}}
+        </button>
+      </div>
+    </div>
+    {{/each}}
+  </script>
+
+
+  <script src="js/handlebars-v4.1.2.js"></script>
+  <script src="js/main.js"></script>
   <script src="js/sliderProt.js"></script>
+
 </body>
 
 </html>
