@@ -21,7 +21,6 @@ function createCellbox(cellboxData) {
   const compiledTemplate = Handlebars.compile(rawTemplate);
   const ourGeneratedHTML = compiledTemplate(cellboxData);
   const cellboxContainer = document.querySelector('.cellbox');
-  console.log(cellboxContainer);
   cellboxContainer.innerHTML = ourGeneratedHTML;
 }
 
@@ -30,7 +29,5 @@ function giveSlides(slidesData) {
   const compiledTemplate = Handlebars.compile(sliderTemplate);
   const ourGeneratedHTML = compiledTemplate(slidesData);
   const slidesContainer = document.querySelector('.header-slider');
-  console.log('slidesData', slidesData);
-  console.log('ourGeneratedHTML', ourGeneratedHTML);
   slidesContainer.innerHTML = ourGeneratedHTML;
 }

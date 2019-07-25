@@ -26,7 +26,6 @@ Slider.prototype.createDots = function sliderCreateDots() {
   const that = this;
   const dotsDiv = document.querySelector('.slider-dots');
 
-
   for (let i = 0; i < that.slides.length; i += 1) {
     dotsDiv.innerHTML += `<a class="slider-dot" data-index="${i}"></a>`;
   }
