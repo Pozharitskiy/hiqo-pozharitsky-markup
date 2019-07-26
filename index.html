@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet" />
 
 
+
   <link rel="stylesheet" href="/assets/style.css" />
 </head>
 
@@ -214,7 +215,7 @@
           <a class="slider-next"></a>
         </div>
         <div class="scroller">
-          <div class="mySlides blogSlides" id="folder">
+          <!-- <div class="mySlides blogSlides" id="folder">
             <div class="first-column">
               <div class="folder">
               </div>
@@ -448,46 +449,42 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
+          <script id="portfolioSlider" type="text/x-handlebars-template">
+            {{#each portfolioSlide}}
           <div class="mySlides blogSlides" id="folder">
             <div class="first-column">
               <div class="folder">
               </div>
-
               <div class="folder-border">
                 <div class="folder-headline">
                 </div>
-                <p class="first-folder-name">6</p>
-
-
+                <p class="first-folder-name">{{title}}</p>
                 <div class="first-folder-info">
                   <ul class="info-list">
                     <li class="info-list-item">
                       <img src="src/img/blog/blog-user.png" alt="" />
                     </li>
                     <li class="info-list-item">
-                      <p class="info-list-text">By Author</p>
+                      <p class="info-list-text">{{author}}</p>
                     </li>
                     <li class="info-list-item">
                       <img src="src/img/blog/calendar.png" alt="" />
                     </li>
                     <li class="info-list-item">
-                      <p class="info-list-text">9 November 2014</p>
+                      <p class="info-list-text">{{date}}</p>
                     </li>
                     <li class="info-list-item">
                       <img src="src/img/blog/blog-comment.png" alt="" />
                     </li>
                     <li class="info-list-item">
-                      <p class="info-list-text">3</p>
+                      <p class="info-list-text">{{comments}}</p>
                     </li>
                   </ul>
                 </div>
                 <div class="folder-paragraph">
                   <p class="folder-words">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Officiis at, voluptatem similique tempora voluptate quia in ea
-                    minima earum consequatur eveniet, praesentium illum error
-                    delectus optio nobis eaque distinctio! Suscipit nostrum?
+                    {{paragraph}}
                   </p>
                 </div>
                 <div class="folder-button">
@@ -496,6 +493,8 @@
               </div>
             </div>
           </div>
+          {{/each}}
+        </script>
         </div>
 
       </div>

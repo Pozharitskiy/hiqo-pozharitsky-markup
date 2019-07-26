@@ -33,7 +33,7 @@ Slider.prototype.createDots = function sliderCreateDots() {
   that.dots = dotsDiv.getElementsByClassName('slider-dot');
   that.dots[that.index].className += ' slider-dot-item-active';
 
-  dotsDiv.onclick = function delegateEvent(event) {
+  function delegateEvent(event) {
     const index = event.target.getAttribute('data-index');
     that.slidesBox.style.transform = `translateX(${-that.slideSize * index}px)`;
     that.slidesBox.style.transition = '0.3s ease-in-out';
@@ -44,7 +44,8 @@ Slider.prototype.createDots = function sliderCreateDots() {
       );
     }
     that.dots[index].className += 'slider-dots-item-active';
-  };
+  }
+  dotsDiv.addEventListener('click', delegateEvent);
   that.box.append(dotsDiv);
 };
 
@@ -55,71 +56,64 @@ Slider.prototype.carousel = function sliderCarousel() {
 };
 
 Slider.previous = function previousSlide(box) {
-  const boxx = box;
-  boxx.slidesBox.style.transition = '0.3s ease-in-out';
-  if (boxx.index > 0) {
-    boxx.index -= 1;
+  const selectedBox = box;
+  selectedBox.slidesBox.style.transition = '0.3s ease-in-out';
+  if (selectedBox.index > 0) {
+    selectedBox.index -= 1;
   }
 
-  if (boxx.isDotsRequired) {
-    for (let i = 0; i < boxx.dots.length; i += 1) {
-      boxx.dots[i].className = boxx.dots[i].className.replace(
-        'slider-dots-item-active',
-        ''
+  if (selectedBox.isDotsRequired) {
+    for (let i = 0; i < selectedBox.dots.length; i += 1) {
+      selectedBox.dots[i].className = selectedBox.dots[i].className.replace(
+        'slider-dots-item-active', ''
       );
     }
-    boxx.dots[boxx.index].className += ' slider-dots-item-active';
+    selectedBox.dots[selectedBox.index].className += ' slider-dots-item-active';
   }
-  const value = -boxx.slideSize * boxx.index;
-  boxx.slidesBox.style.transform = `translateX(${value}px)`;
-  console.log(value);
-  if (-value === 0) {
-    document.querySelector('.prev').style.display = 'none';
-  }
-  if (-value !== 0) {
-    document.querySelector('.prev').style.display = 'block';
-
-  }
-
+  selectedBox.slidesBox.style.transform = `translateX(${-selectedBox.slideSize *
+    selectedBox.index}px)`;
+  // if (-value === 0) {
+  //   document.querySelector('.prev').style.display = 'none';
+  // }
+  // if (-value !== 0) {
+  //   document.querySelector('.prev').style.display = 'block';
+  // }
 };
 
 Slider.next = function nextSlide(box) {
-  const boxx = box;
-  const value = -boxx.slideSize * boxx.index;
+  const selectedBox = box;
   let max = 0;
   const sliderVisibleSize = document.querySelector('.blog-folders').clientWidth;
-  boxx.slidesBox.style.transition = '0.3s ease-in-out';
+  selectedBox.slidesBox.style.transition = '0.3s ease-in-out';
   // checking wrapper size to prevent extra movement
-  if (boxx.isMoreThanOneSlide) {
+  if (selectedBox.isMoreThanOneSlide) {
     if (sliderVisibleSize >= 1200) {
-      max = boxx.slides.length - 3;
+      max = selectedBox.slides.length - 3;
     } else if (sliderVisibleSize >= 800) {
-      max = boxx.slides.length - 2;
+      max = selectedBox.slides.length - 2;
     } else {
-      max = boxx.slides.length - 1;
+      max = selectedBox.slides.length - 1;
     }
   } else {
-    max = boxx.slides.length - 1;
+    max = selectedBox.slides.length - 1;
   }
 
-  if (boxx.index < max) {
-    boxx.index += 1;
+  if (selectedBox.index < max) {
+    selectedBox.index += 1;
   }
 
-  if (boxx.isDotsRequired) {
-    for (let i = 0; i < boxx.dots.length; i += 1) {
-      boxx.dots[i].className = boxx.dots[i].className.replace(
+  if (selectedBox.isDotsRequired) {
+    for (let i = 0; i < selectedBox.dots.length; i += 1) {
+      selectedBox.dots[i].className = selectedBox.dots[i].className.replace(
         'slider-dots-item-active',
         ''
       );
     }
-    boxx.dots[boxx.index].className += ' slider-dots-item-active';
+    selectedBox.dots[selectedBox.index].className += ' slider-dots-item-active';
   }
 
-  boxx.slidesBox.style.transform = `translateX(${value}px)`;
-  if (-value !== 0) {
-    document.querySelector(".prev").style.display = "block";
-  }
+  selectedBox.slidesBox.style.transform = `translateX(${-selectedBox.slideSize *
+    selectedBox.index}px)`;
 };
 new Slider('home-slider', '.header-slider', false, true);
 new Slider('blog-slider', '.scroller', true, false);
