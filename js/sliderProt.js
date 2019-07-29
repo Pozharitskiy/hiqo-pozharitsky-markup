@@ -4,17 +4,10 @@ function Slider(sliderId, choseSlider, isMoreThanOneSlide, isDotsRequired) {
   this.choseSlider = choseSlider;
   this.index = 0;
   this.box = document.getElementById(sliderId);
-  this.slidesBox = this.box.querySelector(this.choseSlider);
-  this.slides = this.slidesBox.getElementsByClassName('mySlides');
+  this.slidesBox = this.box.querySelector(choseSlider);
+  this.slides = this.slidesBox.getElementsByClassName('mySlide');
   this.arrows = this.box.getElementsByClassName('slider-arrow');
   this.code = 'sucks';
-  if (isMoreThanOneSlide) {
-    this.slideSize = this.slidesBox.querySelector('.mySlides').clientWidth;
-  } else {
-    this.slideSize = this.box.clientWidth;
-  }
-  this.slidesBox.style.width = `${this.slideSize * this.slides.length}px`;
-
   this.carousel();
 
   if (this.isDotsRequired) {
@@ -24,9 +17,9 @@ function Slider(sliderId, choseSlider, isMoreThanOneSlide, isDotsRequired) {
 
 Slider.prototype.createDots = function sliderCreateDots() {
   const that = this;
-  const dotsDiv = document.querySelector('.slider-dots');
-
-  for (let i = 0; i < that.slides.length; i += 1) {
+  const dotsDiv = document.getElementById('slider-dots');
+  console.log(this.slides, 'lal')
+  for (let i = 0; i < Object.keys(this.slides).length; i++) {
     dotsDiv.innerHTML += `<a class="slider-dot" data-index="${i}"></a>`;
   }
 
@@ -115,5 +108,6 @@ Slider.next = function nextSlide(box) {
   selectedBox.slidesBox.style.transform = `translateX(${-selectedBox.slideSize *
     selectedBox.index}px)`;
 };
-new Slider('home-slider', '.header-slider', false, true);
+
+new Slider('home-slider', '.header-slider', true, true);
 new Slider('blog-slider', '.scroller', true, false);
