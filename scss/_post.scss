@@ -32,7 +32,8 @@ body {
 .loader {
 	width: 130px;
 	height: 170px;
-	position: relative;
+	position: absolute;
+	margin-left: -70px;
 }
 .loader::before,
 .loader::after {
@@ -79,7 +80,7 @@ body {
 	bottom: -30px;
 	left: -7%;
 	font-family: 'Abel', sans-serif;
-	font-size: 12px;
+	font-size: 20px;
 	letter-spacing: 2px;
 	color: black;
 }

@@ -10,47 +10,37 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-  
   <link rel="stylesheet" href="/assets/style.css" />
-<link rel="stylesheet" href="/assets/style.css" /><link rel="stylesheet" href="/assets/style.css" /></head>
+</head>
 
 <body>
   <div class="container">
     <div class="loader">
       <div class="code">
-        <img src="https://pp.userapi.com/c850620/v850620760/1746e3/tXvJyfoExjs.jpg" width="200px">
+        <img src="./src/xxDrsmPb3Mg.jpg" width="200px">
       </div>
-      <span class="txt">HIRE PAUL...</span>
+      <span class="txt">HIRE PAUL!</span>
     </div>
-    <div class="posts-container"></div>
-    <script id="post" type="text/x-handlebars-template">
+    <div class="posts-container" id="container"></div>
+    <button class="load-btn">Load more</button>
+  </div>
+
+  <script src="./js/handlebars-v4.1.2.js"></script>
+  <script id="post" type="text/x-handlebars-template">
     {{#each post}}
   <div id="{{id}}" class="post">
     <h1 class="post-title">{{title}}</h1>
     <p class="description">{{description}}</p>
-    <div class="likeZone" onclick="like()">
-    <img src="https://vignette.wikia.nocookie.net/elderscrolls/images/8/89/%D0%A7%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5_%D1%81%D0%B5%D1%80%D0%B4%D1%86%D0%B5.png/revision/latest?cb=20140201192937&path-prefix=ru"
-    id='image'>
+      <div class="likeZone" onclick="like()">
+        <img src="https://vignette.wikia.nocookie.net/elderscrolls/images/8/89/%D0%A7%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5_%D1%81%D0%B5%D1%80%D0%B4%D1%86%D0%B5.png/revision/latest?cb=20140201192937&path-prefix=ru"
+        id='image'>
     <span class="likeNumber">{{likes}}</span>
-  </div></div>
+    </div>
+  </div>
 {{/each}}
   </script>
-    <button class="load-btn" onclick="morePosts()">Load more</button>
-  </div>
-
-  <script src="handlebars-v4.1.2.js"></script>
-  <script src='main.js'></script>
+  <script src='./js/main.js'></script>
+  <!-- <script src="https://console.chat/load.js"></script> -->
 </body>
 
 </html>
