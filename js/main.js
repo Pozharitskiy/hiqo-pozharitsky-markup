@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", (function loadingFunc() {
+document.addEventListener("DOMContentLoaded", function loadingFunc() {
   const dataService = new DataService();
   const drawService = new Draw();
 
@@ -16,4 +16,4 @@ document.addEventListener("DOMContentLoaded", (function loadingFunc() {
 
   loadMorePosts();
   document.querySelector('.load-btn').addEventListener('click', loadMorePosts);
-})())
+})
