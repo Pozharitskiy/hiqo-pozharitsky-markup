@@ -11,9 +11,9 @@
 
 
 
-
-  
-<link rel="stylesheet" href="/assets/style.css" /></head>
+  <link rel="stylesheet" href="/assets/style.css" />
+  <link rel="stylesheet" href="/assets/style.css" />
+</head>
 
 <body>
   <div class="container">
@@ -56,31 +56,78 @@
         </ul>
       </nav>
       <!--/BURGER-->
+      <!--SLIDER STARTS-->
 
-      <div class="header-slider">
-        <div class="slider-arrows">
-          <div class="left-blog-arrow"></div>
-          <div class="right-blog-arrow"></div>
+      <div class="header-slider-container" id="home-slider">
+        <div class="slider-arrow prev">
+          <a class="slider-prev"></a>
         </div>
-        <p class="slider-headline">
-          Expire
-        </p>
-        <img src="src/img/line.png" class="line" alt="" />
-        <p class="slider-paragraph">
-          Professionaly designed, carefully made for your enjoyement
-        </p>
-        <div class="slider-buttons">
-          <button class="button">explore</button>
-          <button class="learn-btn">
-            learn more
-          </button>
+        <div class="slider-arrow next">
+          <a class="slider-next"></a>
         </div>
-        <div class="slider-dots">
-          <div class="slider-dots-item slider-dots-item-focused"></div>
-          <div class="slider-dots-item"></div>
-          <div class="slider-dots-item"></div>
+        <div class="header-slider">
+          <!--slide-->
+          <!-- <div class="mySlides">
+            <p class="slider-headline">
+              Expire
+            </p>
+            <img src="src/img/line.png" class="line" alt="" />
+            <p class="slider-paragraph">
+              Professionaly designed, carefully made for your enjoyement
+            </p>
+            <div class="slider-buttons">
+              <button class="button">explore</button>
+              <button class="learn-btn">
+                learn more
+              </button>
+            </div>
+          </div> -->
+          <!--/slide-->
+
+          <!--slide-->
+          <!-- <div class="mySlides">
+            <p class="slider-headline">
+              SECOND
+            </p>
+            <img src="src/img/line.png" class="line" alt="" />
+            <p class="slider-paragraph">
+              Professionaly designed, carefully made for your enjoyement
+            </p>
+            <div class="slider-buttons">
+              <button class="button">explore</button>
+              <button class="learn-btn">
+                learn more
+              </button>
+            </div>
+          </div> -->
+          <!--/slide-->
+
+          <!--slide-->
+          <!-- <div class="mySlides">
+            <p class="slider-headline">
+              THIRD
+            </p>
+            <img src="src/img/line.png" class="line" alt="" />
+            <p class="slider-paragraph">
+              Professionaly carefully made for your enjoyement
+
+            </p>
+            <div class="slider-buttons">
+              <button class="button">explore</button>
+              <button class="learn-btn">
+                learn more
+              </button>
+            </div>
+          </div> -->
+          <!--/slide-->
+
+
+
         </div>
       </div>
+      <!--SLIDER ENDS-->
+    </div>
+    <div id="slider-dots">
     </div>
     <div class="paralax-section">
       <div class="top-picture"></div>
@@ -161,147 +208,295 @@
           it is a burden, not a benefit.
         </p>
       </div>
-      <div class="arrows blog-arrows">
-        <div class="left-blog-arrow"></div>
-        <div class="right-blog-arrow"></div>
-      </div>
-      <div class="blog-folders">
+
+      <div class="blog-folders" id="blog-slider">
+        <div class="left-blog-arrow slider-arrow prev ">
+          <a class="slider-prev"></a>
+        </div>
+        <div class="right-blog-arrow slider-arrow next">
+          <a class="slider-next"></a>
+        </div>
         <div class="scroller">
-          <div class="first-column">
-            <div class="folder">
+          <!-- <div class="mySlides blogSlides" id="folder">
+            <div class="first-column">
+              <div class="folder">
+              </div>
+
+              <div class="folder-border">
+                <div class="folder-headline">
+                </div>
+                <p class="first-folder-name">1</p>
+
+
+                <div class="first-folder-info">
+                  <ul class="info-list">
+                    <li class="info-list-item">
+                      <img src="src/img/blog/blog-user.png" alt="" />
+                    </li>
+                    <li class="info-list-item">
+                      <p class="info-list-text">By Author</p>
+                    </li>
+                    <li class="info-list-item">
+                      <img src="src/img/blog/calendar.png" alt="" />
+                    </li>
+                    <li class="info-list-item">
+                      <p class="info-list-text">9 November 2014</p>
+                    </li>
+                    <li class="info-list-item">
+                      <img src="src/img/blog/blog-comment.png" alt="" />
+                    </li>
+                    <li class="info-list-item">
+                      <p class="info-list-text">3</p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="folder-paragraph">
+                  <p class="folder-words">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Officiis at, voluptatem similique tempora voluptate quia in ea
+                    minima earum consequatur eveniet, praesentium illum error
+                    delectus optio nobis eaque distinctio! Suscipit nostrum?
+                  </p>
+                </div>
+                <div class="folder-button">
+                  <button class="read-more">read more</button>
+                </div>
+              </div>
             </div>
-
-            <div class="folder-border">
-              <div class="folder-headline">
-              </div>
-              <p class="first-folder-name">Just Another Blog Post</p>
-
-
-              <div class="first-folder-info">
-                <ul class="info-list">
-                  <li class="info-list-item">
-                    <img src="src/img/blog/blog-user.png" alt="" />
-                  </li>
-                  <li class="info-list-item">
-                    <p class="info-list-text">By Author</p>
-                  </li>
-                  <li class="info-list-item">
-                    <img src="src/img/blog/calendar.png" alt="" />
-                  </li>
-                  <li class="info-list-item">
-                    <p class="info-list-text">9 November 2014</p>
-                  </li>
-                  <li class="info-list-item">
-                    <img src="src/img/blog/blog-comment.png" alt="" />
-                  </li>
-                  <li class="info-list-item">
-                    <p class="info-list-text">3</p>
-                  </li>
-                </ul>
-              </div>
-              <div class="folder-paragraph">
-                <p class="folder-words">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Officiis at, voluptatem similique tempora voluptate quia in ea
-                  minima earum consequatur eveniet, praesentium illum error
-                  delectus optio nobis eaque distinctio! Suscipit nostrum?
-                </p>
-              </div>
-              <div class="folder-button">
-                <button class="read-more">read more</button>
-              </div>
-            </div>
-
           </div>
-          <div class="second-column">
-            <div class="folder">
-            </div>
-            <div class="folder-border">
-              <div class="folder-headline">
+          <div class="mySlides blogSlides" id="folder">
+            <div class="second-column">
+              <div class="folder">
+              </div>
+              <div class="folder-border">
+                <div class="folder-headline">
 
+                </div>
+                <p class="second-folder-name">2</p>
+                <div class="second-folder-info">
+                  <ul class="info-list">
+                    <li class="info-list-item">
+                      <img src="src/img/blog/blog-user.png" alt="" />
+                    </li>
+                    <li class="info-list-item">
+                      <p class="info-list-text">By Author</p>
+                    </li>
+                    <li class="info-list-item">
+                      <img src="src/img/blog/calendar.png" alt="" />
+                    </li>
+                    <li class="info-list-item">
+                      <p class="info-list-text">9 November 2014</p>
+                    </li>
+                    <li class="info-list-item">
+                      <img src="src/img/blog/blog-comment.png" alt="" />
+                    </li>
+                    <li class="info-list-item">
+                      <p class="info-list-text">3</p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="folder-paragraph">
+                  <p class="folder-words">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Officiis at, voluptatem similique tempora voluptate quia in ea
+                    minima earum consequatur eveniet, praesentium illum error
+                    delectus optio.
+                  </p>
+                </div>
+                <div class="folder-button">
+                  <button class="read-more">read more</button>
+                </div>
               </div>
-              <p class="second-folder-name">Blog Post With Youtube video</p>
-              <div class="second-folder-info">
-                <ul class="info-list">
-                  <li class="info-list-item">
-                    <img src="src/img/blog/blog-user.png" alt="" />
-                  </li>
-                  <li class="info-list-item">
-                    <p class="info-list-text">By Author</p>
-                  </li>
-                  <li class="info-list-item">
-                    <img src="src/img/blog/calendar.png" alt="" />
-                  </li>
-                  <li class="info-list-item">
-                    <p class="info-list-text">9 November 2014</p>
-                  </li>
-                  <li class="info-list-item">
-                    <img src="src/img/blog/blog-comment.png" alt="" />
-                  </li>
-                  <li class="info-list-item">
-                    <p class="info-list-text">3</p>
-                  </li>
-                </ul>
-              </div>
-              <div class="folder-paragraph">
-                <p class="folder-words">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Officiis at, voluptatem similique tempora voluptate quia in ea
-                  minima earum consequatur eveniet, praesentium illum error
-                  delectus optio.
-                </p>
-              </div>
-              <div class="folder-button">
-                <button class="read-more">read more</button>
-              </div>
-            </div>
 
+            </div>
           </div>
-          <div class="third-column">
-            <div class="folder">
+          <div class="mySlides blogSlides" id="folder">
+            <div class="third-column">
+              <div class="folder">
+              </div>
+
+              <div class="folder-border">
+                <div class="folder-headline">
+
+                </div>
+                <p class="third-folder-name">3</p>
+                <div class="third-folder-info">
+                  <ul class="info-list">
+                    <li class="info-list-item">
+                      <img src="src/img/blog/blog-user.png" alt="" />
+                    </li>
+                    <li class="info-list-item">
+                      <p class="info-list-text">By Author</p>
+                    </li>
+                    <li class="info-list-item">
+                      <img src="src/img/blog/calendar.png" alt="" />
+                    </li>
+                    <li class="info-list-item">
+                      <p class="info-list-text">9 November 2014</p>
+                    </li>
+                    <li class="info-list-item">
+                      <img src="src/img/blog/blog-comment.png" alt="" />
+                    </li>
+                    <li class="info-list-item">
+                      <p class="info-list-text">3</p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="folder-paragraph">
+                  <p class="folder-words">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Officiis at, voluptatem similique tempora voluptate quia in ea
+                    minima earum consequatur eveniet, praesentium illum error
+                    delectus optio nobis eaque distinctio! Suscipit nostrum?
+                  </p>
+                </div>
+                <div class="folder-button">
+                  <button class="read-more">read more</button>
+                </div>
+              </div>
+
             </div>
-
-            <div class="folder-border">
-              <div class="folder-headline">
-
-              </div>
-              <p class="third-folder-name">This Could be Great</p>
-              <div class="third-folder-info">
-                <ul class="info-list">
-                  <li class="info-list-item">
-                    <img src="src/img/blog/blog-user.png" alt="" />
-                  </li>
-                  <li class="info-list-item">
-                    <p class="info-list-text">By Author</p>
-                  </li>
-                  <li class="info-list-item">
-                    <img src="src/img/blog/calendar.png" alt="" />
-                  </li>
-                  <li class="info-list-item">
-                    <p class="info-list-text">9 November 2014</p>
-                  </li>
-                  <li class="info-list-item">
-                    <img src="src/img/blog/blog-comment.png" alt="" />
-                  </li>
-                  <li class="info-list-item">
-                    <p class="info-list-text">3</p>
-                  </li>
-                </ul>
-              </div>
-              <div class="folder-paragraph">
-                <p class="folder-words">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Officiis at, voluptatem similique tempora voluptate quia in ea
-                  minima earum consequatur eveniet, praesentium illum error
-                  delectus optio nobis eaque distinctio! Suscipit nostrum?
-                </p>
-              </div>
-              <div class="folder-button">
-                <button class="read-more">read more</button>
-              </div>
-            </div>
-
           </div>
+          <div class="mySlides blogSlides" id="folder">
+            <div class="third-column">
+              <div class="folder">
+              </div>
+
+              <div class="folder-border">
+                <div class="folder-headline">
+
+                </div>
+                <p class="third-folder-name">4</p>
+                <div class="third-folder-info">
+                  <ul class="info-list">
+                    <li class="info-list-item">
+                      <img src="src/img/blog/blog-user.png" alt="" />
+                    </li>
+                    <li class="info-list-item">
+                      <p class="info-list-text">By Author</p>
+                    </li>
+                    <li class="info-list-item">
+                      <img src="src/img/blog/calendar.png" alt="" />
+                    </li>
+                    <li class="info-list-item">
+                      <p class="info-list-text">9 November 2014</p>
+                    </li>
+                    <li class="info-list-item">
+                      <img src="src/img/blog/blog-comment.png" alt="" />
+                    </li>
+                    <li class="info-list-item">
+                      <p class="info-list-text">3</p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="folder-paragraph">
+                  <p class="folder-words">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Officiis at, voluptatem similique tempora voluptate quia in ea
+                    minima earum consequatur eveniet, praesentium illum error
+                    delectus optio nobis eaque distinctio! Suscipit nostrum?
+                  </p>
+                </div>
+                <div class="folder-button">
+                  <button class="read-more">read more</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="mySlides blogSlides" id="folder">
+            <div class="first-column">
+              <div class="folder">
+              </div>
+
+              <div class="folder-border">
+                <div class="folder-headline">
+                </div>
+                <p class="first-folder-name">5</p>
+
+
+                <div class="first-folder-info">
+                  <ul class="info-list">
+                    <li class="info-list-item">
+                      <img src="src/img/blog/blog-user.png" alt="" />
+                    </li>
+                    <li class="info-list-item">
+                      <p class="info-list-text">By Author</p>
+                    </li>
+                    <li class="info-list-item">
+                      <img src="src/img/blog/calendar.png" alt="" />
+                    </li>
+                    <li class="info-list-item">
+                      <p class="info-list-text">9 November 2014</p>
+                    </li>
+                    <li class="info-list-item">
+                      <img src="src/img/blog/blog-comment.png" alt="" />
+                    </li>
+                    <li class="info-list-item">
+                      <p class="info-list-text">3</p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="folder-paragraph">
+                  <p class="folder-words">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Officiis at, voluptatem similique tempora voluptate quia in ea
+                    minima earum consequatur eveniet, praesentium illum error
+                    delectus optio nobis eaque distinctio! Suscipit nostrum?
+                  </p>
+                </div>
+                <div class="folder-button">
+                  <button class="read-more">read more</button>
+                </div>
+              </div>
+            </div>
+          </div> -->
+          <script id="portfolioSlider" type="text/x-handlebars-template">
+            {{#each portfolioSlide}}
+          <div class="mySlides blogSlides" id="folder">
+            <div class="first-column">
+              <div class="folder">
+              </div>
+              <div class="folder-border">
+                <div class="folder-headline">
+                </div>
+                <p class="first-folder-name">{{title}}</p>
+                <div class="first-folder-info">
+                  <ul class="info-list">
+                    <li class="info-list-item">
+                      <img src="src/img/blog/blog-user.png" alt="" />
+                    </li>
+                    <li class="info-list-item">
+                      <p class="info-list-text">{{author}}</p>
+                    </li>
+                    <li class="info-list-item">
+                      <img src="src/img/blog/calendar.png" alt="" />
+                    </li>
+                    <li class="info-list-item">
+                      <p class="info-list-text">{{date}}</p>
+                    </li>
+                    <li class="info-list-item">
+                      <img src="src/img/blog/blog-comment.png" alt="" />
+                    </li>
+                    <li class="info-list-item">
+                      <p class="info-list-text">{{comments}}</p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="folder-paragraph">
+                  <p class="folder-words">
+                    {{paragraph}}
+                  </p>
+                </div>
+                <div class="folder-button">
+                  <button class="read-more">read more</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          {{/each}}
+        </script>
         </div>
 
       </div>
@@ -316,98 +511,10 @@
 
         </div>
       </div>
-      <div class="cellbox">
-        <div class="cellbox-cell">
-          <div class="cellbox-headline">
-            <h2 class="cellbox-headline-name">Big city</h2>
-            <p>Art, Photography, City</p>
-          </div>
-          <div class="cell-bottom">
-            <div class="img-container">
-              <i class="city-img-link"></i><i class="city-img-zoom"></i>
-            </div>
-          </div>
-        </div>
-        <div class="cellbox-cell hidden-small">
-          <div class="cellbox-headline">
-            <h2 class="cellbox-headline-name">Big city</h2>
-            <p>Art, Photography, City</p>
-          </div>
-          <div class="cell-bottom">
-            <div class="img-container">
-              <i class="city-img-link"></i><i class="city-img-zoom"></i>
-            </div>
-          </div>
-        </div>
-        <div class="cellbox-cell hidden-small">
-          <div class="cellbox-headline">
-            <h2 class="cellbox-headline-name">Big city</h2>
-            <p>Art, Photography, City</p>
-          </div>
-          <div class="cell-bottom">
-            <div class="img-container">
-              <i class="city-img-link"></i><i class="city-img-zoom"></i>
-            </div>
-          </div>
-        </div>
-        <div class="cellbox-cell hidden-small">
-          <div class="cellbox-headline">
-            <h2 class="cellbox-headline-name">Big city</h2>
-            <p>Art, Photography, City</p>
-          </div>
-          <div class="cell-bottom">
-            <div class="img-container">
-              <i class="city-img-link"></i><i class="city-img-zoom"></i>
-            </div>
-          </div>
-        </div>
-        <div class="cellbox-cell hidden-small hidden-medium">
-          <div class="cellbox-headline">
-            <h2 class="cellbox-headline-name">Big city</h2>
-            <p>Art, Photography, City</p>
-          </div>
-          <div class="cell-bottom">
-            <div class="img-container">
-              <i class="city-img-link"></i><i class="city-img-zoom"></i>
-            </div>
-          </div>
-        </div>
-        <div class="cellbox-cell hidden-small hidden-medium">
-          <div class="cellbox-headline">
-            <h2 class="cellbox-headline-name">Big city</h2>
-            <p>Art, Photography, City</p>
-          </div>
-          <div class="cell-bottom">
-            <div class="img-container">
-              <i class="city-img-link"></i><i class="city-img-zoom"></i>
-            </div>
-          </div>
-        </div>
-        <div class="cellbox-cell hidden-small hidden-medium">
-          <div class="cellbox-headline">
-            <h2 class="cellbox-headline-name">Big city</h2>
-            <p>Art, Photography, City</p>
-          </div>
-          <div class="cell-bottom">
-            <div class="img-container">
-              <i class="city-img-link"></i><i class="city-img-zoom"></i>
-            </div>
-          </div>
-        </div>
-        <div class="cellbox-cell hidden-small hidden-medium">
-          <div class="cellbox-headline">
-            <h2 class="cellbox-headline-name">Big city</h2>
-            <p>Art, Photography, City</p>
-          </div>
-          <div class="cell-bottom">
-            <div class="img-container">
-              <i class="city-img-link"></i><i class="city-img-zoom"></i>
-            </div>
-          </div>
-        </div>
-        <button class="show-more visible-small">Show more</button>
-      </div>
+      <div class="cellbox"></div>
+      <button class="show-more visible-small">Show more</button>
     </div>
+
     <div class="feedback" id="feedback">
       <div class="feedback-headline">
         <h2 class="feedback-underline-headline">Get to know us better</h2>
@@ -488,9 +595,49 @@
       <div class="copyright">
         <p>&copy; Copyright 2014, design by dingo_design</p>
       </div>
-
     </footer>
   </div>
+  <script id="cellbox" type="text/x-handlebars-template">
+      {{#each cellbox}}
+      <div class="{{cellName}}">
+        <div class="cellbox-headline">
+          <h2 class="cellbox-headline-name">{{cellHeadline}}</h2>
+          <p>{{cellParagraph}}</p>
+        </div>
+        <div class="cell-bottom">
+          <div class="img-container">
+            <i class="city-img-link"></i><i class="city-img-zoom"></i>
+          </div>
+        </div>
+        </div>
+        {{/each}}
+  </script>
+
+  <script id="homeSlider" type="text/x-handlebars-template">
+    {{#each home-slider}}
+    <div class="{{slideClass}}">
+      <p class="slider-headline">
+       {{header}}
+      </p>
+      <img src="src/img/line.png" class="line" alt="" />
+      <p class="slider-paragraph">
+        {{paragraph}}
+      </p>
+      <div class="slider-buttons">
+        <button class="button">{{firstBtn}}</button>
+        <button class="learn-btn">
+          {{secondBtn}}
+        </button>
+      </div>
+    </div>
+    {{/each}}
+  </script>
+
+
+  <script src="js/handlebars-v4.1.2.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/sliderProt.js"></script>
+
 </body>
 
 </html>

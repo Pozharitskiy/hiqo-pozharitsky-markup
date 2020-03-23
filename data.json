@@ -1,0 +1,44 @@
+{
+	"cellbox": [
+		{
+			"cellName": "cellbox-cell",
+			"cellHeadline": "Big city",
+			"cellParagraph": "Art, Photography, City"
+		},
+		{
+			"cellName": "cellbox-cell hidden-small",
+			"cellHeadline": "Big city",
+			"cellParagraph": "Art, Photography, City"
+		},
+		{
+			"cellName": "cellbox-cell hidden-small",
+			"cellHeadline": "Big city",
+			"cellParagraph": "Art, Photography, City"
+		},
+		{
+			"cellName": "cellbox-cell hidden-small",
+			"cellHeadline": "Big city",
+			"cellParagraph": "Art, Photography, City"
+		},
+		{
+			"cellName": "cellbox-cell hidden-small hidden-medium",
+			"cellHeadline": "Big city",
+			"cellParagraph": "Art, Photography, City"
+		},
+		{
+			"cellName": "cellbox-cell hidden-small hidden-medium",
+			"cellHeadline": "Big city",
+			"cellParagraph": "Art, Photography, City"
+		},
+		{
+			"cellName": "cellbox-cell hidden-small hidden-medium",
+			"cellHeadline": "Big city",
+			"cellParagraph": "Art, Photography, City"
+		},
+		{
+			"cellName": "cellbox-cell hidden-small hidden-medium",
+			"cellHeadline": "Big city",
+			"cellParagraph": "Art, Photography, City"
+		}
+	]
+}

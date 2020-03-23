@@ -1,0 +1,25 @@
+{
+	"home-slider": [
+		{
+			"header": "Expire",
+			"slideClass": "mySlide",
+			"paragraph": "Professionaly designed, carefully made for your enjoyement",
+			"firstBtn": "explore",
+			"secondBtn": "learn more"
+		},
+		{
+			"header": "Expire",
+			"slideClass": "mySlide",
+			"paragraph": "Professionaly designed, carefully made for your enjoyement",
+			"firstBtn": "explore",
+			"secondBtn": "learn more"
+		},
+		{
+			"header": "Expire",
+			"slideClass": "mySlide",
+			"paragraph": "Professionaly designed, carefully made for your enjoyement",
+			"firstBtn": "explore",
+			"secondBtn": "learn more"
+		}
+	]
+}

@@ -5,313 +5,236 @@
 @import "../mixins/adaptive";
 
 %column {
-  width: 32%;
-  white-space: normal;
-  margin: 0 auto;
-  display: inline-block;
-  border-image-source: linear-gradient($color-feedback-border-grad1,
-    $color-feedback-border-grad2);
-  border-width: 1px;
-  border-image-slice: 1;
+	//width: 32%;
+	width: 370px;
+	white-space: normal;
+	margin: 0 auto;
+	display: inline-block;
+	border-image-source: linear-gradient($color-feedback-border-grad1, $color-feedback-border-grad2);
+	border-width: 1px;
+	border-image-slice: 1;
 }
-
 .first-column {
-  @extend %column;
+	@extend %column;
 }
-
 .second-column {
-  @extend %column;
-  margin-left: 23px;
+	@extend %column;
 }
-
 .third-column {
-  @extend %column;
-  margin-left: 25px;
+	@extend %column;
 }
-
 .folder-border {
-  border: 1px solid $folder-underline;
-  border-top: 0px;
+	border: 1px solid $folder-underline;
+	border-top: 0px;
 }
-
 %folder {
-  margin: 52px 0 0;
-  width: 100%;
-  padding-bottom: 10px;
-  height: 200px;
-  background: $data-color;
-  position: relative;
-
-  &:before {
-    width: 46%;
-    height: 38px;
-    background: $data-color;
-    position: absolute;
-    content: "";
-    top: -37px;
-    left: 0;
-  }
-
-  &:after {
-    width: 0;
-    height: 0;
-    border-bottom: 78px solid $data-color;
-    border-right: 72px solid transparent;
-    position: absolute;
-    content: "";
-    top: -37px;
-    left: 45.7%;
-  }
+	margin: 52px 0 0;
+	width: 100%;
+	padding-bottom: 10px;
+	height: 200px;
+	background: $data-color;
+	position: relative;
+	&:before {
+		width: 46%;
+		height: 38px;
+		background: $data-color;
+		position: absolute;
+		content: "";
+		top: -37px;
+		left: 0;
+	}
+	&:after {
+		width: 0;
+		height: 0;
+		border-bottom: 78px solid $data-color;
+		border-right: 72px solid transparent;
+		position: absolute;
+		content: "";
+		top: -37px;
+		left: 45.7%;
+	}
 }
-
 %folder-info {
-  padding: 1% 0 0 0;
-  font-family: $main-font;
-  font-weight: 200;
-  color: $folder-text-color;
-  font-size: 14px;
-
+	padding: 1% 0 0 0;
+	font-family: $main-font;
+	font-weight: 200;
+	color: $folder-text-color;
+	font-size: 14px;
 }
-
 .first-folder-info {
-  @extend %folder-info;
+	@extend %folder-info;
 }
-
 .second-folder-info {
-  @extend %folder-info;
-  padding: 0 0 2% 0;
+	@extend %folder-info;
+	padding: 0 0 2% 0;
 }
-
+.scroller {
+	display: -webkit-box;
+	position: relative;
+	transition: 1.5s;
+}
 .third-folder-info {
-  @extend %folder-info;
-  font-weight: 600;
-
+	@extend %folder-info;
+	font-weight: 600;
 }
-
 .info-list {
-  @include flex;
-  padding: 0;
-  justify-content: start;
-  margin-left: 20px;
-  align-items: center;
+	@include flex;
+	padding: 0;
+	justify-content: start;
+	margin-left: 20px;
+	align-items: center;
 }
-
 .info-list-item {
-  margin-left: 8px;
-  font-weight: bold;
+	margin-left: 8px;
+	font-weight: bold;
 }
-
 .folder-paragraph {
-  padding: 0px 10px;
+	padding: 0px 10px;
 }
-
 .read-more {
-  @extend %button-template;
-  border: 1px solid $second-color;
-  color: $second-color;
+	@extend %button-template;
+	border: 1px solid $second-color;
+	color: $second-color;
 }
-
 .read-more:hover {
-  background: $second-color;
-  color: $color-primary;
+	background: $second-color;
+	color: $color-primary;
 }
-
 .folder-button {
-  padding: 19px 27px;
+	padding: 19px 27px;
 }
-
 .folder-words {
-  text-align: justify;
-  padding: 6px 24px 0 14px;
-  font-size: 14px;
-  line-height: 25px;
-  letter-spacing: 0.2px;
+	text-align: justify;
+	padding: 6px 24px 0 14px;
+	font-size: 14px;
+	line-height: 25px;
+	letter-spacing: 0.2px;
 }
-
 .bottom-border {
-  height: 30px;
-  width: 100%;
-  margin-top: 8%;
-
-  &:after {
-    width: calc(50% - 12px);
-    height: 30px;
-    position: absolute;
-    content: "";
-    border-top: 1px solid $data-color;
-  }
-
-  &:before {
-    width: calc(50% - 17px);
-    right: 0;
-    height: 30px;
-    position: absolute;
-    content: "";
-    border-bottom: 1px solid $data-color;
-  }
+	height: 30px;
+	width: 100%;
+	margin-top: 8%;
+	&:after {
+		width: calc(50% - 12px);
+		height: 30px;
+		position: absolute;
+		content: "";
+		border-top: 1px solid $data-color;
+	}
+	&:before {
+		width: calc(50% - 17px);
+		right: 0;
+		height: 30px;
+		position: absolute;
+		content: "";
+		border-bottom: 1px solid $data-color;
+	}
 }
-
 .info-list-text {
-  font-size: 14px;
+	font-size: 14px;
 }
-
 .triangle {
-  margin-top: -16px;
-  border-left: 1px solid $data-color;
-  position: absolute;
-  margin-left: calc(50% - 2px);
-  height: 42px;
-  width: 30px;
-  transform: rotate(-45deg);
+	margin-top: -16px;
+	border-left: 1px solid $data-color;
+	position: absolute;
+	margin-left: calc(50% - 2px);
+	height: 42px;
+	width: 30px;
+	transform: rotate(-45deg);
 }
-
 @include screen-x-large {
-  %folder-info {
-    padding: 3% 0 3% 0;
-  }
-
-  %column {
-    margin: 0 10%;
-  }
-
-  .scroller {
-    overflow: hidden;
-    flex: 1;
-  }
-
-  .info-list {
-    margin-left: 0;
-    font-size: 11px;
-  }
-
-  .info-list-text {
-    font-size: 11px;
-  }
-
-  %folder-name {
-    text-align: start;
-    font-size: 17px;
-    padding-right: 0;
-    padding: 20px 0 11px 0;
-  }
-
-  %folder-info {
-    padding: 0 0 3% 0;
-    display: flex;
-    justify-content: center;
-  }
-
-  .second-folder-info {
-    padding: 3% 0 3% 0;
-  }
-
-  .folder-paragraph,
-  .folder-words {
-    padding: 0 5px;
-    font-size: 11px;
-  }
-
+	%folder-info {
+		padding: 3% 0 3% 0;
+	}
+	.scroller {
+		display: flex;
+		flex: 1;
+	}
+	.info-list {
+		margin-left: 0;
+		font-size: 11px;
+	}
+	.info-list-text {
+		font-size: 11px;
+	}
+	%folder-name {
+		text-align: start;
+		font-size: 17px;
+		padding-right: 0;
+		padding: 20px 0 11px 0;
+	}
+	%folder-info {
+		padding: 0 0 3% 0;
+		display: flex;
+		justify-content: center;
+	}
+	.second-folder-info {
+		padding: 3% 0 3% 0;
+	}
+	.folder-paragraph,
+	.folder-words {
+		padding: 0 5px;
+		font-size: 11px;
+	}
 }
-
-
 @include screen-large {
-
-  %column {
-    width: 45%;
-    margin: 0 30%;
-  }
-
-  .blog-arrows {
-    display: flex;
-    width: 90% !important;
-  }
-
-  %folder-info {
-    padding: 2% 0 3% 0;
-  }
-
-  .folder-button {
-    padding: 19px 27px;
-    @include flex;
-  }
-
-  .info-list {
-    margin-left: 0;
-    font-size: 11px;
-  }
-
-  %folder-name {
-    padding-left: 0;
-    padding-right: 0;
-    text-align: center;
-    font-size: 15px;
-  }
-
-  .folder-paragraph,
-  .folder-words {
-    padding: 0 5px;
-    font-size: 11px;
-  }
-
-  .info-list-text {
-    font-size: 10px;
-  }
-
-  .blog-underline-headline {
-    font-size: 35px;
-    width: 100%;
-  }
-
-  .folder-words {
-    padding: 6px 0 0 14px;
-  }
+	.blog-arrows {
+		display: flex;
+		width: 90% !important;
+	}
+	%folder-info {
+		padding: 2% 0 3% 0;
+	}
+	.folder-button {
+		padding: 19px 27px;
+		@include flex;
+	}
+	.info-list {
+		margin-left: 0;
+		font-size: 11px;
+	}
+	%folder-name {
+		padding-left: 0;
+		padding-right: 0;
+		text-align: center;
+		font-size: 15px;
+	}
+	.folder-paragraph,
+	.folder-words {
+		padding: 0 5px;
+		font-size: 11px;
+	}
+	.info-list-text {
+		font-size: 10px;
+	}
+	.blog-underline-headline {
+		font-size: 35px;
+		width: 100%;
+	}
+	.folder-words {
+		padding: 6px 0 0 14px;
+	}
 }
-
-
 @include screen-medium {
-  %column {
-    width: 60%;
-    margin: 0 22%;
-  }
-
-  .blog-arrows {
-    width: 98% !important;
-  }
-
-  %folder {
-    margin: 52px 0 0 0px;
-  }
-
-  .blog-underline-headline {
-    font-size: 25px;
-    width: 100%;
-  }
-
-  %folder-name {
-    font-size: 17px;
-  }
-
-
-
+	%folder {
+		margin: 52px 0 0 0px;
+	}
+	.blog-underline-headline {
+		font-size: 25px;
+		width: 100%;
+	}
+	%folder-name {
+		font-size: 17px;
+	}
 }
-
 @include screen-small {
-  %folder-name {
-    padding-top: 0;
-  }
-
-  .blog-arrows {
-    width: 89% !important;
-  }
-
-
-  .first-folder-name {
-    padding-top: 15px;
-
-  }
-
-  %folder {
-    height: 120px;
-  }
-
+	%folder-name {
+		padding-top: 0;
+	}
+	.first-folder-name {
+		padding-top: 15px;
+	}
+	%folder {
+		height: 120px;
+	}
 }
